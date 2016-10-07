@@ -1,9 +1,9 @@
 ﻿#pragma strict
 
-private var spawnPoint : Transform;
+private var spawnPoint : Vector3;
 
 function Start () {
-	spawnPoint.position = transform.position;
+	spawnPoint = transform.position;
 }
 
 function Update () {
@@ -11,9 +11,9 @@ function Update () {
 }
 
 function Respawn (){
-	transform.position = spawnPoint.position;
+	transform.position = spawnPoint;
 }
 
 function SetNewSpawnPoint (){
-	spawnPoint.position = transform.position;
+	spawnPoint = transform.position;
 }
