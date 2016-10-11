@@ -8,6 +8,7 @@ var levelToLoad : String;
 
 var cursorsParent : Transform;
 var cursorInterval : float = 0.2;
+var loadingScreen : GameObject;
 private var cursorIdx : int = -1;
 private var canMoveCursor : boolean = true;
 
@@ -41,6 +42,7 @@ function Update () {
 }
 
 function LoadFirstLevel (){
+	DisplayLoadingScreen();
 	SceneManager.LoadScene(levelToLoad);
 }
 
@@ -86,4 +88,8 @@ function MoveCursorDown (){
 	}
 	yield WaitForSeconds (cursorInterval);
 	canMoveCursor = true;
+}
+
+function DisplayLoadingScreen (){
+	loadingScreen.SetActive(true);
 }
