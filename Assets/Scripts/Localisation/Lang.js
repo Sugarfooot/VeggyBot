@@ -26,7 +26,7 @@ static function HasInstance()
 
 private var Strings : Hashtable;
 private var path : String = "lang";
-private var language : String = "English";
+private var language : String = "French";
 private var texts : Array = new Array();
 function Awake()
 {

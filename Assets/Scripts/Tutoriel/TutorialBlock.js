@@ -180,7 +180,7 @@ function ValidateStep (){
 	if (!justText){
 		if (displayTimeInstructions > 0.0){
 			TutorialManager.Instance().DefineTutorialTextImageAndDelay (instructions, displayTimeInstructions, helperIcon);
-			if (nextStep.actionText != ""){
+			if (nextStep != null && nextStep.actionText != ""){
 				yield WaitForSeconds(displayTimeInstructions);
 			}
 			else{

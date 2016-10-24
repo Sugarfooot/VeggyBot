@@ -6,6 +6,7 @@ public class TutorialManager extends MonoBehaviour {
 
 	//Tutorial variables
 	var tutorialText : Text;
+	var textContainer : GameObject;
 	var actionText : Text;
 	var tutorialImage : Image;
 	private var tutorialString : String = "";
@@ -51,6 +52,7 @@ public class TutorialManager extends MonoBehaviour {
 	function DisplayAndHideTutorialSection (){
 		tutorialText.text = tutorialString;
 		tutorialText.gameObject.GetComponent.<LocalisedText>().setNewText(tutorialString);
+		textContainer.SetActive(true);
 		if (tutorialImage.sprite != null){
 			tutorialImage.enabled = true;
 		}
@@ -69,6 +71,7 @@ public class TutorialManager extends MonoBehaviour {
 	}
 
 	function CleanTutorialText (){
+		textContainer.SetActive(false);
 		tutorialText.text = "";
 	}
 
