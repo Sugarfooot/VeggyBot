@@ -11,10 +11,10 @@ private var canMoveCursor : boolean = false;
 
 function Start () {
 	cursorIdx = 0;
-	for (var i = 0; i < pauseCursorsParent.childCount; i++){
-		pauseCursorsParent.GetChild(i).gameObject.SetActive(false);
-	}
-	pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(true);
+	// for (var i = 0; i < pauseCursorsParent.childCount; i++){
+	// 	pauseCursorsParent.GetChild(i).gameObject.SetActive(false);
+	// }
+	// pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(true);
 }
 
 function Update () {
@@ -23,10 +23,10 @@ function Update () {
 	}
 
 	if (canMoveCursor && pauseMenu.activeSelf){
-		if (Input.GetAxis("LeftAnalogVertical") > 0){
+		if (Input.GetAxis("LeftAnalogHorizontal") < 0){
 			MoveCursorUp();
 		}
-		if (Input.GetAxis("LeftAnalogVertical") < 0){
+		if (Input.GetAxis("LeftAnalogHorizontal") > 0){
 			MoveCursorDown();
 		}
 		if (Input.GetButtonDown("A")){
@@ -49,22 +49,28 @@ function TriggerPauseMenu (){
 		pauseMenu.SetActive(false);
 	}
 	else if (!pauseMenu.activeSelf){
+		cursorIdx = 0;
 		pauseMenu.SetActive(true);
 		canMoveCursor = true;
+		pauseCursorsParent.GetChild(cursorIdx).gameObject.GetComponent.<Animator>().SetTrigger("Highlighted");
 	}
 }
 
 function MoveCursorUp (){
 	canMoveCursor = false;
 	if (cursorIdx == 0){
-		pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(false);
+		// pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(false);
+		pauseCursorsParent.GetChild(cursorIdx).gameObject.GetComponent.<Animator>().SetTrigger("Normal");
 		cursorIdx = pauseCursorsParent.childCount -1;
-		pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(true);
+		pauseCursorsParent.GetChild(cursorIdx).gameObject.GetComponent.<Animator>().SetTrigger("Highlighted");
+		// pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(true);
 	}
 	else {
-		pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(false);
+		pauseCursorsParent.GetChild(cursorIdx).gameObject.GetComponent.<Animator>().SetTrigger("Normal");
+		// pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(false);
 		cursorIdx -= 1;
-		pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(true);
+		pauseCursorsParent.GetChild(cursorIdx).gameObject.GetComponent.<Animator>().SetTrigger("Highlighted");
+		// pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(true);
 	}
 	yield WaitForSeconds (cursorInterval);
 	canMoveCursor = true;
@@ -73,14 +79,18 @@ function MoveCursorUp (){
 function MoveCursorDown (){
 	canMoveCursor = false;
 	if (cursorIdx == pauseCursorsParent.childCount -1){
-		pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(false);
+		pauseCursorsParent.GetChild(cursorIdx).gameObject.GetComponent.<Animator>().SetTrigger("Normal");
+		// pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(false);
 		cursorIdx = 0;
-		pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(true);
+		pauseCursorsParent.GetChild(cursorIdx).gameObject.GetComponent.<Animator>().SetTrigger("Highlighted");
+		// pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(true);
 	}
 	else {
-		pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(false);
+		pauseCursorsParent.GetChild(cursorIdx).gameObject.GetComponent.<Animator>().SetTrigger("Normal");
+		// pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(false);
 		cursorIdx += 1;
-		pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(true);
+		pauseCursorsParent.GetChild(cursorIdx).gameObject.GetComponent.<Animator>().SetTrigger("Highlighted");
+		// pauseCursorsParent.GetChild(cursorIdx).gameObject.SetActive(true);
 	}
 	yield WaitForSeconds (cursorInterval);
 	canMoveCursor = true;
