@@ -45,15 +45,22 @@ public class PlayerManager extends MonoBehaviour {
 				}
 			}
 		}
+		if (Input.GetButtonUp("RB") || (!Input.GetButton("RB") && isShooting)){
+			isShooting = false;
+		}
 	}
 
 	function Respawn (){
 		transform.position = spawnPoint;
-		// !! AJOUTER LE CHARGEMENT DES PLAYERPREFS AU MOMENT DU SPAWN !!
+		vieIdx = PlayerPrefs.GetInt("Lives",vieIdx);
+		for (var i = -1; i < vieIdx; i++){
+			vies[i+1].gameObject.SetActive(true);
+		}
 	}
 
 	function SetNewSpawnPoint (){
 		spawnPoint = transform.position;
+		PlayerPrefs.SetInt("Lives",vieIdx);
 	}
 
 	function AddWaterLevel (quantity : float){
@@ -73,10 +80,14 @@ public class PlayerManager extends MonoBehaviour {
 
 	function OnTriggerEnter (collider : Collider){
 		if (collider.CompareTag("Damage")){
-			vieIdx --;
+			collider.enabled = false;
 			vies[vieIdx].gameObject.SetActive(false);
+			vieIdx --;
 			if(vieIdx == -1){
+				yield WaitForSeconds(0.5);
 				Respawn();
+				yield WaitForSeconds(Time.deltaTime);
+				collider.enabled = true;
 			}
 		}
 	}
