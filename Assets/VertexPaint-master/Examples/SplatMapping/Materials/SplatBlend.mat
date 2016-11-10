@@ -1,0 +1,406 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SplatBlend
+  m_Shader: {fileID: 4800000, guid: ce2682afc43314c2abe57fc23f9c61e2, type: 3}
+  m_ShaderKeywords: _EMISSION _FLOW1 _LAYERS3 _NORMALMAP _PARALLAXMAP
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailAlbedoMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailMask
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailNormalMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _EmissionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive1
+      second:
+        m_Texture: {fileID: 2800000, guid: 4bd22db1a4946453fbc2b3442e42621d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive3
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive4
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive5
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FlowNoise
+      second:
+        m_Texture: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex3
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex4
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex5
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MetallicGlossMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal1
+      second:
+        m_Texture: {fileID: 2800000, guid: ead260fb7b1cc4b2c9ee037b18828c31, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal2
+      second:
+        m_Texture: {fileID: 2800000, guid: 712d42c5304d5884ca02522d0b454873, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal3
+      second:
+        m_Texture: {fileID: 2800000, guid: 18222473e3a3b4806b13efd91853ca56, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal4
+      second:
+        m_Texture: {fileID: 2800000, guid: bbab0a6f7bae9cf42bf057d8ee2755f6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal5
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _OcclusionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex1
+      second:
+        m_Texture: {fileID: 2800000, guid: 4bd22db1a4946453fbc2b3442e42621d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex2
+      second:
+        m_Texture: {fileID: 2800000, guid: 8bd6005f9bdc84c0c9feac733f094b02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex3
+      second:
+        m_Texture: {fileID: 2800000, guid: c3ada2bf9f20b489c9e47cad520181ab, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex4
+      second:
+        m_Texture: {fileID: 2800000, guid: b66bceaf0cc0ace4e9bdc92f14bba709, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex5
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BumpScale
+      second: 1
+    - first:
+        name: _Contrast
+      second: 0.5
+    - first:
+        name: _Contrast2
+      second: 0.658
+    - first:
+        name: _Contrast3
+      second: 0.559
+    - first:
+        name: _Contrast4
+      second: 0.5
+    - first:
+        name: _Contrast5
+      second: 0.5
+    - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
+        name: _DetailNormalMapScale
+      second: 1
+    - first:
+        name: _DistBlendMax
+      second: 100
+    - first:
+        name: _DistBlendMin
+      second: 0
+    - first:
+        name: _DistUVScale1
+      second: 0.5
+    - first:
+        name: _DistUVScale2
+      second: 0.5
+    - first:
+        name: _DistUVScale3
+      second: 0.5
+    - first:
+        name: _DstBlend
+      second: 0
+    - first:
+        name: _EmissiveMult1
+      second: 0.5
+    - first:
+        name: _EmissiveMult2
+      second: 0
+    - first:
+        name: _EmissiveMult3
+      second: 0
+    - first:
+        name: _EmissiveMult4
+      second: 1
+    - first:
+        name: _EmissiveMult5
+      second: 1
+    - first:
+        name: _FlowAlpha
+      second: 1
+    - first:
+        name: _FlowIntensity
+      second: 0.2
+    - first:
+        name: _FlowIntensity1
+      second: 1
+    - first:
+        name: _FlowIntensity2
+      second: 1
+    - first:
+        name: _FlowIntensity3
+      second: 1
+    - first:
+        name: _FlowIntensity4
+      second: 1
+    - first:
+        name: _FlowIntensity5
+      second: 1
+    - first:
+        name: _FlowNoiseScale
+      second: 0
+    - first:
+        name: _FlowRefraction
+      second: 0.04
+    - first:
+        name: _FlowSpeed
+      second: 0.1
+    - first:
+        name: _FlowSpeed1
+      second: 0
+    - first:
+        name: _FlowSpeed2
+      second: 0
+    - first:
+        name: _FlowSpeed3
+      second: 0
+    - first:
+        name: _FlowSpeed4
+      second: 0
+    - first:
+        name: _FlowSpeed5
+      second: 0
+    - first:
+        name: _Glossiness
+      second: 0.5
+    - first:
+        name: _Glossiness1
+      second: 0.72
+    - first:
+        name: _Glossiness2
+      second: 0.3
+    - first:
+        name: _Glossiness3
+      second: 0.132
+    - first:
+        name: _Glossiness4
+      second: 0.5
+    - first:
+        name: _Glossiness5
+      second: 0.5
+    - first:
+        name: _Height
+      second: 0.207
+    - first:
+        name: _Metallic
+      second: 0
+    - first:
+        name: _Metallic1
+      second: 0
+    - first:
+        name: _Metallic2
+      second: 0
+    - first:
+        name: _Metallic3
+      second: 0
+    - first:
+        name: _Metallic4
+      second: 0
+    - first:
+        name: _Metallic5
+      second: 0
+    - first:
+        name: _Mode
+      second: 0
+    - first:
+        name: _OcclusionStrength
+      second: 1
+    - first:
+        name: _Parallax
+      second: 0.02
+    - first:
+        name: _Parallax1
+      second: 0.037
+    - first:
+        name: _Parallax2
+      second: 0.0424
+    - first:
+        name: _Parallax3
+      second: 0.0261
+    - first:
+        name: _Parallax4
+      second: 0.02
+    - first:
+        name: _Parallax5
+      second: 0.02
+    - first:
+        name: _SrcBlend
+      second: 1
+    - first:
+        name: _TexScale1
+      second: 1
+    - first:
+        name: _TexScale2
+      second: 2
+    - first:
+        name: _TexScale3
+      second: 3
+    - first:
+        name: _TexScale4
+      second: 1
+    - first:
+        name: _TexScale5
+      second: 1
+    - first:
+        name: _UVSec
+      second: 0
+    - first:
+        name: _ZWrite
+      second: 1
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _EmissionColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _FlowMove
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _Tint1
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Tint2
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Tint3
+      second: {r: 1, g: 1, b: 1, a: 1}
