@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: floorRock
-  m_Shader: {fileID: 4800000, guid: 7b2852392be424b1c8dfe8bcb8ca9a05, type: 3}
+  m_Shader: {fileID: 4800000, guid: 9c09b2e33c3e9400f9072c70a607fa98, type: 3}
   m_ShaderKeywords: _LAYERS2 _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 6
   m_CustomRenderQueue: -1
@@ -76,6 +76,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _DispTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 0baf9ec8db561f14d89f30d8ba6ba0c6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
@@ -139,7 +145,7 @@ Material:
         name: _MainTex
       second:
         m_Texture: {fileID: 2800000, guid: 2ea8d84dacd79e8499822a1fa62e6047, type: 3}
-        m_Scale: {x: 8, y: 8}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
@@ -163,6 +169,12 @@ Material:
         name: _Normal2
       second:
         m_Texture: {fileID: 2800000, guid: fc88b08c96d242047b49670a1175c714, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _NormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 2c8658a7c60139b4a9024d879624925f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -214,6 +226,18 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _SpecGlossMap1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _Tex1
       second:
         m_Texture: {fileID: 2800000, guid: 0baf9ec8db561f14d89f30d8ba6ba0c6, type: 3}
@@ -258,6 +282,9 @@ Material:
       second: 0.5
     - first:
         name: _DetailNormalMapScale
+      second: 1
+    - first:
+        name: _Displacement
       second: 1
     - first:
         name: _DistBlendMax
@@ -356,6 +383,9 @@ Material:
         name: _SrcBlend
       second: 1
     - first:
+        name: _Tess
+      second: 9.8
+    - first:
         name: _TexScale1
       second: 6
     - first:
@@ -386,6 +416,15 @@ Material:
     - first:
         name: _RedChannelColor
       second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _SpecColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - first:
+        name: _SpecColor1
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _SpecColor2
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
     - first:
         name: _Tint1
       second: {r: 1, g: 1, b: 1, a: 1}
