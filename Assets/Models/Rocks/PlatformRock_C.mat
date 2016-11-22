@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: PlatformRock_C
-  m_Shader: {fileID: 4800000, guid: 9c09b2e33c3e9400f9072c70a607fa98, type: 3}
-  m_ShaderKeywords: _LAYERS2 _NORMALMAP _SPECGLOSSMAP
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _EMISSION _LAYERS2 _METALLICGLOSSMAP _NORMALMAP _SPECGLOSSMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -18,7 +18,7 @@ Material:
     - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 2800000, guid: 04c8605a22ab9f6448831a9e302b5f3d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 852361f2bdf1da740896e9ec0504456e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -60,13 +60,13 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 56c50d75735a011478a371ca805074b4, type: 3}
+        m_Texture: {fileID: 2800000, guid: b7696f3fcd821cb4cb5324d8da8211c3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
       second:
-        m_Texture: {fileID: 2800000, guid: cf06ddd608432ed40af438bf9f75bf76, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9493673a34d586c42bd9d1367500a96b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
