@@ -47,6 +47,7 @@ ModelImporter:
     4300014: L_finger_21
     7400000: morphCornichon
     9500000: //RootNode
+    11100000: //RootNode
     13700000: base002
   materials:
     importMaterials: 1
@@ -62,7 +63,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -140,8 +141,109 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    human: []
-    skeleton: []
+    human:
+    - boneName: L_hand
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_finger_20
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_finger_30
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_finger_21
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_finger_31
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_finger_20
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_finger_21
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: face_anim_cornichon(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: base002
+      position: {x: -0, y: 0.75409806, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_hand
+      position: {x: -0.48120558, y: 0.73943466, z: 0.0042755855}
+      rotation: {x: -0.7070675, y: 0.0027086665, z: -0.006690607, w: 0.7071092}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1}
+      transformModified: 1
+    - name: L_finger_10
+      position: {x: -0.073840976, y: -0.011046636, z: -0.00968132}
+      rotation: {x: 0.029809045, y: -0.081899606, z: 0.08682397, w: 0.9924039}
+      scale: {x: 1.0000002, y: 1, z: 0.99999964}
+      transformModified: 1
+    - name: L_finger_11
+      position: {x: -0.021936988, y: 0.0010506439, z: -0.0016695404}
+      rotation: {x: 0.011289495, y: -0.042133067, z: 0.00000003646846, w: 0.99904823}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1.0000005}
+      transformModified: 1
+    - name: L_finger_20
+      position: {x: -0.075399816, y: 0.008702253, z: -0.009347381}
+      rotation: {x: 0.06202814, y: 0.5754096, z: -0.034065902, w: 0.8147981}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_finger_21
+      position: {x: -0.02151924, y: 0.0011221146, z: -0.0011941527}
+      rotation: {x: 0.011289514, y: -0.042133052, z: 0.000000027857999, w: 0.99904823}
+      scale: {x: 1, y: 0.99999964, z: 1.0000001}
+      transformModified: 1
+    - name: L_finger_30
+      position: {x: -0.06976189, y: 0.024336645, z: -0.017197417}
+      rotation: {x: -0.050103426, y: -0.614117, z: -0.09984955, w: 0.7812682}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.9999998}
+      transformModified: 1
+    - name: L_finger_31
+      position: {x: -0.019498214, y: -0.00051506044, z: -0.0021690368}
+      rotation: {x: 0.011289488, y: -0.042133044, z: 0.0000000826731, w: 0.99904823}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000005}
+      transformModified: 1
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -152,7 +254,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
