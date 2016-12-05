@@ -7,11 +7,12 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: GRASS_TEXTURE
-  m_Shader: {fileID: 14001, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION _NORMALMAP
+  m_Shader: {fileID: 4800000, guid: d0d241aff1676604494f767a23ce1ff9, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _EMISSION _NORMALMAP
   m_LightmapFlags: 1
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -54,7 +55,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 2127d2688f1fa01468214bd33d686839, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8f5b54a7b3a7e614f80756a71ae0a3b8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -93,19 +94,19 @@ Material:
       second: 1
     - first:
         name: _Cutoff
-      second: 0.334
+      second: 0.467
     - first:
         name: _DetailNormalMapScale
       second: 1
     - first:
         name: _DstBlend
-      second: 10
+      second: 0
     - first:
         name: _GlossMapScale
       second: 1
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 0.156
     - first:
         name: _GlossyReflections
       second: 1
@@ -114,7 +115,7 @@ Material:
       second: 0
     - first:
         name: _Mode
-      second: 3
+      second: 1
     - first:
         name: _OcclusionStrength
       second: 1
@@ -150,7 +151,7 @@ Material:
       second: 0
     - first:
         name: _ZWrite
-      second: 0
+      second: 1
     m_Colors:
     - first:
         name: _Color
