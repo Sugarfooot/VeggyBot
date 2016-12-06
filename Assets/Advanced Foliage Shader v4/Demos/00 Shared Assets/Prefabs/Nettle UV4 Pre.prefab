@@ -1,0 +1,330 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &106194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 441248}
+  - 33: {fileID: 3349896}
+  - 23: {fileID: 2318540}
+  - 114: {fileID: 11465218}
+  m_Layer: 0
+  m_Name: Nettle UV4 Pre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441248
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 175.59723, y: 32.772247, z: 173.57877}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2318540
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106194}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 94aaabbf32cc546899a0ec1ab578ded2, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3349896
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106194}
+  m_Mesh: {fileID: 4300000, guid: 87da66e66845c47459aa20ef2c4ad77d, type: 2}
+--- !u!114 &11465218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244de86e001f04c23be71034613874c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BendingModeSelected: 2
+  Scale: 2
+  hasBeenSaved: 1
+  savePath: 4173736574732f416476616e63656420466f6c69616765205368616465722076342f44656d6f732f303120466f6c6961676520536861646572204f766572766965772f4d6f646966696564204d65736865732f4e6574746c655f5556342e6173736574
+  fileName: 4e6574746c655f5556342e6173736574
+  hasSubmeshes: 0
+  mergeSubMeshes: 0
+  has2ndUV: 1
+  delete2ndUV: 0
+  storeUV4: 0
+  convert2simpletree: 0
+  convert2foliage: 0
+  sourceTex0: {fileID: 0}
+  sourceTex1: {fileID: 0}
+  sourceTexDiffuse: {fileID: 0}
+  textureSplitHalf: 0
+  showTextureCombine: 0
+  TextureSplitSelected: 0
+  generateUV2: 0
+  transTexPath: 
+  combinedTexPath: 
+  simpleTreeConverted: 0
+  foliageTreeConverted: 0
+  foliageTreeUV4Converted: 0
+  Set1stBendingSelected: 1
+  Mask2ndBendingSelected: 1
+  adjustScale: 0
+  adjustVertexColors: 0
+  adjustBending: 1
+  FoldSetBending: 0
+  showGizmos: 0
+  maxBendingValueY: 0.375
+  maxBendingValueX: 0.32
+  curvY:
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0.60625
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  curvX:
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 0.5006553
+      value: 0.41875008
+      inSlope: 1.7286739
+      outSlope: 1.7286739
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  curvZ:
+    m_Curve:
+    - time: 0
+      value: 0.2750001
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0.5656251
+      inSlope: -0.98864204
+      outSlope: -0.98864204
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  adjustBlueValue: 0
+  adjustGreenValue: 0
+  adjustRedValue: 0
+  adjustAlphaValue: 0
+  Set1stBendingAlongY: 1
+  Set1stBendingRelative2Pivot: 0
+  VertexBlueVals:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  VertexBlueValsStored: 1
+  hasChanged: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 106194}
+  m_IsPrefabParent: 1

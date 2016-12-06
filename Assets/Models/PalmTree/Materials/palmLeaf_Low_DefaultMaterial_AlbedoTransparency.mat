@@ -7,8 +7,9 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: palmLeaf_Low_DefaultMaterial_AlbedoTransparency
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHATEST_ON _METALLICGLOSSMAP _NORMALMAP
+  m_Shader: {fileID: 4800000, guid: d0d241aff1676604494f767a23ce1ff9, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BENDINGCONTROLS_VERTEX_COLORS _METALLICGLOSSMAP
+    _NORMALMAP
   m_LightmapFlags: 6
   m_CustomRenderQueue: 2450
   stringTagMap:
@@ -18,6 +19,12 @@ Material:
     m_TexEnvs:
     - first:
         name: _BumpMap
+      second:
+        m_Texture: {fileID: 2800000, guid: dafbdcdd41b6355489668dae82488aaf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpTransSpecMap
       second:
         m_Texture: {fileID: 2800000, guid: dafbdcdd41b6355489668dae82488aaf, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -90,6 +97,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
+        name: _BendingControls
+      second: 0
+    - first:
         name: _BumpScale
       second: 1
     - first:
@@ -110,6 +120,9 @@ Material:
     - first:
         name: _GlossyReflections
       second: 1
+    - first:
+        name: _LeafTurbulence
+      second: 0.5
     - first:
         name: _Metallic
       second: 0
@@ -138,6 +151,9 @@ Material:
         name: _SrcBlend
       second: 1
     - first:
+        name: _TranslucencyViewDependency
+      second: 0.5
+    - first:
         name: _UVSec
       second: 0
     - first:
@@ -146,10 +162,16 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0.9170385, g: 0.9705882, b: 0, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SpecularReflectivity
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - first:
+        name: _TranslucencyColor
+      second: {r: 0.73, g: 0.85, b: 0.41, a: 1}
     - first:
         name: _TreeInstanceColor
       second: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Dry Grass Touch Bending
+  m_Shader: {fileID: 4800000, guid: a41056c095bd04938aad403f675ae3ba, type: 3}
+  m_ShaderKeywords: _BENDINGCONTROLS_VERTEX_COLORS
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpTransSpecMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 9cfd23a08f9474965a51c7b1ba3c81b3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DiffCubeIBL
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 52a2094e5c02144b4943def8517cd74e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecCubeIBL
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BendingControls
+      second: 0
+    - first:
+        name: _Cutoff
+      second: 0.3
+    - first:
+        name: _ShadowOffsetScale
+      second: 1
+    - first:
+        name: _ShadowStrength
+      second: 0.6269231
+    - first:
+        name: _Shininess
+      second: 0.2
+    - first:
+        name: _SpecularColor
+      second: 0.04
+    - first:
+        name: _TranslucencyViewDependency
+      second: 0.7
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - first:
+        name: _SpecularReflectivity
+      second: {r: 0.3300062, g: 0.3300062, b: 0.3300062, a: 1}
+    - first:
+        name: _TouchBendingForce
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _TouchBendingPosition
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _TranslucencyColor
+      second: {r: 0.92549133, g: 0.7176509, b: 0.5215742, a: 1}

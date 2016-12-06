@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Conifer Foilage Shader UV2_UV4_material
+  m_Shader: {fileID: 4800000, guid: 5baf2cbe7fcf64552a4ac70d43d1db0a, type: 3}
+  m_ShaderKeywords: _BENDINGCONTROLS_VERTEX_COLORS
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpTransSpecMap
+      second:
+        m_Texture: {fileID: 2800000, guid: ed1f5e0b036ca4f8fb4a4fc8c4585c0b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 6ccc18501ce6247be9d0c96499fdcfc6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BendingControls
+      second: 1
+    - first:
+        name: _Cutoff
+      second: 0.3
+    - first:
+        name: _TranslucencyViewDependency
+      second: 0.7
+    m_Colors:
+    - first:
+        name: _SpecularReflectivity
+      second: {r: 0.33, g: 0.33, b: 0.33, a: 1}
+    - first:
+        name: _TranslucencyColor
+      second: {r: 0.73000747, g: 0.85000443, b: 0.41001213, a: 1}

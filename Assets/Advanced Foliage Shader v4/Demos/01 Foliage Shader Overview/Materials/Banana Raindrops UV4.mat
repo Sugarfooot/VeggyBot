@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Banana Raindrops UV4
+  m_Shader: {fileID: 4800000, guid: 35c83703e606f4cd79315d90ce116d5e, type: 3}
+  m_ShaderKeywords: _BENDINGCONTROLS_VERTEX_COLORS_AND_UV4
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpRain
+      second:
+        m_Texture: {fileID: 2800000, guid: ad9b843d0806147f68eaa2824216b578, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpTransSpecMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 91d0938aed3b743299c92bf18e0c94f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: f10ef69557ee84d8c9a8e96fe9b26c35, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MaskRain
+      second:
+        m_Texture: {fileID: 2800000, guid: dc1675c1ed5a8494c93899b474a63476, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BendingControls
+      second: 1
+    - first:
+        name: _Cutoff
+      second: 0.3
+    - first:
+        name: _RainTexScale
+      second: 4
+    - first:
+        name: _TranslucencyViewDependency
+      second: 0.5
+    m_Colors:
+    - first:
+        name: _SpecularReflectivity
+      second: {r: 0.33, g: 0.33, b: 0.33, a: 1}
+    - first:
+        name: _TranslucencyColor
+      second: {r: 0.101761036, g: 0.7426506, b: 0.04914961, a: 1}

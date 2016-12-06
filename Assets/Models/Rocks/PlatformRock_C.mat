@@ -94,6 +94,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _SpecGlossMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 9493673a34d586c42bd9d1367500a96b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _SpecGlossMap1
       second:
         m_Texture: {fileID: 2800000, guid: 9493673a34d586c42bd9d1367500a96b, type: 3}
@@ -165,7 +171,7 @@ Material:
       second: 0
     - first:
         name: _GlossMapScale
-      second: 1
+      second: 0.85
     - first:
         name: _Glossiness
       second: 0.5
@@ -224,6 +230,9 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SpecColor
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - first:
         name: _SpecColor1
       second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
