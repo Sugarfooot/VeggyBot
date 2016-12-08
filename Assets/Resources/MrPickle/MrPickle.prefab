@@ -1145,7 +1145,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011787792594}
   m_LocalRotation: {x: -0.36073053, y: -0.6082008, z: -0.3607828, w: 0.6081127}
-  m_LocalPosition: {x: -0.04676954, y: -0.025549158, z: -0.000007824507}
+  m_LocalPosition: {x: -0.046769362, y: -0.025549583, z: -0.000006886199}
   m_LocalScale: {x: 0.9999999, y: 0.99999976, z: 0.99999905}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1508,7 +1508,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011004146962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 94.865555, y: -26.59, z: 41.19497}
+  m_LocalPosition: {x: 12.06, y: -1.0699995, z: -5.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1610,7 +1610,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010128790536}
   m_LocalRotation: {x: -0.3608678, y: -0.60808027, z: -0.3608483, w: 0.60811305}
-  m_LocalPosition: {x: -0.046760455, y: -0.025524115, z: 0.0000005345792}
+  m_LocalPosition: {x: -0.046760194, y: -0.025524525, z: 0.00000243634}
   m_LocalScale: {x: 1.0000005, y: 0.99999964, z: 1.0000004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1857,7 +1857,7 @@ Animator:
   m_GameObject: {fileID: 1000011004146962}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 5301d39f641e670469987729775a7b9f, type: 3}
-  m_Controller: {fileID: 9100000, guid: 01ea09d05f8ec93428fb8ebeaf7481f7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2f58e1a7cdbc3204e9993a91619d4e78, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 1
   m_ApplyRootMotion: 1
@@ -1923,11 +1923,11 @@ MonoBehaviour:
   chaseSpeed: 1
   strafeSpeed: 1
   sphereSensor: {fileID: 114000014245554060}
-  currentState: 1
+  currentState: 2
   drawAgentPath: 0
   displayGizmos: 0
   fieldOfView: 95
-  maxDetectDistance: 10
+  maxDetectDistance: 3.03
   minDetectDistance: 4
   distanceToLostTarget: 20
   chaseStopDistance: 1
@@ -2011,7 +2011,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 3.03
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &135000011781651778
 SphereCollider:
