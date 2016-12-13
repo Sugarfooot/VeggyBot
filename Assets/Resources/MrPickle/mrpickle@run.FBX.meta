@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: da549a76328203d468f7cf17a3b26c9a
+guid: 46ee3c48e1c8a514aaffc9ac996d718c
 timeCreated: 1481642345
 licenseType: Free
 ModelImporter:
@@ -28,37 +28,44 @@ ModelImporter:
     100040: CATRigLLeg1
     100042: CATRigLLeg2
     100044: CATRigLLegAnkle
-    100046: CATRigRArm1
-    100048: CATRigRArm2
-    100050: CATRigRArmCollarbone
-    100052: CATRigRArmDigit11
-    100054: CATRigRArmDigit12
-    100056: CATRigRArmDigit13
-    100058: CATRigRArmDigit21
-    100060: CATRigRArmDigit22
-    100062: CATRigRArmDigit23
-    100064: CATRigRArmDigit31
-    100066: CATRigRArmDigit32
-    100068: CATRigRArmDigit33
-    100070: CATRigRArmDigit41
-    100072: CATRigRArmDigit42
-    100074: CATRigRArmDigit43
-    100076: CATRigRArmPalm
-    100078: CATRigRLeg1
-    100080: CATRigRLeg2
-    100082: CATRigRLegAnkle
-    100084: CATRigSpine1
-    100086: CATRigSpine2
-    100088: CATRigSpine3
-    100090: ctrl_R_eye
-    100092: ctrl_R_eye 1
-    100094: hat_ctrl
-    100096: L_eye_scale
-    100098: mouth_ctrl
-    100100: //RootNode
-    100102: R_eye_scale
-    100104: mouth_down_ctrl
-    100106: picke_hat_mesh
+    100046: CATRigLLegPlatform
+    100048: CATRigRArm1
+    100050: CATRigRArm2
+    100052: CATRigRArmCollarbone
+    100054: CATRigRArmDigit11
+    100056: CATRigRArmDigit12
+    100058: CATRigRArmDigit13
+    100060: CATRigRArmDigit21
+    100062: CATRigRArmDigit22
+    100064: CATRigRArmDigit23
+    100066: CATRigRArmDigit31
+    100068: CATRigRArmDigit32
+    100070: CATRigRArmDigit33
+    100072: CATRigRArmDigit41
+    100074: CATRigRArmDigit42
+    100076: CATRigRArmDigit43
+    100078: CATRigRArmPalm
+    100080: CATRigRLeg1
+    100082: CATRigRLeg2
+    100084: CATRigRLegAnkle
+    100086: CATRigRLegPlatform
+    100088: CATRigSpine1
+    100090: CATRigSpine2
+    100092: CATRigSpine3
+    100094: ctrl_R_eye
+    100096: ctrl_R_eye 1
+    100098: Cylinder001
+    100100: Cylinder002
+    100102: Dummy001
+    100104: Dummy002
+    100106: hat_ctrl
+    100108: L_eye_scale
+    100110: mouth_ctrl
+    100112: mouth_down_ctrl
+    100114: //RootNode
+    100116: picke_hat_mesh
+    100118: Pickles_mesh
+    100120: R_eye_scale
     400000: CATRigHub001
     400002: CATRigHub002
     400004: CATRigHub002Bone001
@@ -82,42 +89,57 @@ ModelImporter:
     400040: CATRigLLeg1
     400042: CATRigLLeg2
     400044: CATRigLLegAnkle
-    400046: CATRigRArm1
-    400048: CATRigRArm2
-    400050: CATRigRArmCollarbone
-    400052: CATRigRArmDigit11
-    400054: CATRigRArmDigit12
-    400056: CATRigRArmDigit13
-    400058: CATRigRArmDigit21
-    400060: CATRigRArmDigit22
-    400062: CATRigRArmDigit23
-    400064: CATRigRArmDigit31
-    400066: CATRigRArmDigit32
-    400068: CATRigRArmDigit33
-    400070: CATRigRArmDigit41
-    400072: CATRigRArmDigit42
-    400074: CATRigRArmDigit43
-    400076: CATRigRArmPalm
-    400078: CATRigRLeg1
-    400080: CATRigRLeg2
-    400082: CATRigRLegAnkle
-    400084: CATRigSpine1
-    400086: CATRigSpine2
-    400088: CATRigSpine3
-    400090: ctrl_R_eye
-    400092: ctrl_R_eye 1
-    400094: hat_ctrl
-    400096: L_eye_scale
-    400098: mouth_ctrl
-    400100: //RootNode
-    400102: R_eye_scale
-    400104: mouth_down_ctrl
-    400106: picke_hat_mesh
-    2300000: picke_hat_mesh
-    3300000: picke_hat_mesh
-    4300000: picke_hat_mesh
-    7400000: walktrouille
+    400046: CATRigLLegPlatform
+    400048: CATRigRArm1
+    400050: CATRigRArm2
+    400052: CATRigRArmCollarbone
+    400054: CATRigRArmDigit11
+    400056: CATRigRArmDigit12
+    400058: CATRigRArmDigit13
+    400060: CATRigRArmDigit21
+    400062: CATRigRArmDigit22
+    400064: CATRigRArmDigit23
+    400066: CATRigRArmDigit31
+    400068: CATRigRArmDigit32
+    400070: CATRigRArmDigit33
+    400072: CATRigRArmDigit41
+    400074: CATRigRArmDigit42
+    400076: CATRigRArmDigit43
+    400078: CATRigRArmPalm
+    400080: CATRigRLeg1
+    400082: CATRigRLeg2
+    400084: CATRigRLegAnkle
+    400086: CATRigRLegPlatform
+    400088: CATRigSpine1
+    400090: CATRigSpine2
+    400092: CATRigSpine3
+    400094: ctrl_R_eye
+    400096: ctrl_R_eye 1
+    400098: Cylinder001
+    400100: Cylinder002
+    400102: Dummy001
+    400104: Dummy002
+    400106: hat_ctrl
+    400108: L_eye_scale
+    400110: mouth_ctrl
+    400112: mouth_down_ctrl
+    400114: //RootNode
+    400116: picke_hat_mesh
+    400118: Pickles_mesh
+    400120: R_eye_scale
+    2300000: Cylinder001
+    2300002: Cylinder002
+    2300004: picke_hat_mesh
+    3300000: Cylinder001
+    3300002: Cylinder002
+    3300004: picke_hat_mesh
+    4300000: Pickles_mesh
+    4300002: picke_hat_mesh
+    4300004: Cylinder001
+    4300006: Cylinder002
+    7400000: run
     9500000: //RootNode
+    13700000: Pickles_mesh
   materials:
     importMaterials: 1
     materialName: 0
@@ -134,14 +156,28 @@ ModelImporter:
       improve retargeting quality.\n\t'CATRigSpine1' is inbetween humanoid transforms
       and has rotation animation that will be discarded.\n\t'CATRigHub002' is inbetween
       humanoid transforms and has rotation animation that will be discarded.\n\t'mouth_ctrl'
-      has translation animation that will be discarded.\n\t'mouth_ctrl' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'R_eye_scale'
-      has translation animation that will be discarded.\n\t'L_eye_scale' has translation
-      animation that will be discarded.\n\t'mouth_down_ctrl' has translation animation
+      has translation animation that will be discarded.\n\t'CATRigLArmDigit11' has
+      scale animation that will be discarded.\n\t'CATRigLArmDigit21' has scale animation
+      that will be discarded.\n\t'CATRigLArmDigit22' has scale animation that will
+      be discarded.\n\t'CATRigLArmDigit23' has scale animation that will be discarded.\n\t'CATRigLArmDigit31'
+      has scale animation that will be discarded.\n\t'CATRigLArmDigit32' has scale
+      animation that will be discarded.\n\t'CATRigLArmDigit33' has scale animation
+      that will be discarded.\n\t'CATRigLArmDigit41' has scale animation that will
+      be discarded.\n\t'CATRigLArmDigit42' has scale animation that will be discarded.\n\t'CATRigLArmDigit43'
+      has scale animation that will be discarded.\n\t'CATRigRArmDigit11' has scale
+      animation that will be discarded.\n\t'CATRigRArmDigit12' has scale animation
+      that will be discarded.\n\t'CATRigRArmDigit13' has scale animation that will
+      be discarded.\n\t'CATRigRArmDigit21' has scale animation that will be discarded.\n\t'CATRigRArmDigit22'
+      has scale animation that will be discarded.\n\t'CATRigRArmDigit23' has scale
+      animation that will be discarded.\n\t'CATRigRArmDigit31' has scale animation
+      that will be discarded.\n\t'CATRigRArmDigit32' has scale animation that will
+      be discarded.\n\t'CATRigRArmDigit33' has scale animation that will be discarded.\n\t'CATRigRArmDigit41'
+      has scale animation that will be discarded.\n\t'CATRigRArmDigit42' has scale
+      animation that will be discarded.\n\t'CATRigRArmDigit43' has scale animation
       that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 0
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -149,10 +185,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: walktrouille
+      name: run
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 24
+      lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -165,9 +201,9 @@ ModelImporter:
       loopBlendPositionY: 1
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 0
+      keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
-      heightFromFeet: 1
+      heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
@@ -205,6 +241,8 @@ ModelImporter:
         weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigHub002Bone001/CATRigHub002Bone001Bone001/mouth_ctrl/hat_ctrl
         weight: 0
+      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigHub002Bone001/CATRigHub002Bone001Bone001/mouth_ctrl/hat_ctrl/picke_hat_mesh
+        weight: 0
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigHub002Bone001/CATRigHub002Bone001Bone001/mouth_ctrl/L_eye_scale
         weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigHub002Bone001/CATRigHub002Bone001Bone001/mouth_ctrl/L_eye_scale/ctrl_R_eye
@@ -214,6 +252,8 @@ ModelImporter:
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigHub002Bone001/CATRigHub002Bone001Bone001/mouth_ctrl/R_eye_scale/ctrl_R_eye
           1
         weight: 0
+      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigHub002Bone001/CATRigHub002Bone001Bone001/mouth_down_ctrl
+        weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigLArmCollarbone
         weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigLArmCollarbone/CATRigLArm1
@@ -246,6 +286,10 @@ ModelImporter:
         weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigLArmDigit41/CATRigLArmDigit42/CATRigLArmDigit43
         weight: 1
+      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/Dummy002
+        weight: 0
+      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/Dummy002/Cylinder001
+        weight: 0
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigRArmCollarbone
         weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1
@@ -278,6 +322,16 @@ ModelImporter:
         weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigRArmDigit41/CATRigRArmDigit42/CATRigRArmDigit43
         weight: 1
+      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/Dummy001
+        weight: 0
+      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/Dummy001/Cylinder002
+        weight: 0
+      - path: CATRigLLegPlatform
+        weight: 0
+      - path: CATRigRLegPlatform
+        weight: 0
+      - path: Pickles_mesh
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -287,7 +341,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importBlendShapes: 1
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
