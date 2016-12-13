@@ -15,7 +15,7 @@ MonoBehaviour:
   tpCameraStates:
   - Name: Default
     forward: -1
-    right: 0
+    right: -0
     defaultDistance: 10
     maxDistance: 15
     minDistance: 3
@@ -28,10 +28,10 @@ MonoBehaviour:
     rotationOffSet: {x: 0, y: 0, z: 0}
     cullingHeight: 0.2
     cullingMinDist: 0.1
-    useZoom: 1
+    useZoom: 0
     fixedAngle: {x: 0, y: 55}
     lookPoints: []
-    cameraMode: 1
+    cameraMode: 0
   - Name: Crouch
     forward: -1
     right: 0.35

@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: POMO_TEXTURE_defaultMat_AlbedoTransparency
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 172589338eafba9448fa619c7c5f8c7d, type: 3}
   m_ShaderKeywords: _EMISSION _NORMALMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -16,9 +16,15 @@ Material:
     serializedVersion: 2
     m_TexEnvs:
     - first:
+        name: _AmbTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 11bf23345009afc46bbd80becba9cf5f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 2800000, guid: fe3d9ba115c986749922d385a92cb9e9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 29a0fca15dcb5be4bba326228a37c72e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -40,9 +46,27 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _DiffTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 1613a14be0ad6f44cad40b34237b8f48, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _IndicatorTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Lights
+      second:
+        m_Texture: {fileID: 2800000, guid: e64c5df193ee1c84fb022d375c7b03a4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -58,6 +82,18 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _NormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: fe3d9ba115c986749922d385a92cb9e9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normals
+      second:
+        m_Texture: {fileID: 2800000, guid: fe3d9ba115c986749922d385a92cb9e9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _OcclusionMap
       second:
         m_Texture: {fileID: 0}
@@ -69,7 +105,22 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RampTex
+      second:
+        m_Texture: {fileID: 2800000, guid: e31c164f1fefbfb4fa723b1d35fa453b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RimLightRamp
+      second:
+        m_Texture: {fileID: 2800000, guid: 2e6b164482d1a344788692db7414dae2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - first:
+        name: _AtmosFalloff
+      second: 0.8
     - first:
         name: _BumpScale
       second: 1
@@ -92,6 +143,9 @@ Material:
         name: _GlossyReflections
       second: 1
     - first:
+        name: _LightScale
+      second: 0.2
+    - first:
         name: _Metallic
       second: 0
     - first:
@@ -104,8 +158,26 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _RimBoost
+      second: -1.18
+    - first:
+        name: _RimExp
+      second: 0.1
+    - first:
+        name: _RimPower
+      second: 6.2
+    - first:
+        name: _Shininess
+      second: 0.03
+    - first:
         name: _SmoothnessTextureChannel
       second: 0
+    - first:
+        name: _SpecBoost
+      second: -81.31
+    - first:
+        name: _SpecExp
+      second: 150
     - first:
         name: _SpecularHighlights
       second: 1
@@ -120,8 +192,32 @@ Material:
       second: 1
     m_Colors:
     - first:
+        name: _AtmosFar
+      second: {r: 1, g: 0.88965523, b: 0, a: 1}
+    - first:
+        name: _AtmosNear
+      second: {r: 0.21960786, g: 0.2784314, b: 0.4431373, a: 1}
+    - first:
         name: _Color
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _Glow
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Indicator
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _RimColor
+      second: {r: 0.26, g: 0.19, b: 0.16, a: 0}
+    - first:
+        name: _RimLightColor
+      second: {r: 0.8206897, g: 1, b: 0, a: 1}
+    - first:
+        name: _Silhouette
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SpecColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
