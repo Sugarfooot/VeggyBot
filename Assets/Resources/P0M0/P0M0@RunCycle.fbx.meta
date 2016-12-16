@@ -50,6 +50,52 @@ ModelImporter:
     100084: POMO_UV_02
     100086: CATRig1Os001
     100088: CATRig1Os002
+    100090: Bone_INDEX01_L
+    100092: Bone_INDEX01_L001
+    100094: Bone_INDEX01_L002
+    100096: Bone_INDEX01_L003
+    100098: Bone_INDEX01_L004
+    100100: Bone_INDEX01_L005
+    100102: Bone_INDEX02_L
+    100104: Bone_INDEX02_L001
+    100106: Bone_INDEX02_L002
+    100108: Bone_INDEX02_L003
+    100110: Bone_INDEX02_L004
+    100112: Bone_INDEX02_L005
+    100114: Bone_INDEX03_L
+    100116: Bone_INDEX03_L001
+    100118: Bone_INDEX03_L002
+    100120: Bone_INDEX03_L003
+    100122: Bone_INDEX03_L004
+    100124: Bone_INDEX03_L005
+    100126: Bone_thumb01_L
+    100128: Bone_thumb01_L001
+    100130: Bone_thumb02_L
+    100132: Bone_thumb02_L001
+    100134: Bone_thumb03_L
+    100136: Bone_thumb03_L001
+    100138: CATRig_bassin
+    100140: CATRig_chest
+    100142: CATRig_neck
+    100144: CATRighead
+    100146: CATRigHub004Gizmo
+    100148: CATRigHub005Bone001Bone001Gizmo
+    100150: CATRigHub005Gizmo
+    100152: CATRigLArm2Gizmo
+    100154: CATRigLLeg1
+    100156: CATRigLLeg2
+    100158: CATRigLLeg2Gizmo
+    100160: CATRigLLegAnkle
+    100162: CATRigLLegPlatform
+    100164: CATRigRArm2Gizmo
+    100166: CATRigRLeg1
+    100168: CATRigRLeg2
+    100170: CATRigRLeg2Gizmo
+    100172: CATRigRLegAnkle
+    100174: Character002
+    100176: master_ctrl_fingers_L
+    100178: master_ctrl_fingers_R
+    100180: ROBO_MESH002
     400000: CATRigHub001
     400002: CATRigHub002
     400004: CATRigHub002Bone001
@@ -95,6 +141,52 @@ ModelImporter:
     400084: POMO_UV_02
     400086: CATRig1Os001
     400088: CATRig1Os002
+    400090: Bone_INDEX01_L
+    400092: Bone_INDEX01_L001
+    400094: Bone_INDEX01_L002
+    400096: Bone_INDEX01_L003
+    400098: Bone_INDEX01_L004
+    400100: Bone_INDEX01_L005
+    400102: Bone_INDEX02_L
+    400104: Bone_INDEX02_L001
+    400106: Bone_INDEX02_L002
+    400108: Bone_INDEX02_L003
+    400110: Bone_INDEX02_L004
+    400112: Bone_INDEX02_L005
+    400114: Bone_INDEX03_L
+    400116: Bone_INDEX03_L001
+    400118: Bone_INDEX03_L002
+    400120: Bone_INDEX03_L003
+    400122: Bone_INDEX03_L004
+    400124: Bone_INDEX03_L005
+    400126: Bone_thumb01_L
+    400128: Bone_thumb01_L001
+    400130: Bone_thumb02_L
+    400132: Bone_thumb02_L001
+    400134: Bone_thumb03_L
+    400136: Bone_thumb03_L001
+    400138: CATRig_bassin
+    400140: CATRig_chest
+    400142: CATRig_neck
+    400144: CATRighead
+    400146: CATRigHub004Gizmo
+    400148: CATRigHub005Bone001Bone001Gizmo
+    400150: CATRigHub005Gizmo
+    400152: CATRigLArm2Gizmo
+    400154: CATRigLLeg1
+    400156: CATRigLLeg2
+    400158: CATRigLLeg2Gizmo
+    400160: CATRigLLegAnkle
+    400162: CATRigLLegPlatform
+    400164: CATRigRArm2Gizmo
+    400166: CATRigRLeg1
+    400168: CATRigRLeg2
+    400170: CATRigRLeg2Gizmo
+    400172: CATRigRLegAnkle
+    400174: Character002
+    400176: master_ctrl_fingers_L
+    400178: master_ctrl_fingers_R
+    400180: ROBO_MESH002
     2300000: CATRigHub001
     2300002: CATRigHub002
     2300004: CATRigHub002Bone001
@@ -162,9 +254,11 @@ ModelImporter:
     4300040: CATRigPalmBone001Bone001Bone001
     4300042: CATRig1Os001
     4300044: CATRig1Os002
+    4300046: ROBO_MESH002
     7400000: RunCycle
     9500000: //RootNode
     13700000: POMO_UV_02
+    13700002: ROBO_MESH002
   materials:
     importMaterials: 1
     materialName: 0
@@ -175,14 +269,14 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
-    animationImportWarnings: "\nInbetween bone default rotation found in this file
-      is different from the one found in the source avatar:\n\t'CATRigSpine1' : rotation
-      error = 0.422461 deg\n\t'CATRigSpine3' : rotation error = 2.473130 deg\n\nClip
-      'Take 001' has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'CATRigSpine1'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CATRigSpine3'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationImportErrors: '
+
+      Imported file ''P0M0@RunCycle'' conversion failed: Transform ''CATRigHub001''
+      for human bone ''Hips'' not found
+
+
+'
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 0
