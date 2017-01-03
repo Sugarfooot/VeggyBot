@@ -62,6 +62,17 @@ ModelImporter:
     4300016: NUTS_LOW
     4300018: SNEAL_LOW001
     4300020: HOUSE_LOW001
+    6400000: BASE_MAP_LOW
+    6400002: CHEMINEE_LOW
+    6400004: DOOR_LOW
+    6400006: ECHELLE
+    6400008: HOUSE_LOW001
+    6400010: MESH_HERSE
+    6400012: MIRADOR_LOW
+    6400014: NUTS_LOW
+    6400016: RONDIN_LOW
+    6400018: SNEAL_LOW001
+    6400020: WINDOW_LOW
   materials:
     importMaterials: 1
     materialName: 0
@@ -88,17 +99,17 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
-    secondaryUVHardAngle: 88
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 60
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
