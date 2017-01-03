@@ -536,8 +536,16 @@ namespace Invector.CharacterController
             // keyboard & gamepad input
             else
             {
-                if (Input.GetButtonDown(_input) && attackConditions)
+                if (Input.GetButton(_input) && attackConditions){
                     animator.SetTrigger("MeleeAttack");
+                }
+                else if (Input.GetButtonUp(_input)){
+                	animator.ResetTrigger("MeleeAttack");
+                    animator.SetTrigger("StopAttack");
+                    foreach (GameObject water in GameObject.FindGameObjectsWithTag("WaterDamage")){
+                    	Destroy(water);
+                    }
+                }
             }
         }
         
