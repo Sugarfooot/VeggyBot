@@ -64,7 +64,7 @@ namespace Invector.CharacterController
                 JumpInput();
                 RollInput();                
                 CrouchInput();                
-                AttackInput();                
+                // AttackInput();                
                 DefenseInput();                
                 SprintInput();
                 StrafeInput();

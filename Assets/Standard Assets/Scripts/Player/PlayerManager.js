@@ -10,6 +10,8 @@ public class PlayerManager extends MonoBehaviour {
 	var vies : Image[];
 	private var vieIdx : int = 0;
 	static var maxVieIdx : int = 0;
+	private var animator : Animator;
+	var rotateSpeed : float = 20.0;
 
 	private static var instance : PlayerManager;
 	public static function Instance () : PlayerManager {
@@ -28,11 +30,13 @@ public class PlayerManager extends MonoBehaviour {
 	function Start () {
 		spawnPoint = transform.position;
 		vieIdx = maxVieIdx;
+		animator = GetComponent.<Animator>();
 	}
 
 	function Update () {
 		if (Input.GetButtonDown("RB")){
 			TriggerWaterConsumption();
+			animator.SetTrigger("MeleeAttack");
 		}
 		if (Input.GetButton("RB")){
 			if (waterLevel < 0){
@@ -44,9 +48,20 @@ public class PlayerManager extends MonoBehaviour {
 					waterIndicators[i].fillAmount = waterLevel;
 				}
 			}
+			if (Input.GetAxis("LeftAnalogHorizontal") > 0){
+				transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
+			}
+			else if (Input.GetAxis("LeftAnalogHorizontal") < 0){
+				transform.Rotate(-Vector3.up * Time.deltaTime * rotateSpeed);
+			}
 		}
 		if (Input.GetButtonUp("RB") || (!Input.GetButton("RB") && isShooting)){
 			isShooting = false;
+			animator.ResetTrigger("MeleeAttack");
+            animator.SetTrigger("StopAttack");
+            for (var water : GameObject in GameObject.FindGameObjectsWithTag("WaterDamage")){
+            	Destroy(water);
+            }
 		}
 	}
 
