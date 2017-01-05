@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: terrain
   m_Shader: {fileID: 4800000, guid: bf76245e828aa4a008afab3c61c56cb2, type: 3}
-  m_ShaderKeywords: _LAYERS4 _METALLICGLOSSMAP _NORMALMAP
+  m_ShaderKeywords: _LAYERS4 _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -78,7 +78,7 @@ Material:
     - first:
         name: _GlossinessTex4
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 0f7cb7971429cd14191b4263463eb970, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -114,7 +114,7 @@ Material:
     - first:
         name: _Normal4
       second:
-        m_Texture: {fileID: 2800000, guid: 04e050e17aa96aa45a687c724383c153, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1c94d30af557f564994f49f524397815, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -174,7 +174,7 @@ Material:
     - first:
         name: _Tex4
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 5a51ff8e9cd7d584eb11ebce05c4f104, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -186,7 +186,7 @@ Material:
       second: 0.5
     - first:
         name: _Contrast4
-      second: 0.5
+      second: 0.073
     - first:
         name: _DistBlendMax
       second: 100
@@ -270,22 +270,22 @@ Material:
       second: 0.02
     - first:
         name: _Parallax4
-      second: 0.02
+      second: 0.0106
     - first:
         name: _Roughness
       second: 0.843
     - first:
         name: _TexScale1
-      second: 10
+      second: 30
     - first:
         name: _TexScale2
-      second: 10
+      second: 20
     - first:
         name: _TexScale3
-      second: 10
+      second: 20
     - first:
         name: _TexScale4
-      second: 1
+      second: 30
     m_Colors:
     - first:
         name: _BlackColor
@@ -313,10 +313,10 @@ Material:
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _Tint2
-      second: {r: 1, g: 0.94726163, b: 0.8088235, a: 1}
+      second: {r: 0.92156863, g: 0.7921569, b: 0.7254902, a: 1}
     - first:
         name: _Tint3
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0.8110793, g: 0.9191176, b: 0.79071146, a: 1}
     - first:
         name: _Tint4
       second: {r: 1, g: 1, b: 1, a: 1}
