@@ -8,7 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: PlatformRock_C
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _LAYERS2 _METALLICGLOSSMAP _NORMALMAP _SPECGLOSSMAP
+  m_ShaderKeywords: _DETAIL_MULX2 _EMISSION _LAYERS2 _METALLICGLOSSMAP _NORMALMAP
+    _SPECGLOSSMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -24,19 +25,19 @@ Material:
     - first:
         name: _DetailAlbedoMap
       second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 0baf9ec8db561f14d89f30d8ba6ba0c6, type: 3}
+        m_Scale: {x: 10, y: 10}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _DetailMask
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 92bc4c09b1a3de14aafc4f6f137dbfaf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _DetailNormalMap
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 2c8658a7c60139b4a9024d879624925f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -135,7 +136,7 @@ Material:
       second: 0.5
     - first:
         name: _DetailNormalMapScale
-      second: 1
+      second: 0.31
     - first:
         name: _DistBlendMax
       second: 100
@@ -226,7 +227,7 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.65882355, g: 0.7137255, b: 0.6745098, a: 1}
+      second: {r: 0.75919116, g: 0.86764705, b: 0.7901786, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}

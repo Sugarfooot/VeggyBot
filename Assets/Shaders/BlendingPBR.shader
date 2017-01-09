@@ -3,22 +3,25 @@
 // Shader created with Shader Forge v1.27 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.27;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:33263,y:33034,varname:node_2865,prsc:2|diff-4024-OUT,spec-358-OUT,gloss-1813-OUT,normal-906-OUT;n:type:ShaderForge.SFN_Multiply,id:6343,x:32126,y:32087,varname:node_6343,prsc:2|A-5482-RGB,B-6665-RGB;n:type:ShaderForge.SFN_Color,id:6665,x:31823,y:32225,ptovrint:False,ptlb:Black Color,ptin:_BlackColor,varname:_BlackColor,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5019608,c2:0.5019608,c3:0.5019608,c4:1;n:type:ShaderForge.SFN_Tex2d,id:5964,x:32161,y:33447,ptovrint:True,ptlb:Normal Map Base,ptin:_BumpMap,varname:_BumpMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:04e050e17aa96aa45a687c724383c153,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Slider,id:358,x:31998,y:33203,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:_Metallic,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32015,y:33326,ptovrint:False,ptlb:Roughness,ptin:_Roughness,varname:_Roughness,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.8,max:1;n:type:ShaderForge.SFN_Lerp,id:6462,x:32412,y:32218,varname:node_6462,prsc:2|A-6343-OUT,B-899-OUT,T-6693-OUT;n:type:ShaderForge.SFN_VertexColor,id:2422,x:32386,y:32068,varname:node_2422,prsc:2;n:type:ShaderForge.SFN_Lerp,id:4024,x:32402,y:32472,varname:node_4024,prsc:2|A-6462-OUT,B-6541-OUT,T-6749-OUT;n:type:ShaderForge.SFN_Multiply,id:899,x:32126,y:32393,varname:node_899,prsc:2|A-2078-RGB,B-2689-RGB;n:type:ShaderForge.SFN_Color,id:2689,x:31826,y:32603,ptovrint:False,ptlb:Red Color,ptin:_RedColor,varname:_RedColor,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5019608,c2:0.5019608,c3:0.5019608,c4:1;n:type:ShaderForge.SFN_Multiply,id:6541,x:32076,y:32717,varname:node_6541,prsc:2|A-6377-RGB,B-8921-RGB;n:type:ShaderForge.SFN_Color,id:8921,x:31809,y:32991,ptovrint:False,ptlb:Green Color,ptin:_GreenColor,varname:_GreenColor,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5019608,c2:0.5019608,c3:0.5019608,c4:1;n:type:ShaderForge.SFN_NormalBlend,id:906,x:32891,y:33399,varname:node_906,prsc:2|BSE-5964-RGB,DTL-8759-OUT;n:type:ShaderForge.SFN_Lerp,id:24,x:32337,y:33749,varname:node_24,prsc:2|A-614-RGB,B-2713-RGB,T-6693-OUT;n:type:ShaderForge.SFN_VertexColor,id:2376,x:32420,y:33552,varname:node_2376,prsc:2;n:type:ShaderForge.SFN_Lerp,id:8759,x:32347,y:33983,varname:node_8759,prsc:2|A-24-OUT,B-9884-RGB,T-6749-OUT;n:type:ShaderForge.SFN_Tex2d,id:5482,x:31823,y:31979,ptovrint:False,ptlb:Black Base Color,ptin:_BlackBaseColor,varname:_BlackBaseColor,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:0baf9ec8db561f14d89f30d8ba6ba0c6,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:2078,x:31836,y:32410,ptovrint:False,ptlb:Red Base Color,ptin:_RedBaseColor,varname:_RedBaseColor,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:88233d9326edb4041b97a489b139c63f,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:6377,x:31809,y:32784,ptovrint:False,ptlb:Green Base Color,ptin:_GreenBaseColor,varname:_GreenBaseColor,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:614,x:31731,y:33733,ptovrint:False,ptlb:Black Normal Map,ptin:_BlackNormalMap,varname:_BlackNormalMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:2c8658a7c60139b4a9024d879624925f,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:2713,x:31743,y:33926,ptovrint:False,ptlb:Red Normal Map,ptin:_RedNormalMap,varname:_RedNormalMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:c5e6c619477d5654ca110aba8f3bbab0,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:9884,x:31743,y:34131,ptovrint:False,ptlb:Green Normal Map,ptin:_GreenNormalMap,varname:_GreenNormalMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Step,id:6749,x:32126,y:32522,varname:node_6749,prsc:2|A-2422-G,B-2078-A;n:type:ShaderForge.SFN_Step,id:6693,x:32126,y:32238,varname:node_6693,prsc:2|A-2422-R,B-5482-A;proporder:5964-6665-358-1813-2689-8921-5482-2078-6377-9884-2713-614;pass:END;sub:END;*/
+/*SF_DATA;ver:1.27;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:34747,y:32689,varname:node_2865,prsc:2|diff-5548-OUT,spec-9616-OUT,gloss-3677-OUT,normal-7344-OUT;n:type:ShaderForge.SFN_Tex2d,id:922,x:32516,y:31683,ptovrint:False,ptlb:base Albedo Height,ptin:_baseAlbedoHeight,varname:_baseAlbedoHeight,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:0aad627bce521b948ba62b84ffaa9c6e,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:3638,x:32536,y:32757,ptovrint:False,ptlb:base Metallic Smoothness,ptin:_baseMetallicSmoothness,varname:_baseMetallicSmoothness,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:cf06ddd608432ed40af438bf9f75bf76,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:3405,x:33271,y:33077,ptovrint:False,ptlb:base Normal Map,ptin:_baseNormalMap,varname:_baseNormalMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:04c8605a22ab9f6448831a9e302b5f3d,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:4066,x:33110,y:33293,ptovrint:False,ptlb:detail Normal Map,ptin:_detailNormalMap,varname:_detailNormalMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:3d5760742e9578c438381802f7a5baea,ntxv:3,isnm:True;n:type:ShaderForge.SFN_NormalBlend,id:9712,x:33960,y:33193,varname:node_9712,prsc:2|BSE-3405-RGB,DTL-3513-OUT;n:type:ShaderForge.SFN_ComponentMask,id:8600,x:33313,y:33390,varname:node_8600,prsc:2,cc1:0,cc2:1,cc3:-1,cc4:-1|IN-4066-RGB;n:type:ShaderForge.SFN_Multiply,id:4334,x:33558,y:33390,varname:node_4334,prsc:2|A-8600-OUT,B-3848-OUT;n:type:ShaderForge.SFN_Slider,id:2049,x:32957,y:33610,ptovrint:False,ptlb:normal Strength,ptin:_normalStrength,varname:_normalStrength,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:1;n:type:ShaderForge.SFN_Append,id:3513,x:33755,y:33484,varname:node_3513,prsc:2|A-4334-OUT,B-8006-OUT;n:type:ShaderForge.SFN_Vector1,id:8006,x:33114,y:33722,varname:node_8006,prsc:2,v1:1;n:type:ShaderForge.SFN_Lerp,id:8767,x:33944,y:32007,varname:node_8767,prsc:2|A-1661-OUT,B-5470-OUT,T-4260-OUT;n:type:ShaderForge.SFN_Tex2d,id:9103,x:32344,y:32256,ptovrint:False,ptlb:detail Albedo,ptin:_detailAlbedo,varname:_detailAlbedo,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:0baf9ec8db561f14d89f30d8ba6ba0c6,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Slider,id:2140,x:33268,y:32377,ptovrint:False,ptlb:albedo Intensity,ptin:_albedoIntensity,varname:_albedoIntensity,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.05208128,max:1;n:type:ShaderForge.SFN_Color,id:2470,x:32395,y:31945,ptovrint:False,ptlb:baseColor Tint,ptin:_baseColorTint,varname:_baseColorTint,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:1,c3:1,c4:1;n:type:ShaderForge.SFN_Color,id:6059,x:32860,y:32418,ptovrint:False,ptlb:detailColor Tint_copy,ptin:_detailColorTint_copy,varname:_detailColorTint_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:1,c3:1,c4:1;n:type:ShaderForge.SFN_Multiply,id:1661,x:32927,y:31799,varname:node_1661,prsc:2|A-922-RGB,B-2470-RGB;n:type:ShaderForge.SFN_Multiply,id:5470,x:32956,y:32244,varname:node_5470,prsc:2|A-9103-RGB,B-6059-RGB;n:type:ShaderForge.SFN_VertexColor,id:5427,x:32626,y:33048,varname:node_5427,prsc:2;n:type:ShaderForge.SFN_Multiply,id:4260,x:33689,y:32370,varname:node_4260,prsc:2|A-2140-OUT,B-5427-R;n:type:ShaderForge.SFN_Multiply,id:3848,x:33541,y:33599,varname:node_3848,prsc:2|A-2049-OUT,B-5427-R;n:type:ShaderForge.SFN_Tex2d,id:537,x:33861,y:32239,ptovrint:False,ptlb:dirt Albedo Height,ptin:_dirtAlbedoHeight,varname:_dirtAlbedoHeight,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:15c9cf773166dcc45b7d06a660fe1e4c,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:3982,x:33984,y:33440,ptovrint:False,ptlb:dirt Normal,ptin:_dirtNormal,varname:_dirtNormal,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:0f04b6c8fc9c9e649a31ce55b9455386,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Lerp,id:5548,x:34414,y:32346,varname:node_5548,prsc:2|A-8767-OUT,B-537-RGB,T-2657-OUT;n:type:ShaderForge.SFN_Multiply,id:3383,x:32981,y:32686,varname:node_3383,prsc:2|A-1043-OUT,B-743-OUT;n:type:ShaderForge.SFN_Multiply,id:2657,x:33399,y:32555,varname:node_2657,prsc:2|A-2038-OUT,B-5427-G;n:type:ShaderForge.SFN_Power,id:1043,x:32584,y:32484,varname:node_1043,prsc:2|VAL-3326-OUT,EXP-7541-OUT;n:type:ShaderForge.SFN_ValueProperty,id:7541,x:32336,y:32607,ptovrint:False,ptlb:detailHeight Strengtht,ptin:_detailHeightStrengtht,varname:_detailHeightStrengtht,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:2;n:type:ShaderForge.SFN_ValueProperty,id:2984,x:32566,y:32056,ptovrint:False,ptlb:baseHeight Strength,ptin:_baseHeightStrength,varname:_baseHeightStrength,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:2;n:type:ShaderForge.SFN_Power,id:743,x:32956,y:31997,varname:node_743,prsc:2|VAL-1100-OUT,EXP-2984-OUT;n:type:ShaderForge.SFN_OneMinus,id:1100,x:32741,y:31905,varname:node_1100,prsc:2|IN-922-A;n:type:ShaderForge.SFN_OneMinus,id:3326,x:32295,y:32464,varname:node_3326,prsc:2|IN-9103-A;n:type:ShaderForge.SFN_Lerp,id:2038,x:33056,y:32540,varname:node_2038,prsc:2|A-1043-OUT,B-743-OUT,T-5427-R;n:type:ShaderForge.SFN_Lerp,id:7344,x:34278,y:33248,varname:node_7344,prsc:2|A-9712-OUT,B-3982-RGB,T-2657-OUT;n:type:ShaderForge.SFN_Tex2d,id:7641,x:33565,y:32820,ptovrint:False,ptlb:dirt Metallic Smoothness,ptin:_dirtMetallicSmoothness,varname:_dirtMetallicSmoothness,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:613db3a6e5776564fa883f400fef806f,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Lerp,id:9616,x:34014,y:32546,varname:node_9616,prsc:2|A-3638-R,B-7641-R,T-2657-OUT;n:type:ShaderForge.SFN_Lerp,id:3677,x:33915,y:32681,varname:node_3677,prsc:2|A-2446-OUT,B-7641-A,T-2657-OUT;n:type:ShaderForge.SFN_Slider,id:81,x:32397,y:32983,ptovrint:False,ptlb:base Smoothness Strength,ptin:_baseSmoothnessStrength,varname:_baseSmoothnessStrength,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:10;n:type:ShaderForge.SFN_Multiply,id:2446,x:33111,y:32929,varname:node_2446,prsc:2|A-3638-A,B-81-OUT;proporder:922-3638-3405-4066-2049-9103-2140-2470-6059-537-7541-2984-3982-7641-81;pass:END;sub:END;*/
 
 Shader "" {
     Properties {
-        _BumpMap ("Normal Map Base", 2D) = "bump" {}
-        _BlackColor ("Black Color", Color) = (0.5019608,0.5019608,0.5019608,1)
-        _Metallic ("Metallic", Range(0, 1)) = 0
-        _Roughness ("Roughness", Range(0, 1)) = 0.8
-        _RedColor ("Red Color", Color) = (0.5019608,0.5019608,0.5019608,1)
-        _GreenColor ("Green Color", Color) = (0.5019608,0.5019608,0.5019608,1)
-        _BlackBaseColor ("Black Base Color", 2D) = "white" {}
-        _RedBaseColor ("Red Base Color", 2D) = "white" {}
-        _GreenBaseColor ("Green Base Color", 2D) = "white" {}
-        _GreenNormalMap ("Green Normal Map", 2D) = "white" {}
-        _RedNormalMap ("Red Normal Map", 2D) = "bump" {}
-        _BlackNormalMap ("Black Normal Map", 2D) = "bump" {}
+        _baseAlbedoHeight ("base Albedo Height", 2D) = "white" {}
+        _baseMetallicSmoothness ("base Metallic Smoothness", 2D) = "white" {}
+        _baseNormalMap ("base Normal Map", 2D) = "bump" {}
+        _detailNormalMap ("detail Normal Map", 2D) = "bump" {}
+        _normalStrength ("normal Strength", Range(0, 1)) = 1
+        _detailAlbedo ("detail Albedo", 2D) = "white" {}
+        _albedoIntensity ("albedo Intensity", Range(0, 1)) = 0.05208128
+        _baseColorTint ("baseColor Tint", Color) = (1,1,1,1)
+        _detailColorTint_copy ("detailColor Tint_copy", Color) = (1,1,1,1)
+        _dirtAlbedoHeight ("dirt Albedo Height", 2D) = "white" {}
+        _detailHeightStrengtht ("detailHeight Strengtht", Float ) = 2
+        _baseHeightStrength ("baseHeight Strength", Float ) = 2
+        _dirtNormal ("dirt Normal", 2D) = "bump" {}
+        _dirtMetallicSmoothness ("dirt Metallic Smoothness", 2D) = "white" {}
+        _baseSmoothnessStrength ("base Smoothness Strength", Range(0, 10)) = 1
     }
     SubShader {
         Tags {
@@ -49,18 +52,21 @@ Shader "" {
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _BlackColor;
-            uniform sampler2D _BumpMap; uniform float4 _BumpMap_ST;
-            uniform float _Metallic;
-            uniform float _Roughness;
-            uniform float4 _RedColor;
-            uniform float4 _GreenColor;
-            uniform sampler2D _BlackBaseColor; uniform float4 _BlackBaseColor_ST;
-            uniform sampler2D _RedBaseColor; uniform float4 _RedBaseColor_ST;
-            uniform sampler2D _GreenBaseColor; uniform float4 _GreenBaseColor_ST;
-            uniform sampler2D _BlackNormalMap; uniform float4 _BlackNormalMap_ST;
-            uniform sampler2D _RedNormalMap; uniform float4 _RedNormalMap_ST;
-            uniform sampler2D _GreenNormalMap; uniform float4 _GreenNormalMap_ST;
+            uniform sampler2D _baseAlbedoHeight; uniform float4 _baseAlbedoHeight_ST;
+            uniform sampler2D _baseMetallicSmoothness; uniform float4 _baseMetallicSmoothness_ST;
+            uniform sampler2D _baseNormalMap; uniform float4 _baseNormalMap_ST;
+            uniform sampler2D _detailNormalMap; uniform float4 _detailNormalMap_ST;
+            uniform float _normalStrength;
+            uniform sampler2D _detailAlbedo; uniform float4 _detailAlbedo_ST;
+            uniform float _albedoIntensity;
+            uniform float4 _baseColorTint;
+            uniform float4 _detailColorTint_copy;
+            uniform sampler2D _dirtAlbedoHeight; uniform float4 _dirtAlbedoHeight_ST;
+            uniform sampler2D _dirtNormal; uniform float4 _dirtNormal_ST;
+            uniform float _detailHeightStrengtht;
+            uniform float _baseHeightStrength;
+            uniform sampler2D _dirtMetallicSmoothness; uniform float4 _dirtMetallicSmoothness_ST;
+            uniform float _baseSmoothnessStrength;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -114,19 +120,19 @@ Shader "" {
                 i.normalDir = normalize(i.normalDir);
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float3 _BumpMap_var = UnpackNormal(tex2D(_BumpMap,TRANSFORM_TEX(i.uv0, _BumpMap)));
-                float3 _BlackNormalMap_var = UnpackNormal(tex2D(_BlackNormalMap,TRANSFORM_TEX(i.uv0, _BlackNormalMap)));
-                float3 _RedNormalMap_var = UnpackNormal(tex2D(_RedNormalMap,TRANSFORM_TEX(i.uv0, _RedNormalMap)));
-                float4 _BlackBaseColor_var = tex2D(_BlackBaseColor,TRANSFORM_TEX(i.uv0, _BlackBaseColor));
-                float node_6693 = step(i.vertexColor.r,_BlackBaseColor_var.a);
-                float4 _GreenNormalMap_var = tex2D(_GreenNormalMap,TRANSFORM_TEX(i.uv0, _GreenNormalMap));
-                float4 _RedBaseColor_var = tex2D(_RedBaseColor,TRANSFORM_TEX(i.uv0, _RedBaseColor));
-                float node_6749 = step(i.vertexColor.g,_RedBaseColor_var.a);
-                float3 node_906_nrm_base = _BumpMap_var.rgb + float3(0,0,1);
-                float3 node_906_nrm_detail = lerp(lerp(_BlackNormalMap_var.rgb,_RedNormalMap_var.rgb,node_6693),_GreenNormalMap_var.rgb,node_6749) * float3(-1,-1,1);
-                float3 node_906_nrm_combined = node_906_nrm_base*dot(node_906_nrm_base, node_906_nrm_detail)/node_906_nrm_base.z - node_906_nrm_detail;
-                float3 node_906 = node_906_nrm_combined;
-                float3 normalLocal = node_906;
+                float3 _baseNormalMap_var = UnpackNormal(tex2D(_baseNormalMap,TRANSFORM_TEX(i.uv0, _baseNormalMap)));
+                float3 _detailNormalMap_var = UnpackNormal(tex2D(_detailNormalMap,TRANSFORM_TEX(i.uv0, _detailNormalMap)));
+                float3 node_9712_nrm_base = _baseNormalMap_var.rgb + float3(0,0,1);
+                float3 node_9712_nrm_detail = float3((_detailNormalMap_var.rgb.rg*(_normalStrength*i.vertexColor.r)),1.0) * float3(-1,-1,1);
+                float3 node_9712_nrm_combined = node_9712_nrm_base*dot(node_9712_nrm_base, node_9712_nrm_detail)/node_9712_nrm_base.z - node_9712_nrm_detail;
+                float3 node_9712 = node_9712_nrm_combined;
+                float3 _dirtNormal_var = UnpackNormal(tex2D(_dirtNormal,TRANSFORM_TEX(i.uv0, _dirtNormal)));
+                float4 _detailAlbedo_var = tex2D(_detailAlbedo,TRANSFORM_TEX(i.uv0, _detailAlbedo));
+                float node_1043 = pow((1.0 - _detailAlbedo_var.a),_detailHeightStrengtht);
+                float4 _baseAlbedoHeight_var = tex2D(_baseAlbedoHeight,TRANSFORM_TEX(i.uv0, _baseAlbedoHeight));
+                float node_743 = pow((1.0 - _baseAlbedoHeight_var.a),_baseHeightStrength);
+                float node_2657 = (lerp(node_1043,node_743,i.vertexColor.r)*i.vertexColor.g);
+                float3 normalLocal = lerp(node_9712,_dirtNormal_var.rgb,node_2657);
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float3 viewReflectDirection = reflect( -viewDirection, normalDirection );
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
@@ -138,7 +144,9 @@ Shader "" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float gloss = 1.0 - _Roughness; // Convert roughness to gloss
+                float4 _baseMetallicSmoothness_var = tex2D(_baseMetallicSmoothness,TRANSFORM_TEX(i.uv0, _baseMetallicSmoothness));
+                float4 _dirtMetallicSmoothness_var = tex2D(_dirtMetallicSmoothness,TRANSFORM_TEX(i.uv0, _dirtMetallicSmoothness));
+                float gloss = lerp((_baseMetallicSmoothness_var.a*_baseSmoothnessStrength),_dirtMetallicSmoothness_var.a,node_2657);
                 float specPow = exp2( gloss * 10.0+1.0);
 /////// GI Data:
                 UnityLight light;
@@ -179,10 +187,11 @@ Shader "" {
 ////// Specular:
                 float NdotL = max(0, dot( normalDirection, lightDirection ));
                 float LdotH = max(0.0,dot(lightDirection, halfDirection));
-                float3 specularColor = _Metallic;
+                float3 specularColor = lerp(_baseMetallicSmoothness_var.r,_dirtMetallicSmoothness_var.r,node_2657);
                 float specularMonochrome;
-                float4 _GreenBaseColor_var = tex2D(_GreenBaseColor,TRANSFORM_TEX(i.uv0, _GreenBaseColor));
-                float3 diffuseColor = lerp(lerp((_BlackBaseColor_var.rgb*_BlackColor.rgb),(_RedBaseColor_var.rgb*_RedColor.rgb),node_6693),(_GreenBaseColor_var.rgb*_GreenColor.rgb),node_6749); // Need this for specular when using metallic
+                float node_4260 = (_albedoIntensity*i.vertexColor.r);
+                float4 _dirtAlbedoHeight_var = tex2D(_dirtAlbedoHeight,TRANSFORM_TEX(i.uv0, _dirtAlbedoHeight));
+                float3 diffuseColor = lerp(lerp((_baseAlbedoHeight_var.rgb*_baseColorTint.rgb),(_detailAlbedo_var.rgb*_detailColorTint_copy.rgb),node_4260),_dirtAlbedoHeight_var.rgb,node_2657); // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = max(0.0,dot( normalDirection, viewDirection ));
@@ -242,18 +251,21 @@ Shader "" {
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _BlackColor;
-            uniform sampler2D _BumpMap; uniform float4 _BumpMap_ST;
-            uniform float _Metallic;
-            uniform float _Roughness;
-            uniform float4 _RedColor;
-            uniform float4 _GreenColor;
-            uniform sampler2D _BlackBaseColor; uniform float4 _BlackBaseColor_ST;
-            uniform sampler2D _RedBaseColor; uniform float4 _RedBaseColor_ST;
-            uniform sampler2D _GreenBaseColor; uniform float4 _GreenBaseColor_ST;
-            uniform sampler2D _BlackNormalMap; uniform float4 _BlackNormalMap_ST;
-            uniform sampler2D _RedNormalMap; uniform float4 _RedNormalMap_ST;
-            uniform sampler2D _GreenNormalMap; uniform float4 _GreenNormalMap_ST;
+            uniform sampler2D _baseAlbedoHeight; uniform float4 _baseAlbedoHeight_ST;
+            uniform sampler2D _baseMetallicSmoothness; uniform float4 _baseMetallicSmoothness_ST;
+            uniform sampler2D _baseNormalMap; uniform float4 _baseNormalMap_ST;
+            uniform sampler2D _detailNormalMap; uniform float4 _detailNormalMap_ST;
+            uniform float _normalStrength;
+            uniform sampler2D _detailAlbedo; uniform float4 _detailAlbedo_ST;
+            uniform float _albedoIntensity;
+            uniform float4 _baseColorTint;
+            uniform float4 _detailColorTint_copy;
+            uniform sampler2D _dirtAlbedoHeight; uniform float4 _dirtAlbedoHeight_ST;
+            uniform sampler2D _dirtNormal; uniform float4 _dirtNormal_ST;
+            uniform float _detailHeightStrengtht;
+            uniform float _baseHeightStrength;
+            uniform sampler2D _dirtMetallicSmoothness; uniform float4 _dirtMetallicSmoothness_ST;
+            uniform float _baseSmoothnessStrength;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -296,19 +308,19 @@ Shader "" {
                 i.normalDir = normalize(i.normalDir);
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float3 _BumpMap_var = UnpackNormal(tex2D(_BumpMap,TRANSFORM_TEX(i.uv0, _BumpMap)));
-                float3 _BlackNormalMap_var = UnpackNormal(tex2D(_BlackNormalMap,TRANSFORM_TEX(i.uv0, _BlackNormalMap)));
-                float3 _RedNormalMap_var = UnpackNormal(tex2D(_RedNormalMap,TRANSFORM_TEX(i.uv0, _RedNormalMap)));
-                float4 _BlackBaseColor_var = tex2D(_BlackBaseColor,TRANSFORM_TEX(i.uv0, _BlackBaseColor));
-                float node_6693 = step(i.vertexColor.r,_BlackBaseColor_var.a);
-                float4 _GreenNormalMap_var = tex2D(_GreenNormalMap,TRANSFORM_TEX(i.uv0, _GreenNormalMap));
-                float4 _RedBaseColor_var = tex2D(_RedBaseColor,TRANSFORM_TEX(i.uv0, _RedBaseColor));
-                float node_6749 = step(i.vertexColor.g,_RedBaseColor_var.a);
-                float3 node_906_nrm_base = _BumpMap_var.rgb + float3(0,0,1);
-                float3 node_906_nrm_detail = lerp(lerp(_BlackNormalMap_var.rgb,_RedNormalMap_var.rgb,node_6693),_GreenNormalMap_var.rgb,node_6749) * float3(-1,-1,1);
-                float3 node_906_nrm_combined = node_906_nrm_base*dot(node_906_nrm_base, node_906_nrm_detail)/node_906_nrm_base.z - node_906_nrm_detail;
-                float3 node_906 = node_906_nrm_combined;
-                float3 normalLocal = node_906;
+                float3 _baseNormalMap_var = UnpackNormal(tex2D(_baseNormalMap,TRANSFORM_TEX(i.uv0, _baseNormalMap)));
+                float3 _detailNormalMap_var = UnpackNormal(tex2D(_detailNormalMap,TRANSFORM_TEX(i.uv0, _detailNormalMap)));
+                float3 node_9712_nrm_base = _baseNormalMap_var.rgb + float3(0,0,1);
+                float3 node_9712_nrm_detail = float3((_detailNormalMap_var.rgb.rg*(_normalStrength*i.vertexColor.r)),1.0) * float3(-1,-1,1);
+                float3 node_9712_nrm_combined = node_9712_nrm_base*dot(node_9712_nrm_base, node_9712_nrm_detail)/node_9712_nrm_base.z - node_9712_nrm_detail;
+                float3 node_9712 = node_9712_nrm_combined;
+                float3 _dirtNormal_var = UnpackNormal(tex2D(_dirtNormal,TRANSFORM_TEX(i.uv0, _dirtNormal)));
+                float4 _detailAlbedo_var = tex2D(_detailAlbedo,TRANSFORM_TEX(i.uv0, _detailAlbedo));
+                float node_1043 = pow((1.0 - _detailAlbedo_var.a),_detailHeightStrengtht);
+                float4 _baseAlbedoHeight_var = tex2D(_baseAlbedoHeight,TRANSFORM_TEX(i.uv0, _baseAlbedoHeight));
+                float node_743 = pow((1.0 - _baseAlbedoHeight_var.a),_baseHeightStrength);
+                float node_2657 = (lerp(node_1043,node_743,i.vertexColor.r)*i.vertexColor.g);
+                float3 normalLocal = lerp(node_9712,_dirtNormal_var.rgb,node_2657);
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
                 float3 lightColor = _LightColor0.rgb;
@@ -319,15 +331,18 @@ Shader "" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float gloss = 1.0 - _Roughness; // Convert roughness to gloss
+                float4 _baseMetallicSmoothness_var = tex2D(_baseMetallicSmoothness,TRANSFORM_TEX(i.uv0, _baseMetallicSmoothness));
+                float4 _dirtMetallicSmoothness_var = tex2D(_dirtMetallicSmoothness,TRANSFORM_TEX(i.uv0, _dirtMetallicSmoothness));
+                float gloss = lerp((_baseMetallicSmoothness_var.a*_baseSmoothnessStrength),_dirtMetallicSmoothness_var.a,node_2657);
                 float specPow = exp2( gloss * 10.0+1.0);
 ////// Specular:
                 float NdotL = max(0, dot( normalDirection, lightDirection ));
                 float LdotH = max(0.0,dot(lightDirection, halfDirection));
-                float3 specularColor = _Metallic;
+                float3 specularColor = lerp(_baseMetallicSmoothness_var.r,_dirtMetallicSmoothness_var.r,node_2657);
                 float specularMonochrome;
-                float4 _GreenBaseColor_var = tex2D(_GreenBaseColor,TRANSFORM_TEX(i.uv0, _GreenBaseColor));
-                float3 diffuseColor = lerp(lerp((_BlackBaseColor_var.rgb*_BlackColor.rgb),(_RedBaseColor_var.rgb*_RedColor.rgb),node_6693),(_GreenBaseColor_var.rgb*_GreenColor.rgb),node_6749); // Need this for specular when using metallic
+                float node_4260 = (_albedoIntensity*i.vertexColor.r);
+                float4 _dirtAlbedoHeight_var = tex2D(_dirtAlbedoHeight,TRANSFORM_TEX(i.uv0, _dirtAlbedoHeight));
+                float3 diffuseColor = lerp(lerp((_baseAlbedoHeight_var.rgb*_baseColorTint.rgb),(_detailAlbedo_var.rgb*_detailColorTint_copy.rgb),node_4260),_dirtAlbedoHeight_var.rgb,node_2657); // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = max(0.0,dot( normalDirection, viewDirection ));
@@ -382,14 +397,17 @@ Shader "" {
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _BlackColor;
-            uniform float _Metallic;
-            uniform float _Roughness;
-            uniform float4 _RedColor;
-            uniform float4 _GreenColor;
-            uniform sampler2D _BlackBaseColor; uniform float4 _BlackBaseColor_ST;
-            uniform sampler2D _RedBaseColor; uniform float4 _RedBaseColor_ST;
-            uniform sampler2D _GreenBaseColor; uniform float4 _GreenBaseColor_ST;
+            uniform sampler2D _baseAlbedoHeight; uniform float4 _baseAlbedoHeight_ST;
+            uniform sampler2D _baseMetallicSmoothness; uniform float4 _baseMetallicSmoothness_ST;
+            uniform sampler2D _detailAlbedo; uniform float4 _detailAlbedo_ST;
+            uniform float _albedoIntensity;
+            uniform float4 _baseColorTint;
+            uniform float4 _detailColorTint_copy;
+            uniform sampler2D _dirtAlbedoHeight; uniform float4 _dirtAlbedoHeight_ST;
+            uniform float _detailHeightStrengtht;
+            uniform float _baseHeightStrength;
+            uniform sampler2D _dirtMetallicSmoothness; uniform float4 _dirtMetallicSmoothness_ST;
+            uniform float _baseSmoothnessStrength;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float2 texcoord0 : TEXCOORD0;
@@ -422,16 +440,20 @@ Shader "" {
                 
                 o.Emission = 0;
                 
-                float4 _BlackBaseColor_var = tex2D(_BlackBaseColor,TRANSFORM_TEX(i.uv0, _BlackBaseColor));
-                float4 _RedBaseColor_var = tex2D(_RedBaseColor,TRANSFORM_TEX(i.uv0, _RedBaseColor));
-                float node_6693 = step(i.vertexColor.r,_BlackBaseColor_var.a);
-                float4 _GreenBaseColor_var = tex2D(_GreenBaseColor,TRANSFORM_TEX(i.uv0, _GreenBaseColor));
-                float node_6749 = step(i.vertexColor.g,_RedBaseColor_var.a);
-                float3 diffColor = lerp(lerp((_BlackBaseColor_var.rgb*_BlackColor.rgb),(_RedBaseColor_var.rgb*_RedColor.rgb),node_6693),(_GreenBaseColor_var.rgb*_GreenColor.rgb),node_6749);
+                float4 _baseAlbedoHeight_var = tex2D(_baseAlbedoHeight,TRANSFORM_TEX(i.uv0, _baseAlbedoHeight));
+                float4 _detailAlbedo_var = tex2D(_detailAlbedo,TRANSFORM_TEX(i.uv0, _detailAlbedo));
+                float node_4260 = (_albedoIntensity*i.vertexColor.r);
+                float4 _dirtAlbedoHeight_var = tex2D(_dirtAlbedoHeight,TRANSFORM_TEX(i.uv0, _dirtAlbedoHeight));
+                float node_1043 = pow((1.0 - _detailAlbedo_var.a),_detailHeightStrengtht);
+                float node_743 = pow((1.0 - _baseAlbedoHeight_var.a),_baseHeightStrength);
+                float node_2657 = (lerp(node_1043,node_743,i.vertexColor.r)*i.vertexColor.g);
+                float3 diffColor = lerp(lerp((_baseAlbedoHeight_var.rgb*_baseColorTint.rgb),(_detailAlbedo_var.rgb*_detailColorTint_copy.rgb),node_4260),_dirtAlbedoHeight_var.rgb,node_2657);
                 float specularMonochrome;
                 float3 specColor;
-                diffColor = DiffuseAndSpecularFromMetallic( diffColor, _Metallic, specColor, specularMonochrome );
-                float roughness = _Roughness;
+                float4 _baseMetallicSmoothness_var = tex2D(_baseMetallicSmoothness,TRANSFORM_TEX(i.uv0, _baseMetallicSmoothness));
+                float4 _dirtMetallicSmoothness_var = tex2D(_dirtMetallicSmoothness,TRANSFORM_TEX(i.uv0, _dirtMetallicSmoothness));
+                diffColor = DiffuseAndSpecularFromMetallic( diffColor, lerp(_baseMetallicSmoothness_var.r,_dirtMetallicSmoothness_var.r,node_2657), specColor, specularMonochrome );
+                float roughness = 1.0 - lerp((_baseMetallicSmoothness_var.a*_baseSmoothnessStrength),_dirtMetallicSmoothness_var.a,node_2657);
                 o.Albedo = diffColor + specColor * roughness * roughness * 0.5;
                 
                 return UnityMetaFragment( o );
