@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: bigRockA
+  m_Shader: {fileID: 4800000, guid: 2e1a4262d1aa29644b7a91242435e9ac, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _baseAlbedoHeight
+      second:
+        m_Texture: {fileID: 2800000, guid: 73fc5ce144de62449b18ddf048d2abaa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _baseMetallicSmoothness
+      second:
+        m_Texture: {fileID: 2800000, guid: 32e0a37d9f944594c83d1b9578c65d9b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _baseNormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 842158ecccedaf84db3939a390e2ff43, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _detailAlbedo
+      second:
+        m_Texture: {fileID: 2800000, guid: 0baf9ec8db561f14d89f30d8ba6ba0c6, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _detailNormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 2c8658a7c60139b4a9024d879624925f, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _dirtAlbedoHeight
+      second:
+        m_Texture: {fileID: 2800000, guid: 15c9cf773166dcc45b7d06a660fe1e4c, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _dirtMetallicSmoothness
+      second:
+        m_Texture: {fileID: 2800000, guid: 613db3a6e5776564fa883f400fef806f, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _dirtNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: 0f04b6c8fc9c9e649a31ce55b9455386, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _node_3405
+      second:
+        m_Texture: {fileID: 2800000, guid: 04c8605a22ab9f6448831a9e302b5f3d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _node_3638
+      second:
+        m_Texture: {fileID: 2800000, guid: cf06ddd608432ed40af438bf9f75bf76, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _node_6191
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _node_922
+      second:
+        m_Texture: {fileID: 2800000, guid: 56c50d75735a011478a371ca805074b4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _Utiling
+      second: 10
+    - first:
+        name: _Vtiling
+      second: 10
+    - first:
+        name: _albedoIntensity
+      second: 0.33
+    - first:
+        name: _baseHeightStrength
+      second: 2.26
+    - first:
+        name: _baseSmoothnessStrength
+      second: 1.28
+    - first:
+        name: _detailHeightStrengtht
+      second: 0.55
+    - first:
+        name: _dirtHeight
+      second: 0.35
+    - first:
+        name: _dirtHeightBias
+      second: 0.37
+    - first:
+        name: _node_7541
+      second: -0.42
+    - first:
+        name: _node_7541_copy
+      second: 0.36
+    - first:
+        name: _normalStrength
+      second: 0.42
+    m_Colors:
+    - first:
+        name: _baseColorTint
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _detailColorTint_copy
+      second: {r: 0.9191176, g: 0.9191176, b: 0.9191176, a: 1}

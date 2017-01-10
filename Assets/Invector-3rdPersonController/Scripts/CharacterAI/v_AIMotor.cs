@@ -574,6 +574,40 @@ namespace Invector
             CheckHealth();
         }
 
+        void TakeWaterDamage (float amount){
+            // become agressive and starts to chase the target
+            SetAgressive(true);
+            // ignore damage if the character is rolling
+            if (rolling || currentHealth <= 0) return;
+            if (canSeeTarget() && !actions && CheckChanceToRoll()) return;
+            // change to block an attack
+            StartCoroutine(CheckChanceToBlock(chanceToBlockAttack, 0));
+            // apply damage to the health
+            currentHealth -= amount;
+            currentHealthRecoveryDelay = healthRecoveryDelay;
+            // apply tag from the character that hit you and start chase
+            if (!sphereSensor.passiveToDamage)
+            {
+                target = GameObject.FindGameObjectWithTag("Player").transform;
+                currentState = AIStates.Chase;
+                sphereSensor.SetTagToDetect(target);
+                if (meleeManager != null)
+                    meleeManager.SetTagToDetect(target);
+            }
+           // trigger the HitReaction when the AI take the damage
+            // var hitReactionConditions = stepUp || climbUp || jumpOver || quickTurn || rolling;
+            // if (animator != null && animator.enabled && !damage.activeRagdoll && !hitReactionConditions)
+            // {
+            //     animator.SetInteger("Recoil_ID", damage.recoil_id);
+            //     animator.SetTrigger("HitReaction");
+            // }
+            // turn the ragdoll on if the weapon is checked with 'activeRagdoll' 
+            // if (damage.activeRagdoll)
+            //     transform.SendMessage("ActivateRagdoll", SendMessageOptions.DontRequireReceiver);
+
+            CheckHealth();
+        }
+
         #endregion
 
         #region AI Actions
