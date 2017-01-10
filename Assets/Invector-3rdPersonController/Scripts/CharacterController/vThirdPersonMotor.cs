@@ -745,7 +745,6 @@ namespace Invector
                 var hitAngle = Vector3.Angle(Vector3.up, hitinfo.normal);
                 if (hitAngle >= slopeLimit + 1f && hitAngle <= 85)
                 {
-                    Debug.Log("opa");
                     stopMove = true;
                 }
                     
@@ -918,8 +917,8 @@ namespace Invector
         
         public void OnAttackEnter(HitboxFrom hitboxFrom)
         {
-            ReduceStamina(meleeManager.CurrentMeleeAttack(hitboxFrom).staminaCost);
-            recoveryDelay = meleeManager.CurrentMeleeAttack(hitboxFrom).a_staminaRecoveryDelay;
+            // ReduceStamina(meleeManager.CurrentMeleeAttack(hitboxFrom).staminaCost);
+            // recoveryDelay = meleeManager.CurrentMeleeAttack(hitboxFrom).a_staminaRecoveryDelay;
         }
         
         public void InAttacking()
