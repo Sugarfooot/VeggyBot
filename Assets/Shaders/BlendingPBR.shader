@@ -189,9 +189,8 @@ Shader "" {
                 float LdotH = max(0.0,dot(lightDirection, halfDirection));
                 float3 specularColor = lerp(_baseMetallicSmoothness_var.r,_dirtMetallicSmoothness_var.r,node_2657);
                 float specularMonochrome;
-                float node_4260 = (_albedoIntensity*i.vertexColor.r);
                 float4 _dirtAlbedoHeight_var = tex2D(_dirtAlbedoHeight,TRANSFORM_TEX(i.uv0, _dirtAlbedoHeight));
-                float3 diffuseColor = lerp(lerp((_baseAlbedoHeight_var.rgb*_baseColorTint.rgb),(_detailAlbedo_var.rgb*_detailColorTint_copy.rgb),node_4260),_dirtAlbedoHeight_var.rgb,node_2657); // Need this for specular when using metallic
+                float3 diffuseColor = lerp(lerp((_baseAlbedoHeight_var.rgb*_baseColorTint.rgb),(_detailAlbedo_var.rgb*_detailColorTint_copy.rgb),(_albedoIntensity*i.vertexColor.r)),_dirtAlbedoHeight_var.rgb,node_2657); // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = max(0.0,dot( normalDirection, viewDirection ));
@@ -340,9 +339,8 @@ Shader "" {
                 float LdotH = max(0.0,dot(lightDirection, halfDirection));
                 float3 specularColor = lerp(_baseMetallicSmoothness_var.r,_dirtMetallicSmoothness_var.r,node_2657);
                 float specularMonochrome;
-                float node_4260 = (_albedoIntensity*i.vertexColor.r);
                 float4 _dirtAlbedoHeight_var = tex2D(_dirtAlbedoHeight,TRANSFORM_TEX(i.uv0, _dirtAlbedoHeight));
-                float3 diffuseColor = lerp(lerp((_baseAlbedoHeight_var.rgb*_baseColorTint.rgb),(_detailAlbedo_var.rgb*_detailColorTint_copy.rgb),node_4260),_dirtAlbedoHeight_var.rgb,node_2657); // Need this for specular when using metallic
+                float3 diffuseColor = lerp(lerp((_baseAlbedoHeight_var.rgb*_baseColorTint.rgb),(_detailAlbedo_var.rgb*_detailColorTint_copy.rgb),(_albedoIntensity*i.vertexColor.r)),_dirtAlbedoHeight_var.rgb,node_2657); // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = max(0.0,dot( normalDirection, viewDirection ));
@@ -442,12 +440,11 @@ Shader "" {
                 
                 float4 _baseAlbedoHeight_var = tex2D(_baseAlbedoHeight,TRANSFORM_TEX(i.uv0, _baseAlbedoHeight));
                 float4 _detailAlbedo_var = tex2D(_detailAlbedo,TRANSFORM_TEX(i.uv0, _detailAlbedo));
-                float node_4260 = (_albedoIntensity*i.vertexColor.r);
                 float4 _dirtAlbedoHeight_var = tex2D(_dirtAlbedoHeight,TRANSFORM_TEX(i.uv0, _dirtAlbedoHeight));
                 float node_1043 = pow((1.0 - _detailAlbedo_var.a),_detailHeightStrengtht);
                 float node_743 = pow((1.0 - _baseAlbedoHeight_var.a),_baseHeightStrength);
                 float node_2657 = (lerp(node_1043,node_743,i.vertexColor.r)*i.vertexColor.g);
-                float3 diffColor = lerp(lerp((_baseAlbedoHeight_var.rgb*_baseColorTint.rgb),(_detailAlbedo_var.rgb*_detailColorTint_copy.rgb),node_4260),_dirtAlbedoHeight_var.rgb,node_2657);
+                float3 diffColor = lerp(lerp((_baseAlbedoHeight_var.rgb*_baseColorTint.rgb),(_detailAlbedo_var.rgb*_detailColorTint_copy.rgb),(_albedoIntensity*i.vertexColor.r)),_dirtAlbedoHeight_var.rgb,node_2657);
                 float specularMonochrome;
                 float3 specColor;
                 float4 _baseMetallicSmoothness_var = tex2D(_baseMetallicSmoothness,TRANSFORM_TEX(i.uv0, _baseMetallicSmoothness));
