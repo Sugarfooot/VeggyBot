@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SF_tunnel
+  m_Shader: {fileID: 4800000, guid: 080971994189d8646be28f22f1278c0e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Metallic_Smoothness_black
+      second:
+        m_Texture: {fileID: 2800000, guid: e9230e1301da96747841135a41f4ed88, type: 3}
+        m_Scale: {x: 1, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Metallic_Smoothness_red
+      second:
+        m_Texture: {fileID: 2800000, guid: 613db3a6e5776564fa883f400fef806f, type: 3}
+        m_Scale: {x: 2, y: 6}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Norm_black
+      second:
+        m_Texture: {fileID: 2800000, guid: 2cf225950dc09e54b93233794823a7ba, type: 3}
+        m_Scale: {x: 6, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Norm_black_copy
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Norm_red
+      second:
+        m_Texture: {fileID: 2800000, guid: 0f04b6c8fc9c9e649a31ce55b9455386, type: 3}
+        m_Scale: {x: 2, y: 6}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Norm_red_copy
+      second:
+        m_Texture: {fileID: 2800000, guid: 2cf225950dc09e54b93233794823a7ba, type: 3}
+        m_Scale: {x: 1, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _baseColor_Height_Black
+      second:
+        m_Texture: {fileID: 2800000, guid: c9094d6cca0265440a4eeceee6cf526f, type: 3}
+        m_Scale: {x: 1, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _baseColor_Height_R
+      second:
+        m_Texture: {fileID: 2800000, guid: 15c9cf773166dcc45b7d06a660fe1e4c, type: 3}
+        m_Scale: {x: 2, y: 6}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
