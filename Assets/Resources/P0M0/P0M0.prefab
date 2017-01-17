@@ -779,8 +779,9 @@ GameObject:
   - 136: {fileID: 136000011640980180}
   - 114: {fileID: 114000010569778646}
   - 114: {fileID: 114000010316936272}
+  - 114: {fileID: 114000011800404740}
   m_Layer: 8
-  m_Name: 3rdPersonController
+  m_Name: P0M0
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1628,7 +1629,7 @@ MonoBehaviour:
   currentHealth: 0
   healthRecovery: 0
   healthRecoveryDelay: 0
-  maxStamina: 100
+  maxStamina: 1e+9
   staminaRecovery: 1.2
   deathBy: 0
   animator: {fileID: 0}
@@ -1662,8 +1663,8 @@ MonoBehaviour:
   stepOffsetStart: 0.05
   stepSmooth: 2
   slopeLimit: 45
-  extraGravity: 4
-  landHighVel: -5
+  extraGravity: 0
+  landHighVel: -9999
   ragdollVel: -8
   headWeight: 1
   freeBodyWeight: 0.25
@@ -1765,6 +1766,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b04f4ac1b776ff48b5f78a97b57f776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000011800404740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014196666898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6fedb9d1164794c8d0a9d5dce3be6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterIndicators: []
+  shootConsumptionSpeed: 0.1
+  vies: []
+  rotateSpeed: 80
 --- !u!114 &114000011997033642
 MonoBehaviour:
   m_ObjectHideFlags: 1
