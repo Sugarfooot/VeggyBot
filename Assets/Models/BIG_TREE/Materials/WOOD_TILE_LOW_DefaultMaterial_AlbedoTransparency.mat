@@ -7,18 +7,30 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: WOOD_TILE_LOW_DefaultMaterial_AlbedoTransparency
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
+  m_Shader: {fileID: 4800000, guid: f8bc623a59dbf54409543ece3964f416, type: 3}
+  m_ShaderKeywords: _LAYERS3 _METALLICGLOSSMAP _NORMALMAP
+  m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
     - first:
+        name: _BC_base
+      second:
+        m_Texture: {fileID: 2800000, guid: e7e6642c1c0ceae46944f45e8e5aa4c1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BC_red
+      second:
+        m_Texture: {fileID: 2800000, guid: 26aa745044a39fa4ea706edbcadd8e90, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 0aebdf7f896739646bbfe85fb945126e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -43,16 +55,94 @@ Material:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 12, y: 3}
+        m_Offset: {x: 1.0336603, y: 0.036096215}
+    - first:
+        name: _Emissive1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive3
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex1
+      second:
+        m_Texture: {fileID: 2800000, guid: 7343a15050640bd49a16f947582910ca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex2
+      second:
+        m_Texture: {fileID: 2800000, guid: 4d39074be84c85e49a9d1ab8311ad692, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex3
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MS_base
+      second:
+        m_Texture: {fileID: 2800000, guid: 4d39074be84c85e49a9d1ab8311ad692, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MS_red
+      second:
+        m_Texture: {fileID: 2800000, guid: 7343a15050640bd49a16f947582910ca, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 7416291e683b19844a169d70adf09a95, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 26aa745044a39fa4ea706edbcadd8e90, type: 3}
+        m_Scale: {x: 12, y: 3}
         m_Offset: {x: 1.0336603, y: 0.036096215}
     - first:
         name: _MetallicGlossMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 7343a15050640bd49a16f947582910ca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _NM_base
+      second:
+        m_Texture: {fileID: 2800000, guid: a1f022f6b7fdd9040b1976bd42f00520, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _NM_red
+      second:
+        m_Texture: {fileID: 2800000, guid: 0aebdf7f896739646bbfe85fb945126e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal1
+      second:
+        m_Texture: {fileID: 2800000, guid: 0aebdf7f896739646bbfe85fb945126e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal2
+      second:
+        m_Texture: {fileID: 2800000, guid: a1f022f6b7fdd9040b1976bd42f00520, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal3
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -69,10 +159,52 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap1
+      second:
+        m_Texture: {fileID: 2800000, guid: 7343a15050640bd49a16f947582910ca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap2
+      second:
+        m_Texture: {fileID: 2800000, guid: 5538bdaec9635404ca01f3eb7f95bbd9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap3
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex1
+      second:
+        m_Texture: {fileID: 2800000, guid: 26aa745044a39fa4ea706edbcadd8e90, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex2
+      second:
+        m_Texture: {fileID: 2800000, guid: e7e6642c1c0ceae46944f45e8e5aa4c1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex3
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _BumpScale
       second: 1
+    - first:
+        name: _Contrast2
+      second: 0.5
+    - first:
+        name: _Contrast3
+      second: 0.5
     - first:
         name: _Cutoff
       second: 0.5
@@ -80,13 +212,58 @@ Material:
         name: _DetailNormalMapScale
       second: 1
     - first:
+        name: _DistBlendMax
+      second: 100
+    - first:
+        name: _DistBlendMin
+      second: 0
+    - first:
+        name: _DistUVScale1
+      second: 0.5
+    - first:
+        name: _DistUVScale2
+      second: 0.5
+    - first:
+        name: _DistUVScale3
+      second: 0.5
+    - first:
         name: _DstBlend
       second: 0
     - first:
-        name: _GlossMapScale
+        name: _EmissiveMult1
       second: 1
     - first:
+        name: _EmissiveMult2
+      second: 1
+    - first:
+        name: _EmissiveMult3
+      second: 1
+    - first:
+        name: _FlowAlpha
+      second: 1
+    - first:
+        name: _FlowIntensity
+      second: 1
+    - first:
+        name: _FlowRefraction
+      second: 0.04
+    - first:
+        name: _FlowSpeed
+      second: 0
+    - first:
+        name: _GlossMapScale
+      second: 0.63
+    - first:
         name: _Glossiness
+      second: 0.5
+    - first:
+        name: _Glossiness1
+      second: 0.5
+    - first:
+        name: _Glossiness2
+      second: 0.5
+    - first:
+        name: _Glossiness3
       second: 0.5
     - first:
         name: _GlossyReflections
@@ -94,6 +271,18 @@ Material:
     - first:
         name: _Metallic
       second: 0
+    - first:
+        name: _Metallic1
+      second: 0
+    - first:
+        name: _Metallic2
+      second: 0
+    - first:
+        name: _Metallic3
+      second: 0
+    - first:
+        name: _Metallic_intensity
+      second: 1
     - first:
         name: _Mode
       second: 0
@@ -104,8 +293,20 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _Parallax1
+      second: 0.02
+    - first:
+        name: _Parallax2
+      second: 0.02
+    - first:
+        name: _Parallax3
+      second: 0.02
+    - first:
         name: _SmoothnessTextureChannel
       second: 0
+    - first:
+        name: _Smoothness_intensity
+      second: 0.56
     - first:
         name: _SpecularHighlights
       second: 1
@@ -113,15 +314,63 @@ Material:
         name: _SrcBlend
       second: 1
     - first:
+        name: _TexScale1
+      second: 1
+    - first:
+        name: _TexScale2
+      second: 3.22
+    - first:
+        name: _TexScale3
+      second: 1
+    - first:
         name: _UVSec
       second: 0
+    - first:
+        name: _UV_angle_base
+      second: 1.5
+    - first:
+        name: _U_tiling_base
+      second: 10
+    - first:
+        name: _U_tiling_red
+      second: 8.6
+    - first:
+        name: _V_tiling_base
+      second: 2.45
+    - first:
+        name: _V_tiling_red
+      second: 4.01
     - first:
         name: _ZWrite
       second: 1
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.588, g: 0.588, b: 0.588, a: 1}
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SpecColor1
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _SpecColor2
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _SpecColor3
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _Tint1
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Tint2
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Tint3
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _tint_base
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _tint_red
+      second: {r: 0.8014706, g: 0.8014706, b: 0.8014706, a: 1}
