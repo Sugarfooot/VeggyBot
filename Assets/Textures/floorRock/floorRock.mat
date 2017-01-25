@@ -1,0 +1,442 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: floorRock
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _LAYERS2 _METALLICGLOSSMAP _NORMALMAP
+  m_LightmapFlags: 6
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Alpha
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _AlphaNormal
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _AlphaSpecular
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BlueNormal
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BlueSpecular
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BlueTexture
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 2c8658a7c60139b4a9024d879624925f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailAlbedoMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailMask
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailNormalMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DispTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 0baf9ec8db561f14d89f30d8ba6ba0c6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _EmissionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex1
+      second:
+        m_Texture: {fileID: 2800000, guid: d0bd04d8035088644adf597806c4fcd8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex2
+      second:
+        m_Texture: {fileID: 2800000, guid: 08098dfe30188c3478ff44e657ad8023, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GreenNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: fc88b08c96d242047b49670a1175c714, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GreenSpecular
+      second:
+        m_Texture: {fileID: 2800000, guid: 08098dfe30188c3478ff44e657ad8023, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GreenTexture
+      second:
+        m_Texture: {fileID: 2800000, guid: a768821929e88fb4c958494062b47485, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _HeightTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 6df4b6a414f2c3744bd58c9707ec8c8a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 2ea8d84dacd79e8499822a1fa62e6047, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MetallicGlossMap
+      second:
+        m_Texture: {fileID: 2800000, guid: d0bd04d8035088644adf597806c4fcd8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _NoiseTexture
+      second:
+        m_Texture: {fileID: 2800000, guid: 9f21b5f7fdcd53b4fac39152ccc95123, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal1
+      second:
+        m_Texture: {fileID: 2800000, guid: 2c8658a7c60139b4a9024d879624925f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal2
+      second:
+        m_Texture: {fileID: 2800000, guid: fc88b08c96d242047b49670a1175c714, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _NormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 2c8658a7c60139b4a9024d879624925f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _NormalTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _OcclusionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RedNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: 2c8658a7c60139b4a9024d879624925f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RedSpecular
+      second:
+        m_Texture: {fileID: 2800000, guid: d0bd04d8035088644adf597806c4fcd8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RedTexture
+      second:
+        m_Texture: {fileID: 2800000, guid: 2ea8d84dacd79e8499822a1fa62e6047, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ReflectionTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ShadowOffset
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex1
+      second:
+        m_Texture: {fileID: 2800000, guid: 0baf9ec8db561f14d89f30d8ba6ba0c6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex2
+      second:
+        m_Texture: {fileID: 2800000, guid: a26dd6efb36c58d4a9f7036b2b9fc31e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextTexture
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TranslucencyMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _AlphaChannel
+      second: 1
+    - first:
+        name: _BlendAmount
+      second: 20
+    - first:
+        name: _BlueChannel
+      second: 1
+    - first:
+        name: _BumpScale
+      second: 1
+    - first:
+        name: _Contrast2
+      second: 0.056
+    - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
+        name: _DetailNormalMapScale
+      second: 1
+    - first:
+        name: _Displacement
+      second: 1
+    - first:
+        name: _DistBlendMax
+      second: 100
+    - first:
+        name: _DistBlendMin
+      second: 0
+    - first:
+        name: _DistUVScale1
+      second: 0.5
+    - first:
+        name: _DistUVScale2
+      second: 0.5
+    - first:
+        name: _DstBlend
+      second: 0
+    - first:
+        name: _EmissiveMult1
+      second: 1
+    - first:
+        name: _EmissiveMult2
+      second: 1
+    - first:
+        name: _FlowAlpha
+      second: 1
+    - first:
+        name: _FlowIntensity
+      second: 1
+    - first:
+        name: _FlowRefraction
+      second: 0.04
+    - first:
+        name: _FlowSpeed
+      second: 0
+    - first:
+        name: _GlossMapScale
+      second: 1
+    - first:
+        name: _Glossiness
+      second: 0.5
+    - first:
+        name: _Glossiness1
+      second: 0.5
+    - first:
+        name: _Glossiness2
+      second: 0.5
+    - first:
+        name: _GlossyReflections
+      second: 1
+    - first:
+        name: _GreenChannel
+      second: 1
+    - first:
+        name: _Metallic
+      second: 0
+    - first:
+        name: _Metallic1
+      second: 0
+    - first:
+        name: _Metallic2
+      second: 0
+    - first:
+        name: _Mode
+      second: 0
+    - first:
+        name: _OcclusionStrength
+      second: 1
+    - first:
+        name: _Parallax
+      second: 0.02
+    - first:
+        name: _Parallax1
+      second: 0.02
+    - first:
+        name: _Parallax2
+      second: 0.02
+    - first:
+        name: _RedChannel
+      second: 1
+    - first:
+        name: _Roughness
+      second: 0
+    - first:
+        name: _Shininess
+      second: 0.078125
+    - first:
+        name: _SmoothnessTextureChannel
+      second: 0
+    - first:
+        name: _SpecularHighlights
+      second: 1
+    - first:
+        name: _SquashAmount
+      second: 1
+    - first:
+        name: _SrcBlend
+      second: 1
+    - first:
+        name: _Tess
+      second: 9.8
+    - first:
+        name: _TexScale1
+      second: 6
+    - first:
+        name: _TexScale2
+      second: 8
+    - first:
+        name: _Transparency
+      second: 0.304796
+    - first:
+        name: _UVSec
+      second: 1
+    - first:
+        name: _ZWrite
+      second: 1
+    m_Colors:
+    - first:
+        name: _BlueChannelColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _EmissionColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _GreenChannelColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _RedChannelColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _SpecColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - first:
+        name: _SpecColor1
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _SpecColor2
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _Tint1
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Tint2
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _TreeInstanceColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _TreeInstanceScale
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _node_6067
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
