@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: leave_alone
-  m_Shader: {fileID: 10601, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 54717bc55bc4f424abb5f527427a2a91, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON _EMISSION _NORMALMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -87,6 +87,18 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _baseColor
+      second:
+        m_Texture: {fileID: 2800000, guid: 0e22d5f69ad3a624dbd0a1d3cd56aab3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _node_2791
+      second:
+        m_Texture: {fileID: 2800000, guid: 0e22d5f69ad3a624dbd0a1d3cd56aab3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _AO
@@ -152,10 +164,31 @@ Material:
         name: _TranslucencyViewDependency
       second: 0.68
     - first:
+        name: _Transmission
+      second: 1
+    - first:
         name: _UVSec
       second: 0
     - first:
         name: _ZWrite
+      second: 1
+    - first:
+        name: _fresnelPower
+      second: 1
+    - first:
+        name: _metallic
+      second: 0
+    - first:
+        name: _node_4063
+      second: 0.73
+    - first:
+        name: _node_5037
+      second: 0
+    - first:
+        name: _node_5037_copy
+      second: 1
+    - first:
+        name: _roughness
       second: 1
     m_Colors:
     - first:
@@ -173,3 +206,6 @@ Material:
     - first:
         name: _TreeInstanceScale
       second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _tint
+      second: {r: 0.39215687, g: 0.5882353, b: 0.39215687, a: 1}

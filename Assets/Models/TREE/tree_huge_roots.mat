@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: tree_huge
+  m_Name: tree_huge_roots
   m_Shader: {fileID: 4800000, guid: f8bc623a59dbf54409543ece3964f416, type: 3}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
@@ -162,13 +162,13 @@ Material:
       second: 0
     - first:
         name: _U_tiling_base
-      second: 2
+      second: 1
     - first:
         name: _U_tiling_red
       second: 1
     - first:
         name: _V_tiling_base
-      second: 10
+      second: 5
     - first:
         name: _V_tiling_red
       second: 1
