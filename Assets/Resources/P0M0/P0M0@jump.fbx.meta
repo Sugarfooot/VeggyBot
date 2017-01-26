@@ -1,7 +1,5 @@
 fileFormatVersion: 2
-guid: 0d39ea9adb0b04b499b078f252a03e03
-timeCreated: 1484239447
-licenseType: Free
+guid: fe6323997a0e1ec48903915637833544
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -101,7 +99,7 @@ ModelImporter:
     400090: master_ctrl_fingers_L
     400092: master_ctrl_fingers_R
     400094: //RootNode
-    7400000: sprint
+    7400000: jump
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -114,19 +112,49 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "\nInbetween bone default rotation found in this file
-      is different from the one found in the source avatar:\n\t'CATRigSpine3' : rotation
-      error = 6.060851 deg\n\t'CATRig_chest' : rotation error = 1.843796 deg\n\t'Bone_INDEX01_L001'
-      : rotation error = 5.882132 deg\n\t'Bone_INDEX01_L004' : rotation error = 2.747485
-      deg\n\nClip 'Take 001' has import animation warnings that might lower retargeting
-      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CATRigSpine3'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CATRig_chest'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bone_INDEX01_L001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bone_INDEX01_L004'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationImportWarnings: "\nDefault bone length found in this file is different
+      form the one found in the source avatar:\n\t'CATRigLLeg1' : position error =
+      412.237915 mm\n\t'CATRigLLeg2' : position error = 388.182281 mm\n\t'CATRigLLegAnkle'
+      : position error = 227.761642 mm\n\t'CATRigRLeg1' : position error = 412.238373
+      mm\n\t'CATRigRLeg2' : position error = 388.182953 mm\n\t'CATRigRLegAnkle' :
+      position error = 227.764313 mm\n\t'CATRigSpine1' : position error = 230.950348
+      mm\n\t'CATRigSpine2' : position error = 126.973969 mm\n\t'CATRigSpine3' : position
+      error = 148.135330 mm\n\t'CATRig_chest' : position error = 182.274551 mm\n\t'CATRigLArmCollarbone'
+      : position error = 114.971581 mm\n\t'CATRigLArm1' : position error = 289.276459
+      mm\n\t'CATRigLArm2' : position error = 463.228973 mm\n\t'CATRigLArmPalm' : position
+      error = 567.467041 mm\n\t'master_ctrl_fingers_L' : position error = 148.866394
+      mm\n\t'Bone_thumb01_L' : position error = 153.237045 mm\n\t'Bone_thumb02_L'
+      : position error = 133.645279 mm\n\t'Bone_thumb03_L' : position error = 81.730453
+      mm\n\t'Bone_INDEX01_L' : position error = 149.846237 mm\n\t'Bone_INDEX02_L'
+      : position error = 133.645264 mm\n\t'Bone_INDEX03_L' : position error = 81.730316
+      mm\n\t'Bone_INDEX01_L001' : position error = 157.218918 mm\n\t'Bone_INDEX02_L001'
+      : position error = 133.645401 mm\n\t'Bone_INDEX03_L001' : position error = 81.730415
+      mm\n\t'Bone_INDEX01_L002' : position error = 162.433197 mm\n\t'Bone_INDEX02_L002'
+      : position error = 133.645416 mm\n\t'Bone_INDEX03_L002' : position error = 81.730453
+      mm\n\t'CATRig_neck' : position error = 92.444351 mm\n\t'CATRighead' : position
+      error = 307.789093 mm\n\t'CATRigRArmCollarbone' : position error = 114.971535
+      mm\n\t'CATRigRArm1' : position error = 288.992737 mm\n\t'CATRigRArm2' : position
+      error = 463.219025 mm\n\t'CATRigRArmPalm' : position error = 567.467834 mm\n\t'master_ctrl_fingers_R'
+      : position error = 148.862579 mm\n\t'Bone_INDEX01_L003' : position error = 146.006287
+      mm\n\t'Bone_INDEX02_L003' : position error = 133.645523 mm\n\t'Bone_INDEX03_L003'
+      : position error = 81.730331 mm\n\t'Bone_INDEX01_L004' : position error = 151.908554
+      mm\n\t'Bone_INDEX02_L004' : position error = 133.645508 mm\n\t'Bone_INDEX03_L004'
+      : position error = 81.730469 mm\n\t'Bone_INDEX01_L005' : position error = 154.884338
+      mm\n\t'Bone_INDEX02_L005' : position error = 133.645355 mm\n\t'Bone_INDEX03_L005'
+      : position error = 81.730492 mm\n\t'Bone_thumb01_L001' : position error = 158.401855
+      mm\n\t'Bone_thumb02_L001' : position error = 133.645432 mm\n\t'Bone_thumb03_L001'
+      : position error = 81.730507 mm\n\nInbetween bone default rotation found in
+      this file is different from the one found in the source avatar:\n\t'CATRigSpine3'
+      : rotation error = 5.122314 deg\n\t'CATRig_chest' : rotation error = 1.623017
+      deg\n\t'Bone_INDEX01_L001' : rotation error = 50.323563 deg\n\t'Bone_INDEX01_L004'
+      : rotation error = 69.713379 deg\n\nClip 'Take 001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'CATRigSpine3' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'CATRig_chest' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -134,18 +162,18 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: sprint
+      name: jump
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 9
+      lastFrame: 17
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 0
@@ -260,7 +288,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 0
