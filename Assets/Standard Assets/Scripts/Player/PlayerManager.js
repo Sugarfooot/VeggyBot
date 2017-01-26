@@ -1,5 +1,7 @@
 ﻿#pragma strict
 
+import UnityEngine.UI;
+
 public class PlayerManager extends MonoBehaviour {
 
 	var waterIndicators : Image[];
@@ -12,7 +14,7 @@ public class PlayerManager extends MonoBehaviour {
 	static var maxVieIdx : int = 0;
 	private var animator : Animator;
 	var rotateSpeed : float = 20.0;
-
+	
 	private static var instance : PlayerManager;
 	public static function Instance () : PlayerManager {
 		return instance;
@@ -36,7 +38,7 @@ public class PlayerManager extends MonoBehaviour {
 	function Update () {
 		if (Input.GetButtonDown("RB")){
 			TriggerWaterConsumption();
-			animator.SetTrigger("MeleeAttack");
+			animator.SetBool("pomoattack", true);
 		}
 		if (Input.GetButton("RB")){
 			if (waterLevel < 0){
@@ -57,8 +59,9 @@ public class PlayerManager extends MonoBehaviour {
 		}
 		if (Input.GetButtonUp("RB") || (!Input.GetButton("RB") && isShooting)){
 			isShooting = false;
-			animator.ResetTrigger("MeleeAttack");
-            animator.SetTrigger("StopAttack");
+			// animator.ResetTrigger("MeleeAttack");
+            animator.SetBool("pomoattack", false);
+            // animator.SetTrigger("StopAttack");
             for (var water : GameObject in GameObject.FindGameObjectsWithTag("WaterDamage")){
             	Destroy(water);
             }

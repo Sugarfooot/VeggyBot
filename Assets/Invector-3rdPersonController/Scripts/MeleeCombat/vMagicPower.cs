@@ -25,7 +25,7 @@ public class vMagicPower : MonoBehaviour
     {
         if (weapon != null && weapon.isActive && !isActive)
         {
-            if (oneShot)
+            if (oneShot && Input.GetButtonDown("RB"))
             {
                 isActive = true;
                 Invoke("DoEffect", timeToInvoke);
@@ -35,7 +35,7 @@ public class vMagicPower : MonoBehaviour
             else
                 time -= Time.deltaTime;
         }
-        else if (isActive && weapon != null && !weapon.isActive)
+        else if (isActive && weapon != null && !weapon.isActive && Input.GetButtonUp("RB"))
         {
             time = timeToInvoke;
             isActive = false;
