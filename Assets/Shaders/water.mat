@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: water
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 5f4f610e018534c49a2a065282baee92, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -58,6 +58,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _NormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 5c812e1122126a94e8157bd20106d153, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _OcclusionMap
       second:
         m_Texture: {fileID: 0}
@@ -67,6 +73,18 @@ Material:
         name: _ParallaxMap
       second:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _heightMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 59b4ce678b8889d43b2671cf8b8a4892, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _heightMap_copy
+      second:
+        m_Texture: {fileID: 2800000, guid: 59b4ce678b8889d43b2671cf8b8a4892, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -83,6 +101,9 @@ Material:
         name: _DstBlend
       second: 0
     - first:
+        name: _Fresnel_power
+      second: 0.49
+    - first:
         name: _GlossMapScale
       second: 1
     - first:
@@ -93,7 +114,7 @@ Material:
       second: 1
     - first:
         name: _Metallic
-      second: 0
+      second: 0.68
     - first:
         name: _Mode
       second: 0
@@ -103,6 +124,9 @@ Material:
     - first:
         name: _Parallax
       second: 0.02
+    - first:
+        name: _Roughness
+      second: 0
     - first:
         name: _SmoothnessTextureChannel
       second: 0
@@ -118,10 +142,43 @@ Material:
     - first:
         name: _ZWrite
       second: 1
+    - first:
+        name: _baseColor_slope
+      second: 0
+    - first:
+        name: _node_4763
+      second: 1.45
+    - first:
+        name: _node_4993_copy
+      second: 2
+    - first:
+        name: _node_5203
+      second: 3.3
+    - first:
+        name: _offset_Size
+      second: 0.34
+    - first:
+        name: _opacity_Max
+      second: 1
+    - first:
+        name: _opacity_Min
+      second: 0.86
+    - first:
+        name: _speed
+      second: 0.46
     m_Colors:
     - first:
         name: _Color
       second: {r: 0.100562274, g: 0.44117647, b: 0.10291132, a: 1}
     - first:
+        name: _Color1
+      second: {r: 0.3606185, g: 0.8455882, b: 0.5044371, a: 1}
+    - first:
         name: _EmissionColor
       second: {r: 0.31141868, g: 0.7058823, b: 0.39575225, a: 1}
+    - first:
+        name: _node_6564_copy
+      second: {r: 1, g: 0.6413793, b: 0, a: 1}
+    - first:
+        name: _node_6564_copy_copy
+      second: {r: 0, g: 0, b: 0, a: 1}
