@@ -116,13 +116,13 @@ ModelImporter:
     animationImportErrors: 
     animationImportWarnings: "\nInbetween bone default rotation found in this file
       is different from the one found in the source avatar:\n\t'CATRigSpine3' : rotation
-      error = 12.231790 deg\n\t'CATRig_chest' : rotation error = 3.987478 deg\n\t'Bone_INDEX01_L001'
-      : rotation error = 38.840611 deg\n\t'Bone_INDEX01_L004' : rotation error = 55.744877
+      error = 6.060851 deg\n\t'CATRig_chest' : rotation error = 1.843796 deg\n\t'Bone_INDEX01_L001'
+      : rotation error = 5.882132 deg\n\t'Bone_INDEX01_L004' : rotation error = 2.747485
       deg\n\nClip 'Take 001' has import animation warnings that might lower retargeting
-      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CATRigRLeg2'
-      has scale animation that will be discarded.\n\t'CATRigSpine3' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'CATRig_chest'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CATRigLArmPalm'
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CATRigSpine3'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CATRig_chest'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bone_INDEX01_L001'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bone_INDEX01_L004'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
@@ -136,8 +136,8 @@ ModelImporter:
     - serializedVersion: 16
       name: sprint
       takeName: Take 001
-      firstFrame: 0
-      lastFrame: 12
+      firstFrame: 1
+      lastFrame: 9
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

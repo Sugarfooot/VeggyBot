@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: leave_alone
-  m_Shader: {fileID: 10606, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHATEST_ON _EMISSION
+  m_Shader: {fileID: 10601, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _ALPHATEST_ON _EMISSION _NORMALMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -99,7 +99,7 @@ Material:
       second: 1
     - first:
         name: _Cutoff
-      second: 1
+      second: 0.465
     - first:
         name: _DetailNormalMapScale
       second: 1
@@ -135,7 +135,7 @@ Material:
       second: 0
     - first:
         name: _Shininess
-      second: 0.06
+      second: 0.103
     - first:
         name: _SmoothnessTextureChannel
       second: 0
@@ -150,7 +150,7 @@ Material:
       second: 1
     - first:
         name: _TranslucencyViewDependency
-      second: 0.7
+      second: 0.68
     - first:
         name: _UVSec
       second: 0
