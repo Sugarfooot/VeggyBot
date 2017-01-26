@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: feuillage_low_wire_228184153_AlbedoTransparency
-  m_Shader: {fileID: 10511, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 54717bc55bc4f424abb5f527427a2a91, type: 3}
   m_ShaderKeywords: _EMISSION _NORMALMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -65,6 +65,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     - first:
         name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _node_2791
+      second:
+        m_Texture: {fileID: 2800000, guid: e15767c4337e16b4ba3584a0a8c5a515, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _node_7423
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -129,6 +141,15 @@ Material:
       second: 0
     - first:
         name: _ZWrite
+      second: 1
+    - first:
+        name: _node_4063
+      second: 5.7
+    - first:
+        name: _node_5037
+      second: 0
+    - first:
+        name: _node_5037_copy
       second: 1
     m_Colors:
     - first:
