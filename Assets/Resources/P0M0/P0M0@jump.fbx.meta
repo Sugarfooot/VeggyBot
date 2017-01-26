@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b17707b70aa74cd4fb827e589e29169b
-timeCreated: 1484241165
+guid: fe6323997a0e1ec48903915637833544
+timeCreated: 1485442597
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -101,8 +101,9 @@ ModelImporter:
     400090: master_ctrl_fingers_L
     400092: master_ctrl_fingers_R
     400094: //RootNode
-    7400000: JumpMoveP0M0
-    7400002: FallingP0M0
+    7400000: jumpMove
+    7400002: falling
+    7400004: landedP0M0
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -117,17 +118,15 @@ ModelImporter:
     animationImportErrors: 
     animationImportWarnings: "\nInbetween bone default rotation found in this file
       is different from the one found in the source avatar:\n\t'CATRigSpine3' : rotation
-      error = 6.092788 deg\n\t'CATRig_chest' : rotation error = 7.238184 deg\n\t'Bone_INDEX01_L001'
-      : rotation error = 47.930977 deg\n\t'Bone_INDEX01_L004' : rotation error = 47.399601
+      error = 5.809882 deg\n\t'CATRig_chest' : rotation error = 1.714623 deg\n\t'Bone_INDEX01_L001'
+      : rotation error = 50.323563 deg\n\t'Bone_INDEX01_L004' : rotation error = 69.713379
       deg\n\nClip 'Take 001' has import animation warnings that might lower retargeting
       quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CATRigSpine3'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CATRig_chest'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CATRigLArmPalm'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bone_INDEX01_L001'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -135,10 +134,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: JumpMoveP0M0
+      name: jumpMove
       takeName: Take 001
-      firstFrame: 0
-      lastFrame: 10
+      firstFrame: 1
+      lastFrame: 8
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -151,9 +150,9 @@ ModelImporter:
       loopBlendPositionY: 1
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
-      heightFromFeet: 0
+      heightFromFeet: 1
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
@@ -257,12 +256,12 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: FallingP0M0
+      name: falling
       takeName: Take 001
-      firstFrame: 4
-      lastFrame: 16
+      firstFrame: 6
+      lastFrame: 13
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -381,7 +380,131 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: landedP0M0
+      takeName: Take 001
+      firstFrame: 13
+      lastFrame: 17
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRig_bassin
+        weight: 1
+      - path: CATRig_bassin/CATRigLLeg1
+        weight: 1
+      - path: CATRig_bassin/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRig_bassin/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRig_bassin/CATRigRLeg1
+        weight: 1
+      - path: CATRig_bassin/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRig_bassin/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRig_neck
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRig_neck/CATRighead
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_INDEX01_L
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_INDEX01_L/Bone_INDEX02_L
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_INDEX01_L/Bone_INDEX02_L/Bone_INDEX03_L
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_INDEX01_L001
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_INDEX01_L001/Bone_INDEX02_L001
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_INDEX01_L001/Bone_INDEX02_L001/Bone_INDEX03_L001
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_INDEX01_L002
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_INDEX01_L002/Bone_INDEX02_L002
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_INDEX01_L002/Bone_INDEX02_L002/Bone_INDEX03_L002
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_thumb01_L
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_thumb01_L/Bone_thumb02_L
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/master_ctrl_fingers_L/Bone_thumb01_L/Bone_thumb02_L/Bone_thumb03_L
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_INDEX01_L003
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_INDEX01_L003/Bone_INDEX02_L003
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_INDEX01_L003/Bone_INDEX02_L003/Bone_INDEX03_L003
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_INDEX01_L004
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_INDEX01_L004/Bone_INDEX02_L004
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_INDEX01_L004/Bone_INDEX02_L004/Bone_INDEX03_L004
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_INDEX01_L005
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_INDEX01_L005/Bone_INDEX02_L005
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_INDEX01_L005/Bone_INDEX02_L005/Bone_INDEX03_L005
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_thumb01_L001
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_thumb01_L001/Bone_thumb02_L001
+        weight: 1
+      - path: CATRig_bassin/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRig_chest/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/master_ctrl_fingers_R/Bone_thumb01_L001/Bone_thumb02_L001/Bone_thumb03_L001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []

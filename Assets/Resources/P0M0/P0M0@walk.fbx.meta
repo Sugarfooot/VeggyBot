@@ -142,14 +142,11 @@ ModelImporter:
     animationImportErrors: 
     animationImportWarnings: "\nInbetween bone default rotation found in this file
       is different from the one found in the source avatar:\n\t'CATRigSpine3' : rotation
-      error = 5.898114 deg\n\t'CATRig_chest' : rotation error = 2.233322 deg\n\t'Bone_INDEX01_L001'
-      : rotation error = 45.523266 deg\n\t'Bone_INDEX01_L004' : rotation error = 41.538834
+      error = 3.295348 deg\n\t'CATRig_chest' : rotation error = 1.250772 deg\n\t'Bone_INDEX01_L001'
+      : rotation error = 50.323563 deg\n\t'Bone_INDEX01_L004' : rotation error = 69.713379
       deg\n\nClip 'Take 001' has import animation warnings that might lower retargeting
       quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CATRigSpine3'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CATRig_chest'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CATRigLArmPalm'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bone_INDEX01_L001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bone_INDEX01_L004'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
@@ -163,8 +160,8 @@ ModelImporter:
     - serializedVersion: 16
       name: walk
       takeName: Take 001
-      firstFrame: 0
-      lastFrame: 26
+      firstFrame: 1
+      lastFrame: 25
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -172,7 +169,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 0
