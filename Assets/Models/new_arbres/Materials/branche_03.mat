@@ -70,6 +70,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _baseColor
+      second:
+        m_Texture: {fileID: 2800000, guid: bb2dfafeb09887e459e6156b52d80c2d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _node_2791
       second:
         m_Texture: {fileID: 2800000, guid: bb2dfafeb09887e459e6156b52d80c2d, type: 3}
@@ -131,11 +137,20 @@ Material:
         name: _SrcBlend
       second: 1
     - first:
+        name: _Transmission
+      second: 0
+    - first:
         name: _UVSec
       second: 0
     - first:
         name: _ZWrite
       second: 1
+    - first:
+        name: _fresnelPower
+      second: 1
+    - first:
+        name: _metallic
+      second: 0
     - first:
         name: _node_4063
       second: 3.4
@@ -145,6 +160,9 @@ Material:
     - first:
         name: _node_5037_copy
       second: 1
+    - first:
+        name: _roughness
+      second: 0
     m_Colors:
     - first:
         name: _Color
@@ -157,4 +175,7 @@ Material:
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _TreeInstanceScale
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _tint
       second: {r: 1, g: 1, b: 1, a: 1}
