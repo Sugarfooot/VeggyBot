@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: 23___Default_Base_Color
   m_Shader: {fileID: 4800000, guid: 7b2852392be424b1c8dfe8bcb8ca9a05, type: 3}
-  m_ShaderKeywords: _LAYERS2 _METALLICGLOSSMAP _NORMALMAP
+  m_ShaderKeywords: _EMISSION _LAYERS2 _NORMALMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -54,13 +54,13 @@ Material:
     - first:
         name: _Emissive2
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 613cc197e7726de4bb10ca4cf4a16cee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _GlossinessTex1
       second:
-        m_Texture: {fileID: 2800000, guid: 54cdcb063a5bde040bf32b132403cddb, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -84,7 +84,7 @@ Material:
     - first:
         name: _Normal1
       second:
-        m_Texture: {fileID: 2800000, guid: 4f872d14104c98d439ffe3954157f225, type: 3}
+        m_Texture: {fileID: 2800000, guid: a1f022f6b7fdd9040b1976bd42f00520, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -120,7 +120,7 @@ Material:
     - first:
         name: _Tex1
       second:
-        m_Texture: {fileID: 2800000, guid: 9b6308121d5e7524886104f8d1af1a3f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 61c33a785bb951d448643756f6e96a04, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -162,7 +162,7 @@ Material:
       second: 1
     - first:
         name: _EmissiveMult2
-      second: 1
+      second: 1.41
     - first:
         name: _FlowAlpha
       second: 1
@@ -183,10 +183,10 @@ Material:
       second: 0
     - first:
         name: _Glossiness1
-      second: 0.5
+      second: 0.165
     - first:
         name: _Glossiness2
-      second: 0.5
+      second: 0.39
     - first:
         name: _GlossyReflections
       second: 1
@@ -225,7 +225,7 @@ Material:
       second: 1
     - first:
         name: _TexScale1
-      second: 1
+      second: 9.87
     - first:
         name: _TexScale2
       second: 9.06
