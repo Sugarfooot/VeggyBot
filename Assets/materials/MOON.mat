@@ -7,12 +7,11 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MOON
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 44fd8e3dfd49dd143983127a8197e0ad, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -76,6 +75,18 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _baseColor_Opacity
+      second:
+        m_Texture: {fileID: 2800000, guid: 5f3ed9b5c15e995448466595603b3085, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _baseColor_copy
+      second:
+        m_Texture: {fileID: 2800000, guid: 8d00c65b73fb12a4fb617bee4bdeea9c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _BumpScale
@@ -108,6 +119,9 @@ Material:
         name: _OcclusionStrength
       second: 1
     - first:
+        name: _Opacity_Bias
+      second: 0.29
+    - first:
         name: _Parallax
       second: 0.02
     - first:
@@ -128,6 +142,9 @@ Material:
     - first:
         name: _ZWrite
       second: 1
+    - first:
+        name: _emissiveIntensity
+      second: 115.67
     m_Colors:
     - first:
         name: _Color
@@ -140,4 +157,10 @@ Material:
       second: {r: 0.6, g: 0.6, b: 0.7, a: 1}
     - first:
         name: _SpecColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - first:
+        name: _moonTint
+      second: {r: 0.34969723, g: 0.47350854, b: 0.61764705, a: 1}
+    - first:
+        name: _node_5010
       second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
