@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: "feuilles_unit\xE9"
-  m_Shader: {fileID: 4800000, guid: 54717bc55bc4f424abb5f527427a2a91, type: 3}
+  m_Shader: {fileID: 10606, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHATEST_ON _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -131,6 +131,9 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _ShadowStrength
+      second: 1
+    - first:
         name: _SmoothnessTextureChannel
       second: 0
     - first:
@@ -142,6 +145,9 @@ Material:
     - first:
         name: _SrcBlend
       second: 1
+    - first:
+        name: _TranslucencyViewDependency
+      second: 0.7
     - first:
         name: _Transmission
       second: 0
@@ -176,6 +182,9 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _TranslucencyColor
+      second: {r: 0.73, g: 0.85, b: 0.41, a: 1}
     - first:
         name: _TreeInstanceColor
       second: {r: 1, g: 1, b: 1, a: 1}

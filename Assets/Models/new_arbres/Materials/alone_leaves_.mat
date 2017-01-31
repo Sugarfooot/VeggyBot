@@ -9,7 +9,7 @@ Material:
   m_Name: alone_leaves_
   m_Shader: {fileID: 4800000, guid: 54717bc55bc4f424abb5f527427a2a91, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON _EMISSION
-  m_LightmapFlags: 1
+  m_LightmapFlags: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
@@ -165,7 +165,7 @@ Material:
       second: 1
     - first:
         name: _Transmission
-      second: 1.3
+      second: 0
     - first:
         name: _UVSec
       second: 0
@@ -189,7 +189,7 @@ Material:
       second: 1
     - first:
         name: _roughness
-      second: 0.88
+      second: 1
     m_Colors:
     - first:
         name: _Color
