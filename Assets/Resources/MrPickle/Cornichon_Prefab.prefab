@@ -133,6 +133,7 @@ GameObject:
   - 195: {fileID: 195000014001989344}
   - 114: {fileID: 114000011150061058}
   - 114: {fileID: 114000011126176394}
+  - 114: {fileID: 114000010783354606}
   m_Layer: 9
   m_Name: Cornichon_Prefab
   m_TagString: Enemy
@@ -1866,6 +1867,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000010783354606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010892206862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a6c3a80f975324297a9e828ffcb61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDeath: 0
+  triggeredMechanism: {fileID: 0}
 --- !u!114 &114000011126176394
 MonoBehaviour:
   m_ObjectHideFlags: 1

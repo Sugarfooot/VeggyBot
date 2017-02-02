@@ -368,7 +368,7 @@ namespace JBooth.VertexPainterPro
                // the verticies would all become 0. This seems a funny thing to change in a patch release, but
                // since getting the data from the C++ side creates a new array anyway, we don't really need
                // to copy them anyway since they are a unique copy already.
-               stream.vertices = mf.sharedMesh.vertices;
+            	  stream.vertices = mf.sharedMesh.vertices;
                // another Unity bug, when in editor, the paint job will just disapear sometimes. So we have to re-assign
                // it every update (even though this doesn't get called each frame, it appears to loose the data during
                // the editor update call, which only happens occationaly. 
