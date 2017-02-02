@@ -13,5 +13,7 @@ function Update () {
 }
 
 function TriggerMechanism (){
-	triggeredMechanism.MechOn();
+	if (triggeredMechanism != null){
+		triggeredMechanism.MechOn();
+	}
 }
