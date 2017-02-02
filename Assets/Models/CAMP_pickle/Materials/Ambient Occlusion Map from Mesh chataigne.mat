@@ -52,9 +52,21 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _MetalRoughness
+      second:
+        m_Texture: {fileID: 2800000, guid: 8df3e32c4fb8cd34f879d6f4d9fd74e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _MetallicGlossMap
       second:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal
+      second:
+        m_Texture: {fileID: 2800000, guid: a593cbf2c30f9de4b90a4538ac1f0bcf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -72,7 +84,7 @@ Material:
     - first:
         name: _baseColor_Opacity
       second:
-        m_Texture: {fileID: 2800000, guid: d6eb17e05bf1f1648817de2f36c14439, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0c89a77dec6bf8142898c47bf1499cbc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -135,7 +147,7 @@ Material:
       second: 1
     - first:
         name: _emissiveIntensity
-      second: 1
+      second: 0
     m_Colors:
     - first:
         name: _Color
@@ -145,4 +157,4 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _moonTint
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      second: {r: 1, g: 1, b: 1, a: 1}
