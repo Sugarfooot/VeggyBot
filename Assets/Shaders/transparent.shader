@@ -3,15 +3,15 @@
 // Shader created with Shader Forge v1.27 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.27;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:False,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:True,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:33900,y:32738,varname:node_2865,prsc:2|diff-2493-RGB,spec-9546-R,gloss-9546-A,emission-1792-OUT,alpha-710-OUT;n:type:ShaderForge.SFN_Tex2d,id:2493,x:33050,y:32663,ptovrint:False,ptlb:baseColor_Opacity,ptin:_baseColor_Opacity,varname:_baseColor_Opacity,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:5f3ed9b5c15e995448466595603b3085,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:9546,x:33149,y:32986,ptovrint:False,ptlb:baseColor_copy,ptin:_baseColor_copy,varname:_baseColor_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:8d00c65b73fb12a4fb617bee4bdeea9c,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Power,id:7635,x:33310,y:32725,varname:node_7635,prsc:2|VAL-2493-A,EXP-9910-OUT;n:type:ShaderForge.SFN_ValueProperty,id:9910,x:33149,y:32867,ptovrint:False,ptlb:Opacity_Bias,ptin:_Opacity_Bias,varname:_Opacity_Bias,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_Clamp01,id:710,x:33502,y:32668,varname:node_710,prsc:2|IN-7635-OUT;n:type:ShaderForge.SFN_Color,id:5010,x:33317,y:33117,ptovrint:False,ptlb:moonTint,ptin:_moonTint,varname:_moonTint,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Multiply,id:2043,x:33527,y:33001,varname:node_2043,prsc:2|A-2493-R,B-5010-RGB;n:type:ShaderForge.SFN_Multiply,id:1792,x:33709,y:33017,varname:node_1792,prsc:2|A-2043-OUT,B-6151-OUT;n:type:ShaderForge.SFN_ValueProperty,id:6151,x:33606,y:33191,ptovrint:False,ptlb:emissiveIntensity,ptin:_emissiveIntensity,varname:_emissiveIntensity,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;proporder:2493-9546-9910-5010-6151;pass:END;sub:END;*/
+/*SF_DATA;ver:1.27;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:False,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:True,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:34231,y:32762,varname:node_2865,prsc:2|diff-2493-RGB,spec-9546-R,gloss-5768-OUT,normal-4453-RGB,emission-1792-OUT,alpha-2493-A;n:type:ShaderForge.SFN_Tex2d,id:2493,x:33196,y:32482,ptovrint:False,ptlb:baseColor_Opacity,ptin:_baseColor_Opacity,varname:_baseColor_Opacity,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:5f3ed9b5c15e995448466595603b3085,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:9546,x:33036,y:32998,ptovrint:False,ptlb:MetalRoughness,ptin:_MetalRoughness,varname:_MetalRoughness,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:8d00c65b73fb12a4fb617bee4bdeea9c,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Color,id:5010,x:33317,y:33117,ptovrint:False,ptlb:moonTint,ptin:_moonTint,varname:_moonTint,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Multiply,id:2043,x:33527,y:33001,varname:node_2043,prsc:2|A-2493-R,B-5010-RGB;n:type:ShaderForge.SFN_Multiply,id:1792,x:33802,y:33050,varname:node_1792,prsc:2|A-2043-OUT,B-6151-OUT;n:type:ShaderForge.SFN_ValueProperty,id:6151,x:33606,y:33191,ptovrint:False,ptlb:emissiveIntensity,ptin:_emissiveIntensity,varname:_emissiveIntensity,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_Tex2d,id:4453,x:33124,y:33233,ptovrint:False,ptlb:Normal,ptin:_Normal,varname:_Normal,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:True;n:type:ShaderForge.SFN_OneMinus,id:5768,x:33460,y:32813,varname:node_5768,prsc:2|IN-9546-A;proporder:2493-9546-5010-6151-4453;pass:END;sub:END;*/
 
 Shader "Shader Forge / Alpha Blended" {
     Properties {
         _baseColor_Opacity ("baseColor_Opacity", 2D) = "white" {}
-        _baseColor_copy ("baseColor_copy", 2D) = "white" {}
-        _Opacity_Bias ("Opacity_Bias", Float ) = 1
+        _MetalRoughness ("MetalRoughness", 2D) = "white" {}
         _moonTint ("moonTint", Color) = (0.5,0.5,0.5,1)
         _emissiveIntensity ("emissiveIntensity", Float ) = 1
+        _Normal ("Normal", 2D) = "bump" {}
         [HideInInspector]_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
     }
     SubShader {
@@ -47,10 +47,10 @@ Shader "Shader Forge / Alpha Blended" {
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform sampler2D _baseColor_Opacity; uniform float4 _baseColor_Opacity_ST;
-            uniform sampler2D _baseColor_copy; uniform float4 _baseColor_copy_ST;
-            uniform float _Opacity_Bias;
+            uniform sampler2D _MetalRoughness; uniform float4 _MetalRoughness_ST;
             uniform float4 _moonTint;
             uniform float _emissiveIntensity;
+            uniform sampler2D _Normal; uniform float4 _Normal_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -102,7 +102,9 @@ Shader "Shader Forge / Alpha Blended" {
                 i.normalDir *= faceSign;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float3 normalDirection = i.normalDir;
+                float3 _Normal_var = UnpackNormal(tex2D(_Normal,TRANSFORM_TEX(i.uv0, _Normal)));
+                float3 normalLocal = _Normal_var.rgb;
+                float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float3 viewReflectDirection = reflect( -viewDirection, normalDirection );
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
                 float3 lightColor = _LightColor0.rgb;
@@ -113,8 +115,8 @@ Shader "Shader Forge / Alpha Blended" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float4 _baseColor_copy_var = tex2D(_baseColor_copy,TRANSFORM_TEX(i.uv0, _baseColor_copy));
-                float gloss = 1.0 - _baseColor_copy_var.a; // Convert roughness to gloss
+                float4 _MetalRoughness_var = tex2D(_MetalRoughness,TRANSFORM_TEX(i.uv0, _MetalRoughness));
+                float gloss = 1.0 - (1.0 - _MetalRoughness_var.a); // Convert roughness to gloss
                 float specPow = exp2( gloss * 10.0+1.0);
 /////// GI Data:
                 UnityLight light;
@@ -155,7 +157,7 @@ Shader "Shader Forge / Alpha Blended" {
 ////// Specular:
                 float NdotL = max(0, dot( normalDirection, lightDirection ));
                 float LdotH = max(0.0,dot(lightDirection, halfDirection));
-                float3 specularColor = _baseColor_copy_var.r;
+                float3 specularColor = _MetalRoughness_var.r;
                 float specularMonochrome;
                 float4 _baseColor_Opacity_var = tex2D(_baseColor_Opacity,TRANSFORM_TEX(i.uv0, _baseColor_Opacity));
                 float3 diffuseColor = _baseColor_Opacity_var.rgb; // Need this for specular when using metallic
@@ -188,7 +190,7 @@ Shader "Shader Forge / Alpha Blended" {
                 float3 emissive = ((_baseColor_Opacity_var.r*_moonTint.rgb)*_emissiveIntensity);
 /// Final Color:
                 float3 finalColor = diffuse + specular + emissive;
-                fixed4 finalRGBA = fixed4(finalColor,saturate(pow(_baseColor_Opacity_var.a,_Opacity_Bias)));
+                fixed4 finalRGBA = fixed4(finalColor,_baseColor_Opacity_var.a);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
             }
@@ -222,10 +224,10 @@ Shader "Shader Forge / Alpha Blended" {
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform sampler2D _baseColor_Opacity; uniform float4 _baseColor_Opacity_ST;
-            uniform sampler2D _baseColor_copy; uniform float4 _baseColor_copy_ST;
-            uniform float _Opacity_Bias;
+            uniform sampler2D _MetalRoughness; uniform float4 _MetalRoughness_ST;
             uniform float4 _moonTint;
             uniform float _emissiveIntensity;
+            uniform sampler2D _Normal; uniform float4 _Normal_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -268,7 +270,9 @@ Shader "Shader Forge / Alpha Blended" {
                 i.normalDir *= faceSign;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float3 normalDirection = i.normalDir;
+                float3 _Normal_var = UnpackNormal(tex2D(_Normal,TRANSFORM_TEX(i.uv0, _Normal)));
+                float3 normalLocal = _Normal_var.rgb;
+                float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
                 float3 lightColor = _LightColor0.rgb;
                 float3 halfDirection = normalize(viewDirection+lightDirection);
@@ -278,13 +282,13 @@ Shader "Shader Forge / Alpha Blended" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float4 _baseColor_copy_var = tex2D(_baseColor_copy,TRANSFORM_TEX(i.uv0, _baseColor_copy));
-                float gloss = 1.0 - _baseColor_copy_var.a; // Convert roughness to gloss
+                float4 _MetalRoughness_var = tex2D(_MetalRoughness,TRANSFORM_TEX(i.uv0, _MetalRoughness));
+                float gloss = 1.0 - (1.0 - _MetalRoughness_var.a); // Convert roughness to gloss
                 float specPow = exp2( gloss * 10.0+1.0);
 ////// Specular:
                 float NdotL = max(0, dot( normalDirection, lightDirection ));
                 float LdotH = max(0.0,dot(lightDirection, halfDirection));
-                float3 specularColor = _baseColor_copy_var.r;
+                float3 specularColor = _MetalRoughness_var.r;
                 float specularMonochrome;
                 float4 _baseColor_Opacity_var = tex2D(_baseColor_Opacity,TRANSFORM_TEX(i.uv0, _baseColor_Opacity));
                 float3 diffuseColor = _baseColor_Opacity_var.rgb; // Need this for specular when using metallic
@@ -310,7 +314,7 @@ Shader "Shader Forge / Alpha Blended" {
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse + specular;
-                fixed4 finalRGBA = fixed4(finalColor * saturate(pow(_baseColor_Opacity_var.a,_Opacity_Bias)),0);
+                fixed4 finalRGBA = fixed4(finalColor * _baseColor_Opacity_var.a,0);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
             }
@@ -343,7 +347,7 @@ Shader "Shader Forge / Alpha Blended" {
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform sampler2D _baseColor_Opacity; uniform float4 _baseColor_Opacity_ST;
-            uniform sampler2D _baseColor_copy; uniform float4 _baseColor_copy_ST;
+            uniform sampler2D _MetalRoughness; uniform float4 _MetalRoughness_ST;
             uniform float4 _moonTint;
             uniform float _emissiveIntensity;
             struct VertexInput {
@@ -381,9 +385,9 @@ Shader "Shader Forge / Alpha Blended" {
                 float3 diffColor = _baseColor_Opacity_var.rgb;
                 float specularMonochrome;
                 float3 specColor;
-                float4 _baseColor_copy_var = tex2D(_baseColor_copy,TRANSFORM_TEX(i.uv0, _baseColor_copy));
-                diffColor = DiffuseAndSpecularFromMetallic( diffColor, _baseColor_copy_var.r, specColor, specularMonochrome );
-                float roughness = _baseColor_copy_var.a;
+                float4 _MetalRoughness_var = tex2D(_MetalRoughness,TRANSFORM_TEX(i.uv0, _MetalRoughness));
+                diffColor = DiffuseAndSpecularFromMetallic( diffColor, _MetalRoughness_var.r, specColor, specularMonochrome );
+                float roughness = (1.0 - _MetalRoughness_var.a);
                 o.Albedo = diffColor + specColor * roughness * roughness * 0.5;
                 
                 return UnityMetaFragment( o );
