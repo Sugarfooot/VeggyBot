@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 2SidedDoubleTextured
+  m_Shader: {fileID: 4800000, guid: 1b0823c1bf94a994fa77a8d001b740f7, type: 3}
+  m_ShaderKeywords: _ENABLEREFLECTIONS_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailAlbedoMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailMask
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailNormalMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _EmissionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FoamTexture
+      second:
+        m_Texture: {fileID: 2800000, guid: 199d83fd2aca7214481411272c61f368, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _LargeWavesTexture
+      second:
+        m_Texture: {fileID: 2800000, guid: ab936a54e633d9344a28ecf0cb43d652, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MetallicGlossMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _OcclusionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ReflectionTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SmallWavesTexture
+      second:
+        m_Texture: {fileID: 2800000, guid: 44dfcc93766446e4585ff66f12aa3ed7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BumpScale
+      second: 1
+    - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
+        name: _Density
+      second: 3.74
+    - first:
+        name: _DepthTransparency
+      second: 10.66
+    - first:
+        name: _DetailNormalMapScale
+      second: 1
+    - first:
+        name: _DistanceTilingFade
+      second: 1.2
+    - first:
+        name: _Distortion
+      second: 0.33
+    - first:
+        name: _DstBlend
+      second: 0
+    - first:
+        name: _EnableCustomFog
+      second: 0
+    - first:
+        name: _EnableReflections
+      second: 1
+    - first:
+        name: _Fade
+      second: 0.72
+    - first:
+        name: _FoamBlend
+      second: 0.5
+    - first:
+        name: _FoamContrast
+      second: 0.31
+    - first:
+        name: _FoamDistFade
+      second: 14.7
+    - first:
+        name: _FoamDistFalloff
+      second: 4.7
+    - first:
+        name: _FoamIntensity
+      second: 7
+    - first:
+        name: _FoamSpeed
+      second: -100
+    - first:
+        name: _FoamTiling
+      second: 20
+    - first:
+        name: _FoamVisibility
+      second: 0.295
+    - first:
+        name: _FogDistance
+      second: 1000
+    - first:
+        name: _FogFade
+      second: 1
+    - first:
+        name: _FullTransparency
+      second: 0
+    - first:
+        name: _Gloss
+      second: 0.8
+    - first:
+        name: _Glossiness
+      second: 0.5
+    - first:
+        name: _LargeWavesSpeed
+      second: 40
+    - first:
+        name: _LargeWavesTiling
+      second: 0.5
+    - first:
+        name: _LightWrapping
+      second: 2
+    - first:
+        name: _LongTilingDistance
+      second: 100
+    - first:
+        name: _Metallic
+      second: 0
+    - first:
+        name: _Mode
+      second: 0
+    - first:
+        name: _OcclusionStrength
+      second: 1
+    - first:
+        name: _OffsetSmallBigSmall
+      second: 1
+    - first:
+        name: _OffsetSmallBigSmallBig
+      second: 0
+    - first:
+        name: _Parallax
+      second: 0.02
+    - first:
+        name: _ReflectionIntensity
+      second: 0.518
+    - first:
+        name: _Refraction
+      second: 0.656
+    - first:
+        name: _ShoreFade
+      second: 0.25
+    - first:
+        name: _ShoreTransparency
+      second: 0.4
+    - first:
+        name: _SmallWavesSpeed
+      second: 120
+    - first:
+        name: _SmallWavesTiling
+      second: 5
+    - first:
+        name: _Specular
+      second: 0.8
+    - first:
+        name: _SrcBlend
+      second: 1
+    - first:
+        name: _UVSec
+      second: 0
+    - first:
+        name: _UnderwaterMode
+      second: 0
+    - first:
+        name: _UnderwaterTranspDist
+      second: 13.56
+    - first:
+        name: _UnderwaterTranspFalloff
+      second: 0.78
+    - first:
+        name: _ZWrite
+      second: 1
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _DeepWaterColor
+      second: {r: 0.11970156, g: 0.29380906, b: 0.39705884, a: 1}
+    - first:
+        name: _EmissionColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _FoamColor
+      second: {r: 0.3602941, g: 0.3602941, b: 0.3602941, a: 1}
+    - first:
+        name: _FogColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _MainColor
+      second: {r: 0.35294116, g: 0.91967565, b: 1, a: 1}
+    - first:
+        name: _SpecularColor
+      second: {r: 0.9338235, g: 0.9338235, b: 0.9338235, a: 1}
