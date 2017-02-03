@@ -48,13 +48,13 @@ Material:
     - first:
         name: _FoamTexture
       second:
-        m_Texture: {fileID: 2800000, guid: 199d83fd2aca7214481411272c61f368, type: 3}
+        m_Texture: {fileID: 2800000, guid: 364055c625aebb14794f2f81ea18e23b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _LargeWavesTexture
       second:
-        m_Texture: {fileID: 2800000, guid: 38a68f55943b5274d9269966a0a631ff, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -66,7 +66,7 @@ Material:
     - first:
         name: _MediumWavesTexture
       second:
-        m_Texture: {fileID: 2800000, guid: 23bcf594ec017424e892a95b68f6b439, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -102,7 +102,7 @@ Material:
     - first:
         name: _SmallWavesTexture
       second:
-        m_Texture: {fileID: 2800000, guid: 16aae366ec986ff4f8a63a5331ee7acb, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -114,7 +114,7 @@ Material:
       second: 0.5
     - first:
         name: _Density
-      second: 1
+      second: 10
     - first:
         name: _DepthTransparency
       second: 14.05
@@ -141,10 +141,10 @@ Material:
       second: 0.85
     - first:
         name: _FoamBlend
-      second: 0.5
+      second: 20.7
     - first:
         name: _FoamContrast
-      second: 0.318
+      second: 0.035
     - first:
         name: _FoamDistFade
       second: 2.87
@@ -159,10 +159,10 @@ Material:
       second: -200
     - first:
         name: _FoamTiling
-      second: 30
+      second: 3.71
     - first:
         name: _FoamVisibility
-      second: 0.547
+      second: 0.04
     - first:
         name: _FogDistance
       second: 1000
@@ -174,13 +174,13 @@ Material:
       second: 0
     - first:
         name: _Gloss
-      second: 0.9
+      second: 0.39
     - first:
         name: _Glossiness
       second: 0.5
     - first:
         name: _LargeWaveRefraction
-      second: 1.53
+      second: 1.39
     - first:
         name: _LargeWavesSpeed
       second: 50
@@ -222,13 +222,13 @@ Material:
       second: 0.02
     - first:
         name: _ReflectionIntensity
-      second: 0.436
+      second: 0.1
     - first:
         name: _Refraction
       second: 0.67
     - first:
         name: _ShoreFade
-      second: 0.56
+      second: -0.22
     - first:
         name: _ShoreTransparency
       second: 0.5
@@ -277,19 +277,19 @@ Material:
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _DeepWaterColor
-      second: {r: 1, g: 0.39310348, b: 0, a: 1}
+      second: {r: 0.88235295, g: 0.23732251, b: 0, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _FoamColor
-      second: {r: 0.3823529, g: 0.3879758, b: 0.3879758, a: 1}
+      second: {r: 0.9485294, g: 0.7422772, b: 0.4812392, a: 1}
     - first:
         name: _FogColor
       second: {r: 0.8014706, g: 0.8014706, b: 0.8014706, a: 1}
     - first:
         name: _MainColor
-      second: {r: 0.71323526, g: 0.5082343, b: 0.14159818, a: 1}
+      second: {r: 1, g: 0.47586206, b: 0, a: 1}
     - first:
         name: _SpecularColor
       second: {r: 0.7205882, g: 0.7311851, b: 0.7311851, a: 1}
