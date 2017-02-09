@@ -14,6 +14,7 @@ public class PlayerManager extends MonoBehaviour {
 	static var maxVieIdx : int = 0;
 	private var animator : Animator;
 	var rotateSpeed : float = 20.0;
+	private var levelEnd : boolean = false;
 	
 	private static var instance : PlayerManager;
 	public static function Instance () : PlayerManager {
@@ -36,6 +37,11 @@ public class PlayerManager extends MonoBehaviour {
 	}
 
 	function Update () {
+
+		if (levelEnd){
+			return;
+		}
+
 		if (Input.GetButtonDown("RB")){
 			TriggerWaterConsumption();
 			animator.SetBool("pomoattack", true);
@@ -108,5 +114,10 @@ public class PlayerManager extends MonoBehaviour {
 				collider.enabled = true;
 			}
 		}
+	}
+
+	function TakeOff (){
+		animator.SetTrigger("TakeOff");
+		levelEnd = true;
 	}
 }

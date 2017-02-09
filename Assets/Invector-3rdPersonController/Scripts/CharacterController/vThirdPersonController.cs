@@ -819,6 +819,12 @@ namespace Invector.CharacterController
                 else
                     Application.Quit();
             }			    
-	    }    
+	    }
+
+        void FreezeMoves ()
+        {
+            LockPlayer();
+            this.enabled = false;
+        }
     }    
 }
