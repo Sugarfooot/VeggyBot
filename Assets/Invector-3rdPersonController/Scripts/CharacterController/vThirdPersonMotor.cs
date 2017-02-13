@@ -470,8 +470,8 @@ namespace Invector
 
             hud.healthSlider.maxValue = maxHealth;
             hud.healthSlider.value = currentHealth;
-            hud.staminaSlider.maxValue = maxStamina;
-            hud.staminaSlider.value = currentStamina;
+            // hud.staminaSlider.maxValue = maxStamina;
+            // hud.staminaSlider.value = currentStamina;
 
             if (hud.damaged)
                 hud.damageImage.color = hud.flashColour;

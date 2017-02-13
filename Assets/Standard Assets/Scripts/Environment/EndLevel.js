@@ -2,7 +2,7 @@
 
 import UnityEngine.SceneManagement;
 
-var nextLevel : String;
+var larry : LarryBehaviour;
 
 function Start () {
 
@@ -15,7 +15,10 @@ function Update () {
 function OnTriggerEnter (collider : Collider){
 	if (collider.CompareTag("Player")){
 		GetComponent.<Collider>().enabled = false;
-		print ("CONGRATULATIONS !!");
-		SceneManager.LoadScene(nextLevel);
+		collider.GetComponent.<PlayerManager>().enabled = false;
+		collider.GetComponent.<Animator>().SetFloat("Speed",0.0);
+		collider.SendMessage("FreezeMoves");
+		larry.TakeOff();
 	}
 }
+
