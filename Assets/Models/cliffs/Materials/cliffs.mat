@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: cliffs
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
+  m_Shader: {fileID: 4800000, guid: ce2682afc43314c2abe57fc23f9c61e2, type: 3}
+  m_ShaderKeywords: _LAYERS3 _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -46,6 +46,54 @@ Material:
         m_Scale: {x: 16, y: 16}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _Emissive1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive3
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive4
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex3
+      second:
+        m_Texture: {fileID: 2800000, guid: 4cedc62d445279545ad0040b33010e5d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GlossinessTex4
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _MainTex
       second:
         m_Texture: {fileID: 2800000, guid: 2676db97cfcf2724295aadda4eb5f994, type: 3}
@@ -55,6 +103,30 @@ Material:
         name: _MetallicGlossMap
       second:
         m_Texture: {fileID: 2800000, guid: 52a038f8d348cdf459fe77d54f4c4bdf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal1
+      second:
+        m_Texture: {fileID: 2800000, guid: c563b821cefd70c4895c3e9fffba5f0a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal2
+      second:
+        m_Texture: {fileID: 2800000, guid: 3d5f7cbd16e68e945adb0a2b0150ac12, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal3
+      second:
+        m_Texture: {fileID: 2800000, guid: 40be975a4b159114db7609ec10a7311e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal4
+      second:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -69,10 +141,67 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap3
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap4
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex1
+      second:
+        m_Texture: {fileID: 2800000, guid: 92a026ec8f5143f4891ae9f54874d6df, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex2
+      second:
+        m_Texture: {fileID: 2800000, guid: 1d8a641f06a6e1944b2bbc59b032465f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex3
+      second:
+        m_Texture: {fileID: 2800000, guid: ed1993868f5cc70458c104890a618f84, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex4
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _BumpScale
       second: 1
+    - first:
+        name: _Contrast2
+      second: 0.5
+    - first:
+        name: _Contrast3
+      second: 0
+    - first:
+        name: _Contrast4
+      second: 0.5
     - first:
         name: _Cutoff
       second: 0.5
@@ -80,7 +209,49 @@ Material:
         name: _DetailNormalMapScale
       second: 1
     - first:
+        name: _DistBlendMax
+      second: 100
+    - first:
+        name: _DistBlendMin
+      second: 0
+    - first:
+        name: _DistUVScale1
+      second: 0.5
+    - first:
+        name: _DistUVScale2
+      second: 0.5
+    - first:
+        name: _DistUVScale3
+      second: 0.5
+    - first:
+        name: _DistUVScale4
+      second: 0.5
+    - first:
         name: _DstBlend
+      second: 0
+    - first:
+        name: _EmissiveMult1
+      second: 1
+    - first:
+        name: _EmissiveMult2
+      second: 1
+    - first:
+        name: _EmissiveMult3
+      second: 1
+    - first:
+        name: _EmissiveMult4
+      second: 1
+    - first:
+        name: _FlowAlpha
+      second: 1
+    - first:
+        name: _FlowIntensity
+      second: 1
+    - first:
+        name: _FlowRefraction
+      second: 0.04
+    - first:
+        name: _FlowSpeed
       second: 0
     - first:
         name: _GlossMapScale
@@ -89,10 +260,34 @@ Material:
         name: _Glossiness
       second: 0.5
     - first:
+        name: _Glossiness1
+      second: 0
+    - first:
+        name: _Glossiness2
+      second: 0
+    - first:
+        name: _Glossiness3
+      second: 0.5
+    - first:
+        name: _Glossiness4
+      second: 0.5
+    - first:
         name: _GlossyReflections
       second: 1
     - first:
         name: _Metallic
+      second: 0
+    - first:
+        name: _Metallic1
+      second: 0
+    - first:
+        name: _Metallic2
+      second: 0
+    - first:
+        name: _Metallic3
+      second: 0
+    - first:
+        name: _Metallic4
       second: 0
     - first:
         name: _Mode
@@ -104,6 +299,18 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _Parallax1
+      second: 0.02
+    - first:
+        name: _Parallax2
+      second: 0.02
+    - first:
+        name: _Parallax3
+      second: 0.02
+    - first:
+        name: _Parallax4
+      second: 0.02
+    - first:
         name: _SmoothnessTextureChannel
       second: 0
     - first:
@@ -111,6 +318,18 @@ Material:
       second: 1
     - first:
         name: _SrcBlend
+      second: 1
+    - first:
+        name: _TexScale1
+      second: 8.83
+    - first:
+        name: _TexScale2
+      second: 15.07
+    - first:
+        name: _TexScale3
+      second: 10.81
+    - first:
+        name: _TexScale4
       second: 1
     - first:
         name: _UVSec
@@ -125,3 +344,27 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SpecColor1
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _SpecColor2
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _SpecColor3
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _SpecColor4
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _Tint1
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Tint2
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Tint3
+      second: {r: 1, g: 0.90000004, b: 0.5735294, a: 1}
+    - first:
+        name: _Tint4
+      second: {r: 1, g: 1, b: 1, a: 1}

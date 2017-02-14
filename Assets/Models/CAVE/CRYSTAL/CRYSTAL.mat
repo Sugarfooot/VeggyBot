@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: CRYSTAL
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION
+  m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -18,7 +18,7 @@ Material:
     - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 2800000, guid: a3713d521808d8a4bbf6b60b87140200, type: 3}
+        m_Texture: {fileID: 2800000, guid: f9f07dc4d16d47e4fa8f21a895ccf26b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -42,19 +42,19 @@ Material:
     - first:
         name: _EmissionMap
       second:
-        m_Texture: {fileID: 2800000, guid: f7c0c43676c239141aafdb50d4ac6aad, type: 3}
+        m_Texture: {fileID: 2800000, guid: 65a69d05bf00aa84c9397f2758c5e5c5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: e86b5aa2cf6e2ff48a63a56cb9b1c889, type: 3}
+        m_Texture: {fileID: 2800000, guid: 69eadf95ada8d0248830ae69103b6196, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
       second:
-        m_Texture: {fileID: 2800000, guid: 4a7c1fbb911fe9541ae6e6463e6b4747, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8ad9579e2f406584ebb126e320cbcb9e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -124,4 +124,4 @@ Material:
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+      second: {r: 1, g: 1, b: 1, a: 1}
