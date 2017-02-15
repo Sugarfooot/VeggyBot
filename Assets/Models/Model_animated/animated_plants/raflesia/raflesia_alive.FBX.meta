@@ -76,6 +76,7 @@ ModelImporter:
     4300000: RAFLESIA_LOW
     7400000: TOUSSE
     9500000: //RootNode
+    11100000: //RootNode
     13700000: RAFLESIA_LOW
   materials:
     importMaterials: 1
@@ -95,15 +96,15 @@ ModelImporter:
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
-    animationWrapMode: 0
+    animationWrapMode: 2
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
       name: TOUSSE
       takeName: Take 001
-      firstFrame: 0
-      lastFrame: 220
-      wrapMode: 0
+      firstFrame: 25
+      lastFrame: 125
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
@@ -132,62 +133,6 @@ ModelImporter:
       - path: Bone001/Bone002/Bone003
         weight: 1
       - path: Bone001/Bone002/Bone003/Bone004
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone005
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone005/Bone006
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone005/Bone006/Bone007
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone005/Bone006/Bone007/Bone008
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone005/Bone006/Bone007/Bone008/Bone009
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone005/Bone006/Bone007/Bone008/Bone009/Bone010
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone011
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone011/Bone012
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone011/Bone012/Bone013
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone011/Bone012/Bone013/Bone014
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone011/Bone012/Bone013/Bone014/Bone015
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone011/Bone012/Bone013/Bone014/Bone015/Bone016
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone017
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone017/Bone018
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone017/Bone018/Bone019
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone017/Bone018/Bone019/Bone020
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone017/Bone018/Bone019/Bone020/Bone021
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone022
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone022/Bone023
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone022/Bone023/Bone024
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone022/Bone023/Bone024/Bone025
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone022/Bone023/Bone024/Bone025/Bone026
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone027
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone027/Bone028
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone027/Bone028/Bone029
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone027/Bone028/Bone029/Bone030
-        weight: 1
-      - path: Bone001/Bone002/Bone003/Bone004/Dummy001/Bone027/Bone028/Bone029/Bone030/Bone031
         weight: 1
       - path: RAFLESIA_LOW
         weight: 1
@@ -231,7 +176,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
