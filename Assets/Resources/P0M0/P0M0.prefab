@@ -779,6 +779,7 @@ GameObject:
   - 136: {fileID: 136000011640980180}
   - 114: {fileID: 114000010569778646}
   - 114: {fileID: 114000010316936272}
+  - 114: {fileID: 114000012948994140}
   m_Layer: 8
   m_Name: P0M0
   m_TagString: Player
@@ -924,7 +925,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012198763852}
   m_LocalRotation: {x: -0.3608116, y: -0.60802364, z: -0.36063266, w: 0.60833085}
-  m_LocalPosition: {x: -0.08795584, y: -0.048062805, z: 0.00004414613}
+  m_LocalPosition: {x: -0.08795632, y: -0.04806197, z: 0.00004414648}
   m_LocalScale: {x: 1.0000012, y: 0.9999994, z: 0.999998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -979,7 +980,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011996422648}
   m_LocalRotation: {x: -0.3605304, y: -0.60840213, z: -0.36073413, w: 0.6080589}
-  m_LocalPosition: {x: -0.087932445, y: -0.048083622, z: -0.000050231938}
+  m_LocalPosition: {x: -0.087932885, y: -0.04808278, z: -0.000050238225}
   m_LocalScale: {x: 1.0000002, y: 1, z: 0.9999997}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1230,7 +1231,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014196666898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.356262, y: 2.4689198, z: 15.046987}
+  m_LocalPosition: {x: 112.67, y: 125.79, z: 146.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1332,7 +1333,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011134316908}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.07, y: 0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1651,7 +1652,7 @@ MonoBehaviour:
   stopMoveHeight: 0.65
   stopMoveDistance: 0.5
   locomotionType: 0
-  extraMoveSpeed: 0
+  extraMoveSpeed: 2
   extraStrafeSpeed: 0
   rotateByWorld: 0
   turnOnSpot: 1
@@ -1662,8 +1663,8 @@ MonoBehaviour:
   stepOffsetStart: 0.05
   stepSmooth: 2
   slopeLimit: 45
-  extraGravity: 4
-  landHighVel: -5
+  extraGravity: 0
+  landHighVel: -9999
   ragdollVel: -8
   headWeight: 1
   freeBodyWeight: 0.25
@@ -1776,6 +1777,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b04f4ac1b776ff48b5f78a97b57f776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000012948994140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014196666898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6fedb9d1164794c8d0a9d5dce3be6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterIndicators: []
+  shootConsumptionSpeed: 0.1
+  vies: []
+  rotateSpeed: 20
 --- !u!135 &135000012476460086
 SphereCollider:
   m_ObjectHideFlags: 1
