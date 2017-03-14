@@ -16,6 +16,6 @@ function OnTriggerEnter (collider : Collider){
 		pomoAnimator.SetTrigger("TakeOff");
 		larry.TakeOffAnim();
 		yield WaitForSeconds (1.6);
-		UIManager.Instance().LoadNextLevel();
+		//UIManager.Instance().LoadNextLevel();
 	}
 }
