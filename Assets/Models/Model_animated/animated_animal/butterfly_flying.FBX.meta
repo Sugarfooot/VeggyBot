@@ -19,9 +19,19 @@ ModelImporter:
     400008: Box003
     400010: //RootNode
     400012: Dummy001
+    2300000: Box003
+    3300000: Box003
     4300000: Box003
-    7400000: Take 001
+    7400000: anim_butterfly
+    7400002: anim_butterfly //// Dummy002
     9500000: //RootNode
+    11100000: //RootNode
+    11100002: Bone001
+    11100004: Bone002
+    11100006: Bone003
+    11100008: Bone004
+    11100010: Box003
+    11100012: Dummy001
     13700000: Box003
   materials:
     importMaterials: 1
@@ -37,13 +47,55 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
-    animationWrapMode: 0
+    animationWrapMode: 2
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: anim_butterfly
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 295
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dummy001
+        weight: 1
+      - path: Dummy001/Bone001
+        weight: 1
+      - path: Dummy001/Bone002
+        weight: 1
+      - path: Dummy001/Bone003
+        weight: 1
+      - path: Dummy001/Bone004
+        weight: 1
+      - path: Dummy001/Box003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
