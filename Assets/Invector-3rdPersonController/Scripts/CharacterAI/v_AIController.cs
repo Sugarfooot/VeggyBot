@@ -161,7 +161,7 @@ namespace Invector
             {
                 Debug.LogWarning("Missing NavMesh Bake, character will die - Please Bake your navmesh again!");
                 currentHealth = 0;
-                GetComponent<EnemyPlus>().TriggerMechanism();
+                // GetComponent<EnemyPlus>().TriggerMechanism();
             }
         }
 

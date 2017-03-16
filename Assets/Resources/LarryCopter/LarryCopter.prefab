@@ -309,9 +309,10 @@ GameObject:
   - 4: {fileID: 4000013433563036}
   - 95: {fileID: 95000010526040224}
   - 114: {fileID: 114000012258052810}
+  - 65: {fileID: 65000012630164004}
   m_Layer: 0
   m_Name: LarryCopter
-  m_TagString: Untagged
+  m_TagString: Larry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -532,7 +533,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010195356706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 117.100746, y: -19.14, z: 134.75693}
+  m_LocalPosition: {x: 210.97, y: 96.60404, z: 395.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -689,6 +690,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011980447676}
   m_Mesh: {fileID: 4300002, guid: 0b59120adbb821146ab120e66310b198, type: 3}
+--- !u!65 &65000012630164004
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013690646670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26, y: 1.3, z: 0.66}
+  m_Center: {x: 0, y: 0.6, z: -0.12}
 --- !u!95 &95000010526040224
 Animator:
   serializedVersion: 3
@@ -717,7 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f7dafe9949783438f7b5e483a4d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pomo: {fileID: 0}
+  takeOffTarget: {fileID: 0}
   larrymator: {fileID: 95000010526040224}
 --- !u!137 &137000011807903022
 SkinnedMeshRenderer:
