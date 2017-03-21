@@ -15,6 +15,7 @@ public class PlayerManager extends MonoBehaviour {
 	private var animator : Animator;
 	var rotateSpeed : float = 20.0;
 	private var levelEnd : boolean = false;
+	var hose : ParticleSystem;
 	
 	private static var instance : PlayerManager;
 	public static function Instance () : PlayerManager {
@@ -67,10 +68,11 @@ public class PlayerManager extends MonoBehaviour {
 			isShooting = false;
 			// animator.ResetTrigger("MeleeAttack");
             animator.SetBool("Attack", false);
+            hose.Stop();
             // animator.SetTrigger("StopAttack");
-            for (var water : GameObject in GameObject.FindGameObjectsWithTag("WaterDamage")){
-            	Destroy(water);
-            }
+            // for (var water : GameObject in GameObject.FindGameObjectsWithTag("WaterDamage")){
+            // 	Destroy(water);
+            // }
 		}
 	}
 
@@ -102,6 +104,7 @@ public class PlayerManager extends MonoBehaviour {
 	function TriggerWaterConsumption (){
 		yield WaitForSeconds (0.1);
 		isShooting = true;
+		hose.Play();
 	}
 
 	function OnTriggerEnter (collider : Collider){
