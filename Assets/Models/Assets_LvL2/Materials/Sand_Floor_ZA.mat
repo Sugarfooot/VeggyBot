@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Rock_Tile
+  m_Name: Sand_Floor_ZA
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 1
@@ -18,14 +18,14 @@ Material:
     - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 2800000, guid: ea0f7c26d80f84147a2ddfd201971afb, type: 3}
+        m_Texture: {fileID: 2800000, guid: cdec1d55301fbc34f91f824af9ba33b1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _DetailAlbedoMap
       second:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: -2.02, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _DetailMask
@@ -43,18 +43,18 @@ Material:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 537}
+        m_Scale: {x: 10, y: 10}
+        m_Offset: {x: 0, y: 0}
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 2677c261e16bf3f4aaac96742e665476, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 537}
+        m_Texture: {fileID: 2800000, guid: 8b01b79c3b22b5e4ca9f10fc05eede3c, type: 3}
+        m_Scale: {x: 10, y: 10}
+        m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
       second:
-        m_Texture: {fileID: 2800000, guid: 644fa3fa7a11a8b4f97a5a15957625c5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 61ada8160f270744d911d2584356da72, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -66,13 +66,13 @@ Material:
     - first:
         name: _ParallaxMap
       second:
-        m_Texture: {fileID: 2800000, guid: 8671309e3bbff184cbf072e5ca739adb, type: 3}
+        m_Texture: {fileID: 2800000, guid: e6c977974c3d74b4089d764381e4e434, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _BumpScale
-      second: 1
+      second: 0.5
     - first:
         name: _Cutoff
       second: 0.5
@@ -102,7 +102,7 @@ Material:
       second: 1
     - first:
         name: _Parallax
-      second: 0.08
+      second: 0.0508
     - first:
         name: _SmoothnessTextureChannel
       second: 0
