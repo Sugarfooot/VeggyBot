@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ty6604-ROCK_TILED_occlusion
+  m_Name: Rock_Tile
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 1
@@ -25,7 +25,7 @@ Material:
         name: _DetailAlbedoMap
       second:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _DetailMask
@@ -43,14 +43,14 @@ Material:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 4.15, y: 2.86}
-        m_Offset: {x: 0, y: -1.37}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 537}
     - first:
         name: _MainTex
       second:
         m_Texture: {fileID: 2800000, guid: 2677c261e16bf3f4aaac96742e665476, type: 3}
-        m_Scale: {x: 4.15, y: 2.86}
-        m_Offset: {x: 0, y: -1.37}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 537}
     - first:
         name: _MetallicGlossMap
       second:
