@@ -57,11 +57,11 @@ public class PlayerMoves extends MonoBehaviour {
 	
 	// Update is called once per frame
 	function Update () {
-		if (Input.GetButtonDown("X") && canGather)
-        {
-            m_Animable.Gather();
-            StartCoroutine("GatherCD");
-        }
+		// if (Input.GetButtonDown("X") && canGather)
+  //       {
+  //           m_Animable.Gather();
+  //           StartCoroutine("GatherCD");
+  //       }
 	}
 
     function GatherCD ()

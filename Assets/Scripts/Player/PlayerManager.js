@@ -16,6 +16,8 @@ public class PlayerManager extends MonoBehaviour {
 	var rotateSpeed : float = 20.0;
 	private var levelEnd : boolean = false;
 	var hose : ParticleSystem;
+	private var transformToLock : Transform[] = []; 
+	private var enemyLockedIdx : int = -1;
 	
 	private static var instance : PlayerManager;
 	public static function Instance () : PlayerManager {
@@ -57,15 +59,20 @@ public class PlayerManager extends MonoBehaviour {
 					waterIndicators[i].fillAmount = waterLevel;
 				}
 			}
-			if (Input.GetAxis("LeftAnalogHorizontal") > 0){
-				transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
-			}
-			else if (Input.GetAxis("LeftAnalogHorizontal") < 0){
-				transform.Rotate(-Vector3.up * Time.deltaTime * rotateSpeed);
+			// if (Input.GetAxis("LeftAnalogHorizontal") > 0){
+			// 	transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
+			// }
+			// else if (Input.GetAxis("LeftAnalogHorizontal") < 0){
+			// 	transform.Rotate(-Vector3.up * Time.deltaTime * rotateSpeed);
+			// }
+
+			if (transformToLock.Length > 0){
+				transform.LookAt(transformToLock[enemyLockedIdx]);
 			}
 		}
 		if (Input.GetButtonUp("RB") || (!Input.GetButton("RB") && isShooting)){
 			isShooting = false;
+			UpdateLockableEnemiesIdx();
 			// animator.ResetTrigger("MeleeAttack");
             animator.SetBool("Attack", false);
             hose.Stop();
@@ -117,6 +124,44 @@ public class PlayerManager extends MonoBehaviour {
 				Respawn();
 				yield WaitForSeconds(Time.deltaTime);
 				collider.enabled = true;
+			}
+		}
+		if (collider.CompareTag("Enemy")){
+			if (transformToLock.Length == 1){
+				enemyLockedIdx = 0;
+			}
+			transformToLock += [collider.transform];
+		}
+	}
+
+	function OnTriggerExit (collider : Collider){
+		if (collider.CompareTag("Enemy")){
+			UpdateLockableEnemies(collider.transform);
+		}
+	}
+
+	function UpdateLockableEnemies (removedEnemyTrs : Transform){
+		if (transformToLock.Length == 1){
+			transformToLock = [];
+			enemyLockedIdx = -1;
+			return;
+		}
+		var tmpTrs : Transform[] = transformToLock;
+		transformToLock = [];
+		for (var trs in tmpTrs){
+			if (trs != removedEnemyTrs){
+				transformToLock += [trs];
+			}
+		}
+	}
+
+	function UpdateLockableEnemiesIdx (){
+		if (transformToLock.Length > 0){
+			if (enemyLockedIdx + 1 >= transformToLock.Length){
+				enemyLockedIdx = 0;
+			}
+			else {
+				enemyLockedIdx++;
 			}
 		}
 	}
