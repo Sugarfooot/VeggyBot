@@ -18,7 +18,6 @@ function OnTriggerEnter (collider : Collider){
 		pomoAnimator.SetTrigger("TakeOff");
 		collider.GetComponent.<LarryBehaviour>().TakeOffAnim();
 		yield WaitForSeconds (1.6);
-		SceneManager.LoadScene("proto_02_blockOut");
-		//SceneManager.LoadScene(SceneManager.GetSceneAt(SceneManager.GetActiveScene().buildIndex + 1).name);
+		UIManager.Instance().LoadNextLevel();
 	}
 }

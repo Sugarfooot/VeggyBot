@@ -4,19 +4,20 @@ import UnityEngine.UI;
 
 public class PlayerManager extends MonoBehaviour {
 
+	var pomoCharacter : Character;
+	private var currentHealth : float;
+	private var bDamaged : boolean = true;
 	var waterIndicators : Image[];
 	private var isShooting : boolean = false;
 	private var spawnPoint : Vector3;
 	private var waterLevel : float = 0;
 	var shootConsumptionSpeed : float = 0.1;
-	var vies : Image[];
-	private var vieIdx : int = 0;
-	static var maxVieIdx : int = 0;
+	var vimage : Image;
 	private var animator : Animator;
 	var rotateSpeed : float = 20.0;
 	private var levelEnd : boolean = false;
 	var hose : ParticleSystem;
-	private var transformToLock : Transform[] = []; 
+	private var transformToLock : Transform[] = [];
 	private var enemyLockedIdx : int = -1;
 	
 	private static var instance : PlayerManager;
@@ -35,12 +36,11 @@ public class PlayerManager extends MonoBehaviour {
 
 	function Start () {
 		spawnPoint = transform.position;
-		vieIdx = maxVieIdx;
 		animator = GetComponent.<Animator>();
+		currentHealth = pomoCharacter.maxSoul;
 	}
 
 	function Update () {
-
 		if (levelEnd){
 			return;
 		}
@@ -85,17 +85,11 @@ public class PlayerManager extends MonoBehaviour {
 
 	function Respawn (){
 		transform.position = spawnPoint;
-		vieIdx = PlayerPrefs.GetInt("Lives",vieIdx);
-		if (vies.Length > 0){
-			for (var i = -1; i < vieIdx; i++){
-				vies[i+1].gameObject.SetActive(true);
-			}
-		}
+		currentHealth = pomoCharacter.maxSoul;
 	}
 
 	function SetNewSpawnPoint (){
 		spawnPoint = transform.position;
-		PlayerPrefs.SetInt("Lives",vieIdx);
 	}
 
 	function AddWaterLevel (quantity : float){
@@ -115,16 +109,10 @@ public class PlayerManager extends MonoBehaviour {
 	}
 
 	function OnTriggerEnter (collider : Collider){
-		if (collider.CompareTag("Damage")){
+		if (collider.CompareTag("EnemyWeapon")){
 			collider.enabled = false;
-			vies[vieIdx].gameObject.SetActive(false);
-			vieIdx --;
-			if(vieIdx == -1){
-				yield WaitForSeconds(0.5);
-				Respawn();
-				yield WaitForSeconds(Time.deltaTime);
-				collider.enabled = true;
-			}
+			yield WaitForSeconds(0.5);
+			collider.enabled = true;
 		}
 		if (collider.CompareTag("Enemy")){
 			if (transformToLock.Length == 1){
@@ -137,6 +125,28 @@ public class PlayerManager extends MonoBehaviour {
 	function OnTriggerExit (collider : Collider){
 		if (collider.CompareTag("Enemy")){
 			UpdateLockableEnemies(collider.transform);
+		}
+	}
+
+	function OnParticleCollision (weaponObject : GameObject){
+		if (weaponObject.CompareTag("EnemyWeapon")){
+			if (bDamaged){
+				TakeDamage(10);
+			}
+		}
+	}
+
+	function TakeDamage (amount : int){
+		if (bDamaged){
+			bDamaged = false;
+			currentHealth -= amount * 1.0;
+			UIManager.Instance().UpdateLifeGear(currentHealth);
+			if (currentHealth <= 0){
+				Respawn();
+				return;
+			}
+			yield WaitForSeconds (0.5);
+			bDamaged = true;
 		}
 	}
 

@@ -11,6 +11,7 @@ var attackDistance : float;
 var playerSpotted : boolean = false;
 var isPatroller : boolean = false;
 var patrolWayParent : Transform;
+var particleAttack : ParticleSystem;
 private var targetPlayer : GameObject = null;
 private var isStalking : boolean = false;
 private var isDead : boolean = false;
@@ -64,6 +65,9 @@ function SpotPlayer (){
 function Attack (){
 	isStalking = false;
 	aiAnimator.SetTrigger("Attack");
+	if (particleAttack != null){
+		particleAttack.Play();
+	}
 	yield WaitForSeconds (1.5);
 	isStalking = true;
 }
@@ -90,7 +94,9 @@ function TakeDamage (amount : int){
 }
 
 function OnParticleCollision (weaponObject : GameObject){
-	TakeDamage(10);
+	if (weaponObject.CompareTag("PlayerWeapon")){
+		TakeDamage(10);
+	}
 }
 
 function Die (){
