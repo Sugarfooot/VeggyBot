@@ -145,7 +145,7 @@ GameObject:
   - 114: {fileID: 114000012658268470}
   - 114: {fileID: 114000011767533646}
   - 114: {fileID: 114000012295242794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: P0M0_NotIV
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   - 199: {fileID: 199000012356357206}
   m_Layer: 2
   m_Name: HoseParticles
-  m_TagString: WaterDamage
+  m_TagString: PlayerWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1174,7 +1174,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010757740780}
   m_LocalRotation: {x: -0, y: -0.044052906, z: -0, w: 0.9990292}
-  m_LocalPosition: {x: 217.76495, y: 70.42264, z: 254.86133}
+  m_LocalPosition: {x: 128.54256, y: 117.84555, z: 225.78883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -4.906, z: 0}
   m_Children:
@@ -1675,9 +1675,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f6fedb9d1164794c8d0a9d5dce3be6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pomoCharacter: {fileID: 11400000, guid: 305ac4bd5cdf9e74cb0f4f68498b29f2, type: 2}
   waterIndicators: []
   shootConsumptionSpeed: 0.1
-  vies: []
+  vimage: {fileID: 0}
   rotateSpeed: 20
   hose: {fileID: 198000010501702570}
 --- !u!136 &136000011603197694
@@ -1832,7 +1833,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: -787927094
+  randomSeed: 1852909591
   InitialModule:
     serializedVersion: 2
     enabled: 1
