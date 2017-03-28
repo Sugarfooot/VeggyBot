@@ -5,6 +5,7 @@ import UnityEngine.SceneManagement;
 
 class UIManager extends MonoBehaviour{
 
+	var vimage : Image;
 	var pauseMenu : GameObject;
 	var pauseCursorsParent : Transform;
 	var cursorInterval : float = 0.2;
@@ -113,6 +114,10 @@ class UIManager extends MonoBehaviour{
 		}
 		yield WaitForSeconds (cursorInterval);
 		canMoveCursor = true;
+	}
+
+	function UpdateLifeGear (healthValue : float){
+		vimage.fillAmount = healthValue / 100.0 ;
 	}
 
 	function LoadNextLevel (){
