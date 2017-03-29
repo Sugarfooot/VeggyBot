@@ -84,8 +84,13 @@ public class PlayerManager extends MonoBehaviour {
 	}
 
 	function Respawn (){
-		transform.position = spawnPoint;
+		animator.SetTrigger("Death");
+		yield WaitForSeconds(1.49);
+		animator.SetTrigger("Idle");
 		currentHealth = pomoCharacter.maxSoul;
+		UIManager.Instance().UpdateLifeGear(currentHealth);
+		bDamaged = true;
+		transform.position = spawnPoint;
 	}
 
 	function SetNewSpawnPoint (){
@@ -109,7 +114,7 @@ public class PlayerManager extends MonoBehaviour {
 	}
 
 	function OnTriggerEnter (collider : Collider){
-		if (collider.CompareTag("EnemyWeapon")){
+		if (collider.CompareTag("Damage")){
 			collider.enabled = false;
 			yield WaitForSeconds(0.5);
 			collider.enabled = true;
