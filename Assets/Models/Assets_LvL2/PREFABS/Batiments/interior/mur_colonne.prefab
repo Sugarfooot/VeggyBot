@@ -21,6 +21,7 @@ GameObject:
   - 4: {fileID: 4000010718550978}
   - 33: {fileID: 33000012008830824}
   - 23: {fileID: 23000013847909366}
+  - 64: {fileID: 64000012059740996}
   m_Layer: 0
   m_Name: mur_colonne
   m_TagString: Untagged
@@ -76,4 +77,16 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012804784832}
+  m_Mesh: {fileID: 4300000, guid: daa0b87a085a1a047ac8dc8af346eb91, type: 3}
+--- !u!64 &64000012059740996
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012804784832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: daa0b87a085a1a047ac8dc8af346eb91, type: 3}
