@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: blend_rock
+  m_Name: blend_dalles
   m_Shader: {fileID: 4800000, guid: ce2682afc43314c2abe57fc23f9c61e2, type: 3}
   m_ShaderKeywords: _LAYERS3 _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 1
@@ -66,19 +66,19 @@ Material:
     - first:
         name: _GlossinessTex1
       second:
-        m_Texture: {fileID: 2800000, guid: fca9bbb6a7b7bd84db31d149625c9dbe, type: 3}
+        m_Texture: {fileID: 2800000, guid: d47e0cdf17d68304caf9176480d84fdd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _GlossinessTex2
       second:
-        m_Texture: {fileID: 2800000, guid: a5ee3dbb12ae9da4d8ca9c7e0d04b52d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 61ada8160f270744d911d2584356da72, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _GlossinessTex3
       second:
-        m_Texture: {fileID: 2800000, guid: 15fbf0074be523a408f7862c4de84ca8, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -96,19 +96,19 @@ Material:
     - first:
         name: _Normal1
       second:
-        m_Texture: {fileID: 2800000, guid: 07d10689f6dc5844fb2dbb2305c0e9e0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1bacddc2e1b4766499fb1352fd6f320f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _Normal2
       second:
-        m_Texture: {fileID: 2800000, guid: 1e8c6dc2688f3684095db2d28dd6a8a1, type: 3}
+        m_Texture: {fileID: 2800000, guid: cdec1d55301fbc34f91f824af9ba33b1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _Normal3
       second:
-        m_Texture: {fileID: 2800000, guid: 997fb98bd9d836c45b41ad9e1421d88f, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -144,19 +144,19 @@ Material:
     - first:
         name: _Tex1
       second:
-        m_Texture: {fileID: 2800000, guid: e504f4b6a3e458a4eacf824b4799670b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0346cd5c888d4c947a606b973313d32b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _Tex2
       second:
-        m_Texture: {fileID: 2800000, guid: 317eddb2ac7ec3d4f99d11c2556731ce, type: 3}
+        m_Texture: {fileID: 2800000, guid: dd600a5f3b7acaf47862bcaa545e2eaa, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _Tex3
       second:
-        m_Texture: {fileID: 2800000, guid: f474ae7a734cd3341a9cd01731299eb0, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -273,10 +273,10 @@ Material:
       second: 1
     - first:
         name: _TexScale1
-      second: 1.73
+      second: 5.77
     - first:
         name: _TexScale2
-      second: 1
+      second: 6.08
     - first:
         name: _TexScale3
       second: 2.6
