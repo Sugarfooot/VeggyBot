@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: colonne_02
+  m_Name: colonne_02_top
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION
+  m_ShaderKeywords: _EMISSION _NORMALMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -18,7 +18,7 @@ Material:
     - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: da07e2ce742f1ac47835d9b78fbf8fd2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -48,7 +48,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 52f97fa89e4730b4f954c6e4a266658b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -87,7 +87,7 @@ Material:
       second: 1
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 0
     - first:
         name: _GlossyReflections
       second: 1
