@@ -1174,7 +1174,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010757740780}
   m_LocalRotation: {x: -0, y: -0.044052906, z: -0, w: 0.9990292}
-  m_LocalPosition: {x: 128.54256, y: 117.84555, z: 225.78883}
+  m_LocalPosition: {x: 110.35386, y: 124.4, z: 152.03337}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -4.906, z: 0}
   m_Children:
@@ -1833,12 +1833,12 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: 1852909591
+  randomSeed: -738283791
   InitialModule:
     serializedVersion: 2
     enabled: 1
     startLifetime:
-      scalar: 0.1
+      scalar: 6.32
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1999,7 +1999,7 @@ ParticleSystem:
       maxColor: {r: 0.34117648, g: 0.7372549, b: 0.75686276, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 0.02
+      scalar: 0.54
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3550,7 +3550,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 09a99b10658931c46a438c586a49ec65, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -3566,7 +3566,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
