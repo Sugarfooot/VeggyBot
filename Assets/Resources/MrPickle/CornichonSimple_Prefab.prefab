@@ -556,6 +556,7 @@ GameObject:
   - 4: {fileID: 4000012533502970}
   - 198: {fileID: 198000010422288128}
   - 199: {fileID: 199000011354494014}
+  - 114: {fileID: 114000013582251608}
   m_Layer: 0
   m_Name: FlytoxEmitter
   m_TagString: EnemyWeapon
@@ -2011,6 +2012,20 @@ MonoBehaviour:
   patrolWayParent: {fileID: 0}
   particleAttack: {fileID: 198000010422288128}
   spottedMtl: {fileID: 0}
+--- !u!114 &114000013582251608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012731142634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c719796b6ab97a64b9a35989ee699f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 5
+  rows: 5
+  framesPerSecond: 24
 --- !u!135 &135000013821711012
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -2346,7 +2361,7 @@ ParticleSystem:
       maxColor: {r: 0.5254902, g: 0.75686276, b: 0.21568628, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 0.1
+      scalar: 0.7
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2557,7 +2572,7 @@ ParticleSystem:
       minMaxState: 0
     randomizeRotationDirection: 0
     gravityModifier: 0
-    maxNumParticles: 1000
+    maxNumParticles: 50
     size3D: 0
     rotation3D: 0
   ShapeModule:
@@ -3867,7 +3882,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 94545a56ae55b594bb5bb1b61066d82e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -3894,7 +3909,7 @@ ParticleSystemRenderer:
   m_NormalDirection: 1
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
