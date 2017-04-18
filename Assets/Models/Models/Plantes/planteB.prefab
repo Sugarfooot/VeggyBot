@@ -664,6 +664,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013249980442}
+  - 111: {fileID: 111000014220743150}
   m_Layer: 0
   m_Name: planteB
   m_TagString: Untagged
@@ -4390,6 +4391,20 @@ Transform:
   - {fileID: 4000012025233140}
   m_Father: {fileID: 4000013249980442}
   m_RootOrder: 0
+--- !u!111 &111000014220743150
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011427918478}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 42efee0e89f42804697fe7d30fb9cdb0, type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!137 &137000014011841536
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
