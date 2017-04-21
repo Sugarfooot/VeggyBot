@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: tree_huge
+  m_Name: MAT_VEG_TRE_huge
   m_Shader: {fileID: 4800000, guid: f8bc623a59dbf54409543ece3964f416, type: 3}
   m_ShaderKeywords: _BENDINGCONTROLS_VERTEX_COLORS _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
@@ -64,6 +64,18 @@ Material:
         m_Scale: {x: 2, y: 10}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _Emissive1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Emissive2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _MS_base
       second:
         m_Texture: {fileID: 2800000, guid: 5538bdaec9635404ca01f3eb7f95bbd9, type: 3}
@@ -100,6 +112,18 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _Normal1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _OcclusionMap
       second:
         m_Texture: {fileID: 0}
@@ -107,6 +131,30 @@ Material:
         m_Offset: {x: 0, y: 0}
     - first:
         name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex1
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex2
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -122,19 +170,58 @@ Material:
         name: _BumpScale
       second: 1
     - first:
+        name: _Contrast2
+      second: 0.5
+    - first:
         name: _Cutoff
       second: 0.5
     - first:
         name: _DetailNormalMapScale
       second: 1
     - first:
+        name: _DistBlendMax
+      second: 100
+    - first:
+        name: _DistBlendMin
+      second: 0
+    - first:
+        name: _DistUVScale1
+      second: 0.5
+    - first:
+        name: _DistUVScale2
+      second: 0.5
+    - first:
         name: _DstBlend
+      second: 0
+    - first:
+        name: _EmissiveMult1
+      second: 1
+    - first:
+        name: _EmissiveMult2
+      second: 1
+    - first:
+        name: _FlowAlpha
+      second: 1
+    - first:
+        name: _FlowIntensity
+      second: 1
+    - first:
+        name: _FlowRefraction
+      second: 0.04
+    - first:
+        name: _FlowSpeed
       second: 0
     - first:
         name: _GlossMapScale
       second: 0.49
     - first:
         name: _Glossiness
+      second: 0.5
+    - first:
+        name: _Glossiness1
+      second: 0.5
+    - first:
+        name: _Glossiness2
       second: 0.5
     - first:
         name: _GlossyReflections
@@ -153,6 +240,12 @@ Material:
       second: 1
     - first:
         name: _Parallax
+      second: 0.02
+    - first:
+        name: _Parallax1
+      second: 0.02
+    - first:
+        name: _Parallax2
       second: 0.02
     - first:
         name: _ShadowStrength
@@ -176,6 +269,12 @@ Material:
         name: _SrcBlend
       second: 1
     - first:
+        name: _TexScale1
+      second: 1
+    - first:
+        name: _TexScale2
+      second: 1
+    - first:
         name: _TranslucencyViewDependency
       second: 0.7
     - first:
@@ -183,6 +282,9 @@ Material:
       second: 0
     - first:
         name: _UV_angle_base
+      second: 0
+    - first:
+        name: _UV_angle_base_red
       second: 0
     - first:
         name: _U_tiling_base
@@ -206,6 +308,18 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SpecColor1
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _SpecColor2
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
+    - first:
+        name: _Tint1
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Tint2
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _TranslucencyColor
       second: {r: 0.73, g: 0.85, b: 0.41, a: 1}
