@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010457473140}
-  - 95: {fileID: 95000010924905218}
   - 205: {fileID: 205000013816825136}
   m_Layer: 0
   m_Name: BUI_PIK_box
@@ -326,23 +325,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300002, guid: 3e6f2cad791baf04695aad1d2c9775e2, type: 3}
---- !u!95 &95000010924905218
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010007212954}
-  m_Enabled: 0
-  m_Avatar: {fileID: 9000000, guid: 3e6f2cad791baf04695aad1d2c9775e2, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!205 &205000013816825136
 LODGroup:
   m_ObjectHideFlags: 1
