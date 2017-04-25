@@ -74,6 +74,12 @@ public class PlayerMoves extends MonoBehaviour {
 
 	function FixedUpdate()
     {
+    	if (transform.rotation.x != 0){
+    		transform.rotation.x = 0;
+    	}
+    	if (transform.rotation.z != 0){
+    		transform.rotation.z = 0;
+    	}
 
         if (isDead)
         {
