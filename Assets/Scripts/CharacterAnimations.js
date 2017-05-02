@@ -2,9 +2,12 @@
 
 private var animator : Animator;
 
+function Awake (){
+	animator = GetComponent.<Animator>();
+}
+
 function Start ()
 {
-	animator = GetComponent.<Animator>();
     animator.applyRootMotion = true;
 }
 
