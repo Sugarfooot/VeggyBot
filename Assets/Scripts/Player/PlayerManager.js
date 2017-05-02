@@ -22,6 +22,10 @@ public class PlayerManager extends MonoBehaviour {
 	private var transformToLock : Transform[] = [];
 	private var enemyLockedIdx : int = -1;
 	private var lockOn : Transform = null;
+	private var isDead : boolean = false; 
+
+	var refTrs : Transform;
+	var armTrs : Transform;
 	
 	private static var instance : PlayerManager;
 	public static function Instance () : PlayerManager {
@@ -44,7 +48,7 @@ public class PlayerManager extends MonoBehaviour {
 	}
 
 	function Update () {
-		if (levelEnd){
+		if (levelEnd || isDead){
 			return;
 		}
 
@@ -52,15 +56,15 @@ public class PlayerManager extends MonoBehaviour {
 			if (transformToLock.Length > 0){
 				lockOn = GetClosestEnemy();
 			}
+			if (lockOn != null){
+				transform.LookAt(Vector3(lockOn.position.x, transform.position.y, lockOn.position.z));
+			}
 			StartShooting();
 		}
 
 		if (Input.GetButton("RB") && isShooting && !canShoot){
 			if (UIManager.Instance().ConsumeWaterTank() <= 0){
 				StopShooting();
-			}
-			if (lockOn != null){
-				// transform.LookAt(Vector3(lockOn.position.x, transform.position.y, lockOn.position.z));
 			}
 		}
 		if (Input.GetButtonUp("RB") || (!Input.GetButton("RB") && isShooting)){
@@ -79,9 +83,13 @@ public class PlayerManager extends MonoBehaviour {
 	}
 
 	function OnAnimatorIK (){
-		if (transformToLock.Length > 0 && isShooting){
+		if (transformToLock.Length > 0 && isShooting && lockOn != null){
 			animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
 			animator.SetIKPosition(AvatarIKGoal.RightHand, Vector3(lockOn.position.x, lockOn.position.y + 1, lockOn.position.z));
+			if (armTrs.localRotation.eulerAngles.y - refTrs.localRotation.eulerAngles.y > 140 && armTrs.localRotation.eulerAngles.y - refTrs.localRotation.eulerAngles.y < 340){
+				lockOn = null;
+				animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 0);
+			}
 		}
 	}
 
@@ -100,13 +108,16 @@ public class PlayerManager extends MonoBehaviour {
 	}
 
 	function Respawn (){
+		isDead = true;
 		animator.SetTrigger("Death");
+		StopShooting();
 		yield WaitForSeconds(1.49);
 		animator.SetTrigger("Idle");
 		currentHealth = pomoCharacter.maxSoul;
 		UIManager.Instance().UpdateLifeGear(currentHealth);
 		bDamaged = true;
 		transform.position = spawnPoint;
+		isDead = false;
 	}
 
 	function SetNewSpawnPoint (){

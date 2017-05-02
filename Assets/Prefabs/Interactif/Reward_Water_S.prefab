@@ -21,7 +21,8 @@ GameObject:
   - 4: {fileID: 4000013318745006}
   - 33: {fileID: 33000010317971880}
   - 23: {fileID: 23000011743580136}
-  - 65: {fileID: 65000014287463456}
+  - 65: {fileID: 65000011844589506}
+  - 114: {fileID: 114000014126090606}
   m_Layer: 0
   m_Name: Reward_Water_S
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012705372936}
   m_LocalRotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 102.06184, y: 79.762794, z: 338.0199}
+  m_LocalPosition: {x: 4.2373414, y: -0.47, z: -7.194311}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -79,7 +80,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012705372936}
   m_Mesh: {fileID: 4300000, guid: bd1e35ca7fd58054bb6ba682b611dc7c, type: 3}
---- !u!65 &65000014287463456
+--- !u!65 &65000011844589506
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -89,5 +90,16 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3366224, y: 0.33662236, z: 0.4791089}
-  m_Center: {x: 0, y: 0.000000007450577, z: 0.2415825}
+  m_Size: {x: 0.78606373, y: 0.7860637, z: 1.1187912}
+  m_Center: {x: 0, y: -0.00000001490117, z: 0.56413144}
+--- !u!114 &114000014126090606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012705372936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef1fe489a6653b468e12efdacd5d883, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
