@@ -8,6 +8,7 @@ public class PlayerManager extends MonoBehaviour {
 	private var currentHealth : float;
 	private var bDamaged : boolean = true;
 	var waterIndicators : Image[];
+	private var canShoot : boolean = true;
 	private var isShooting : boolean = false;
 	private var spawnPoint : Vector3;
 	private var waterLevel : float = 0;
@@ -45,20 +46,23 @@ public class PlayerManager extends MonoBehaviour {
 			return;
 		}
 
-		if (Input.GetButtonDown("RB")){
-			TriggerWaterConsumption();
-			animator.SetBool("Attack", true);
+		if (Input.GetButtonDown("RB") && UIManager.Instance().ConsumeWaterTank() > 0 && canShoot){
+			// TriggerWaterConsumption();
+			StartShooting();
 		}
-		if (Input.GetButton("RB")){
-			if (waterLevel < 0){
-				waterLevel = 0;
+		if (Input.GetButton("RB") && isShooting && !canShoot){
+			if (UIManager.Instance().ConsumeWaterTank() <= 0){
+				StopShooting();
 			}
-			if (isShooting && waterLevel > 0){
-				waterLevel -= shootConsumptionSpeed * Time.deltaTime;
-				for (var i = 0; i < waterIndicators.Length; i++){
-					waterIndicators[i].fillAmount = waterLevel;
-				}
-			}
+			// if (waterLevel < 0){
+			// 	waterLevel = 0;
+			// }
+			// if (isShooting && waterLevel > 0){
+			// 	waterLevel -= shootConsumptionSpeed * Time.deltaTime;
+			// 	for (var i = 0; i < waterIndicators.Length; i++){
+			// 		waterIndicators[i].fillAmount = waterLevel;
+			// 	}
+			// }
 			// if (Input.GetAxis("LeftAnalogHorizontal") > 0){
 			// 	transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
 			// }
@@ -71,16 +75,28 @@ public class PlayerManager extends MonoBehaviour {
 			}
 		}
 		if (Input.GetButtonUp("RB") || (!Input.GetButton("RB") && isShooting)){
-			isShooting = false;
-			UpdateLockableEnemiesIdx();
+			StopShooting();
+			// UpdateLockableEnemiesIdx();
 			// animator.ResetTrigger("MeleeAttack");
-            animator.SetBool("Attack", false);
-            hose.Stop();
             // animator.SetTrigger("StopAttack");
             // for (var water : GameObject in GameObject.FindGameObjectsWithTag("WaterDamage")){
             // 	Destroy(water);
             // }
 		}
+	}
+
+	function StartShooting (){
+		canShoot = false;
+		isShooting = true;
+		animator.SetBool("Attack", true);
+		hose.Play();
+	}
+
+	function StopShooting (){
+		canShoot = true;
+		isShooting = false;
+		animator.SetBool("Attack", false);
+        hose.Stop();
 	}
 
 	function Respawn (){
@@ -107,11 +123,11 @@ public class PlayerManager extends MonoBehaviour {
 		}
 	}
 
-	function TriggerWaterConsumption (){
-		yield WaitForSeconds (0.1);
-		isShooting = true;
-		hose.Play();
-	}
+	// function TriggerWaterConsumption (){
+	// 	yield WaitForSeconds (0.1);
+	// 	isShooting = true;
+	// 	hose.Play();
+	// }
 
 	function OnTriggerEnter (collider : Collider){
 		if (collider.CompareTag("Damage")){

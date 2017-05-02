@@ -162,15 +162,7 @@ ModelImporter:
       humanoid transforms and has rotation animation that will be discarded.\n\t'R_eye_scale'
       has translation animation that will be discarded.\n\t'R_eye_scale' has scale
       animation that will be discarded.\n\t'L_eye_scale' has translation animation
-      that will be discarded.\n\t'L_eye_scale' has scale animation that will be discarded.\n\t'CATRigLArm1'
-      has scale animation that will be discarded.\n\t'CATRigLArm2' has scale animation
-      that will be discarded.\n\t'CATRigLArmPalm' has scale animation that will be
-      discarded.\n\t'CATRigLArmDigit12' has scale animation that will be discarded.\n\t'CATRigLArmDigit13'
-      has scale animation that will be discarded.\n\t'CATRigRArm1' has scale animation
-      that will be discarded.\n\t'CATRigRArmPalm' has scale animation that will be
-      discarded.\n\t'CATRigRArmDigit31' has scale animation that will be discarded.\n\t'CATRigRArmDigit41'
-      has scale animation that will be discarded.\n\t'CATRigRArmDigit42' has scale
-      animation that will be discarded.\n"
+      that will be discarded.\n\t'L_eye_scale' has scale animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -193,7 +185,7 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
@@ -236,8 +228,6 @@ ModelImporter:
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigHub002Bone001/CATRigHub002Bone001Bone001/mouth_ctrl
         weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigHub002Bone001/CATRigHub002Bone001Bone001/mouth_ctrl/hat_ctrl
-        weight: 0
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigHub002Bone001/CATRigHub002Bone001Bone001/mouth_ctrl/hat_ctrl/picke_hat_mesh
         weight: 0
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigHub002Bone001/CATRigHub002Bone001Bone001/mouth_ctrl/L_eye_scale
         weight: 1
@@ -284,8 +274,6 @@ ModelImporter:
         weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/Dummy002
         weight: 0
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/Dummy002/Cylinder001
-        weight: 0
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigRArmCollarbone
         weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1
@@ -319,16 +307,6 @@ ModelImporter:
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigRArmDigit41/CATRigRArmDigit42/CATRigRArmDigit43
         weight: 1
       - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/Dummy001
-        weight: 0
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/Dummy001/Cylinder002
-        weight: 0
-      - path: CATRigLLegPlatform
-        weight: 0
-      - path: CATRigRLegPlatform
-        weight: 0
-      - path: Character001
-        weight: 0
-      - path: Pickles_mesh
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}

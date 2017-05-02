@@ -65,10 +65,11 @@ function SpotPlayer (){
 function Attack (){
 	isStalking = false;
 	aiAnimator.SetTrigger("Attack");
+	yield WaitForSeconds (0.3);
 	if (particleAttack != null){
 		particleAttack.Play();
 	}
-	yield WaitForSeconds (1.5);
+	yield WaitForSeconds (1.1);
 	isStalking = true;
 }
 

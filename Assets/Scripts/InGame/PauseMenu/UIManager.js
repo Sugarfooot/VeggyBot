@@ -5,7 +5,14 @@ import UnityEngine.SceneManagement;
 
 class UIManager extends MonoBehaviour{
 
+	@Header("Vie")
 	var vimage : Image;
+
+	@Header("Réservoir")
+	var tankImage : Image;
+	var consumeSpeed : float;
+
+	@Header("UI Générale")
 	var pauseMenu : GameObject;
 	var pauseCursorsParent : Transform;
 	var cursorInterval : float = 0.2;
@@ -13,6 +20,8 @@ class UIManager extends MonoBehaviour{
 	var loadingProgress : Image;
 	private var cursorIdx : int = -1;
 	private var canMoveCursor : boolean = false;
+
+	@Header("End game")
 	var nextLevel : String;
 
 	private static var instance : UIManager;
@@ -61,6 +70,15 @@ class UIManager extends MonoBehaviour{
 				}
 			}
 		}
+	}
+
+	function FillWaterTank (){
+		tankImage.fillAmount = 1.0;
+	}
+
+	function ConsumeWaterTank () : float{
+		tankImage.fillAmount -= consumeSpeed;
+		return tankImage.fillAmount;
 	}
 
 	function TriggerPauseMenu (){

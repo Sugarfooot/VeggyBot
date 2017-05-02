@@ -11,12 +11,16 @@ public class PlayerMoves extends MonoBehaviour {
 
     @SerializeField var m_MovingTurnSpeed :float = 360;
     @SerializeField var m_StationaryTurnSpeed : float = 180;
-    @SerializeField var m_JumpPower : float = 12f;
-    @SerializeField var m_airSpeed : float = 7f;
+    @SerializeField var m_JumpPower : float = 12;
+    @SerializeField var m_airSpeed : float = 7;
     @Range(1, 4)
-    @SerializeField var m_GravityMultiplier : float = 2f;
-    @SerializeField var m_GroundCheckDistance : float = 0.2f;
+    @SerializeField var m_GravityMultiplier : float = 2;
+    @SerializeField var m_GroundCheckDistance : float = 0.2;
+    @SerializeField var m_airTimeBeforeDamage : float = 2.0;
 
+    private var checkAirTime : boolean = false;
+    private var takeAirDamage : boolean = false;
+    private var fallingDamage : float = 0.0;
     private var m_Rigidbody : Rigidbody;
     //Animator m_Animator;
     private var m_Animable : CharacterAnimations;
@@ -57,12 +61,37 @@ public class PlayerMoves extends MonoBehaviour {
 	
 	// Update is called once per frame
 	function Update () {
+
+        // REPRENDRE ICI !!!
+        print (fallingDamage);
+        if (!m_IsGrounded && !checkAirTime){
+            AirTimeChecker();
+        }
+
+        if (takeAirDamage && !m_IsGrounded){
+            fallingDamage += Time.deltaTime;
+        }
+
+        if (m_IsGrounded && takeAirDamage && fallingDamage > 0){
+            takeAirDamage = false;
+            GetComponent.<PlayerManager>().TakeDamage(fallingDamage);
+            fallingDamage = 0.0;
+            checkAirTime = false;
+        }
 		// if (Input.GetButtonDown("X") && canGather)
   //       {
   //           m_Animable.Gather();
   //           StartCoroutine("GatherCD");
   //       }
 	}
+
+    function AirTimeChecker (){
+        checkAirTime = true;
+        yield WaitForSeconds(m_airTimeBeforeDamage);
+        if (!m_IsGrounded){
+            takeAirDamage = true;
+        }
+    }
 
     function GatherCD ()
     {
