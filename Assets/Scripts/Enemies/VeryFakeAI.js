@@ -2,7 +2,8 @@
 
 var enemy : Enemy;
 
-private var currentSoul : int;
+private var currentSoul : float;
+var damagesFromPlayer : float = 0.5;
 private var currentIntuition : int;
 private var aiAnimator : Animator;
 private var idleTime : float = 0.0;
@@ -77,7 +78,7 @@ function FollowPlayer (){
 	aiAnimator.SetTrigger("Run");
 }
 
-function TakeDamage (amount : int){
+function TakeDamage (amount : float){
 	if (!isStalking){
 		SpotPlayer();
 	}
@@ -96,7 +97,7 @@ function TakeDamage (amount : int){
 
 function OnParticleCollision (weaponObject : GameObject){
 	if (weaponObject.CompareTag("PlayerWeapon")){
-		TakeDamage(10);
+		TakeDamage(damagesFromPlayer);
 	}
 }
 
@@ -108,6 +109,7 @@ function Die (){
 		aiAnimator.ResetTrigger("Walk");
 		aiAnimator.SetTrigger("Death");
 	}
+	PlayerManager.Instance().RemoveLockableEnemies(transform);
 	Destroy(gameObject,0.5);
 }
 

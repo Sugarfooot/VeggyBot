@@ -5,6 +5,7 @@ import UnityEngine.UI;
 public class PlayerManager extends MonoBehaviour {
 
 	var pomoCharacter : Character;
+	var rightArmIK : Transform;
 	private var currentHealth : float;
 	private var bDamaged : boolean = true;
 	var waterIndicators : Image[];
@@ -20,6 +21,11 @@ public class PlayerManager extends MonoBehaviour {
 	var hose : ParticleSystem;
 	private var transformToLock : Transform[] = [];
 	private var enemyLockedIdx : int = -1;
+	private var lockOn : Transform = null;
+	private var isDead : boolean = false; 
+
+	var refTrs : Transform;
+	var armTrs : Transform;
 	
 	private static var instance : PlayerManager;
 	public static function Instance () : PlayerManager {
@@ -42,46 +48,48 @@ public class PlayerManager extends MonoBehaviour {
 	}
 
 	function Update () {
-		if (levelEnd){
+		if (levelEnd || isDead){
 			return;
 		}
 
 		if (Input.GetButtonDown("RB") && UIManager.Instance().ConsumeWaterTank() > 0 && canShoot){
-			// TriggerWaterConsumption();
+			if (transformToLock.Length > 0){
+				lockOn = GetClosestEnemy();
+			}
+			if (lockOn != null){
+				transform.LookAt(Vector3(lockOn.position.x, transform.position.y, lockOn.position.z));
+			}
 			StartShooting();
 		}
+
 		if (Input.GetButton("RB") && isShooting && !canShoot){
 			if (UIManager.Instance().ConsumeWaterTank() <= 0){
 				StopShooting();
 			}
-			// if (waterLevel < 0){
-			// 	waterLevel = 0;
-			// }
-			// if (isShooting && waterLevel > 0){
-			// 	waterLevel -= shootConsumptionSpeed * Time.deltaTime;
-			// 	for (var i = 0; i < waterIndicators.Length; i++){
-			// 		waterIndicators[i].fillAmount = waterLevel;
-			// 	}
-			// }
-			// if (Input.GetAxis("LeftAnalogHorizontal") > 0){
-			// 	transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
-			// }
-			// else if (Input.GetAxis("LeftAnalogHorizontal") < 0){
-			// 	transform.Rotate(-Vector3.up * Time.deltaTime * rotateSpeed);
-			// }
-
-			if (transformToLock.Length > 0){
-				transform.LookAt(transformToLock[enemyLockedIdx]);
-			}
 		}
 		if (Input.GetButtonUp("RB") || (!Input.GetButton("RB") && isShooting)){
 			StopShooting();
-			// UpdateLockableEnemiesIdx();
-			// animator.ResetTrigger("MeleeAttack");
-            // animator.SetTrigger("StopAttack");
-            // for (var water : GameObject in GameObject.FindGameObjectsWithTag("WaterDamage")){
-            // 	Destroy(water);
-            // }
+		}
+	}
+
+	function GetClosestEnemy () : Transform{
+		var closestTrs : Transform = transformToLock[0];
+		for (var trs : Transform in transformToLock){
+			if (Vector3.Distance(transform.position, trs.position) < Vector3.Distance(transform.position, closestTrs.position)){
+				closestTrs = trs;
+			}
+		}
+		return closestTrs;
+	}
+
+	function OnAnimatorIK (){
+		if (transformToLock.Length > 0 && isShooting && lockOn != null){
+			animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
+			animator.SetIKPosition(AvatarIKGoal.RightHand, Vector3(lockOn.position.x, lockOn.position.y + 1, lockOn.position.z));
+			if (armTrs.localRotation.eulerAngles.y - refTrs.localRotation.eulerAngles.y > 140 && armTrs.localRotation.eulerAngles.y - refTrs.localRotation.eulerAngles.y < 340){
+				lockOn = null;
+				animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 0);
+			}
 		}
 	}
 
@@ -100,13 +108,16 @@ public class PlayerManager extends MonoBehaviour {
 	}
 
 	function Respawn (){
+		isDead = true;
 		animator.SetTrigger("Death");
+		StopShooting();
 		yield WaitForSeconds(1.49);
 		animator.SetTrigger("Idle");
 		currentHealth = pomoCharacter.maxSoul;
 		UIManager.Instance().UpdateLifeGear(currentHealth);
 		bDamaged = true;
 		transform.position = spawnPoint;
+		isDead = false;
 	}
 
 	function SetNewSpawnPoint (){
@@ -123,12 +134,6 @@ public class PlayerManager extends MonoBehaviour {
 		}
 	}
 
-	// function TriggerWaterConsumption (){
-	// 	yield WaitForSeconds (0.1);
-	// 	isShooting = true;
-	// 	hose.Play();
-	// }
-
 	function OnTriggerEnter (collider : Collider){
 		if (collider.CompareTag("Damage")){
 			collider.enabled = false;
@@ -136,17 +141,29 @@ public class PlayerManager extends MonoBehaviour {
 			collider.enabled = true;
 		}
 		if (collider.CompareTag("Enemy")){
-			if (transformToLock.Length == 1){
-				enemyLockedIdx = 0;
-			}
+			// if (transformToLock.Length == 1){
+			// 	enemyLockedIdx = 0;
+			// }
 			transformToLock += [collider.transform];
+			// UpdateLockableEnemies();
 		}
 	}
 
 	function OnTriggerExit (collider : Collider){
 		if (collider.CompareTag("Enemy")){
-			UpdateLockableEnemies(collider.transform);
+			RemoveLockableEnemies(collider.transform);
+			print ("Dead or too far");
 		}
+	}
+
+	function UpdateLockableEnemies (){
+		var tmpArray : Transform[] = [];
+		for (var trs : Transform in transformToLock){
+			if (trs != null){
+				tmpArray += [trs];
+			}
+		}
+		transformToLock = tmpArray;
 	}
 
 	function OnParticleCollision (weaponObject : GameObject){
@@ -171,7 +188,7 @@ public class PlayerManager extends MonoBehaviour {
 		}
 	}
 
-	function UpdateLockableEnemies (removedEnemyTrs : Transform){
+	function RemoveLockableEnemies (removedEnemyTrs : Transform){
 		if (transformToLock.Length == 1){
 			transformToLock = [];
 			enemyLockedIdx = -1;
