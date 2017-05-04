@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000013779722120}
   - 33: {fileID: 33000013241849116}
   - 23: {fileID: 23000011022611338}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: panneauInside001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000012014205408}
   - 33: {fileID: 33000013312961572}
   - 23: {fileID: 23000011601440662}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowPoly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013303784510}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: panneau_broke_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,10 +71,12 @@ GameObject:
   - 33: {fileID: 33000013648672948}
   - 23: {fileID: 23000010526379292}
   - 114: {fileID: 114000010920884878}
-  - 65: {fileID: 65000010262698372}
-  m_Layer: 0
+  - 54: {fileID: 54000014149803370}
+  - 65: {fileID: 65000011228936736}
+  - 135: {fileID: 135000010238958126}
+  m_Layer: 9
   m_Name: PanneauElectrique
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,10 +100,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014238289606}
-  m_LocalRotation: {x: -0.000000021359442, y: -0.9914733, z: -0.13031, w: 0.00000016251515}
-  m_LocalPosition: {x: 117.797, y: -29.836, z: 127.288}
+  m_LocalRotation: {x: -0, y: -0.9980581, z: -0, w: -0.06229074}
+  m_LocalPosition: {x: 2.32, y: -0.22, z: -0.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: -14.922001, y: -180.00002, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -186.94699, z: 0}
   m_Children:
   - {fileID: 4000013303784510}
   m_Father: {fileID: 0}
@@ -242,7 +244,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014238289606}
   m_Mesh: {fileID: 4300000, guid: 569777be98bf1e242b49e43569f9c183, type: 3}
---- !u!65 &65000010262698372
+--- !u!54 &54000014149803370
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014238289606}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!65 &65000011228936736
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -252,8 +269,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.39459425, y: 0.3457509, z: 0.11140541}
-  m_Center: {x: -2.1017174e-16, y: 0.1720375, z: 0.050404254}
+  m_Size: {x: 0.54, y: 0.41, z: 0.23}
+  m_Center: {x: 0, y: 0.17203797, z: 0.050404254}
 --- !u!114 &114000010920884878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -265,7 +282,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4347e93f9ca069441a1bc3a5dbb07d65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelHP: 10
+  panelHP: 5
   wastedPanel: {fileID: 1000013942181642}
   activePanel: {fileID: 23000010526379292}
+  animatorToActivate: {fileID: 0}
   isWet: 0
+--- !u!135 &135000010238958126
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014238289606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.34
+  m_Center: {x: 0, y: 0, z: 0.76}

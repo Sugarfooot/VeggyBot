@@ -1,8 +1,9 @@
 ﻿#pragma strict
 
-var panelHP : int;
+var panelHP : float;
 var wastedPanel : GameObject;
 var activePanel : MeshRenderer;
+var animatorToActivate : Animator;
 var isWet : boolean = false;
 
 function Start () {
@@ -11,7 +12,7 @@ function Start () {
 
 function Update () {
 	if (isWet){
-		panelHP -= Time.deltaTime;
+		panelHP -= Time.deltaTime * 5;
 		if (panelHP <= 0){
 			TriggerDeactivation();
 		}
@@ -20,14 +21,17 @@ function Update () {
 	isWet = false;
 }
 
-function OnParticleCollision (particles : GameObject){
-	if (particles.CompareTag("WaterPlayer")){
+function OnParticleCollision (weaponObject : GameObject){
+	if (weaponObject.CompareTag("PlayerWeapon") && activePanel.enabled){
+		// TriggerDeactivation();
 		isWet = true;
 	}
 }
 
 function TriggerDeactivation (){
+	isWet = false;
 	GetComponent.<Collider>().enabled = false;
 	activePanel.enabled = false;
 	wastedPanel.SetActive(true);
+	animatorToActivate.SetTrigger("Activate");
 }

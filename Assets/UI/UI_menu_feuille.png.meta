@@ -1,15 +1,15 @@
 fileFormatVersion: 2
 guid: 7c17a88d1631ef94a89b391d3beabe8b
-timeCreated: 1493908259
+timeCreated: 1493909115
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: UI_menu_feuille_0
-    21300002: UI_menu_feuille_1
-    21300004: UI_menu_feuille_2
-    21300006: UI_menu_feuille_3
-    21300008: UI_menu_feuille_4
-    21300010: UI_menu_feuille_5
+    21300000: PlayText
+    21300002: Exit
+    21300004: CreditsText
+    21300006: PlayCursor
+    21300008: ExitCursor
+    21300010: CreditsCursor
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -59,78 +59,78 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_menu_feuille_0
+      name: PlayText
       rect:
         serializedVersion: 2
-        x: 77
-        y: 846
-        width: 663
-        height: 375
+        x: 110
+        y: 853
+        width: 613
+        height: 358
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_menu_feuille_1
+      name: Exit
       rect:
         serializedVersion: 2
-        x: 830
-        y: 915
-        width: 627
-        height: 304
+        x: 828
+        y: 906
+        width: 504
+        height: 248
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_menu_feuille_2
+      name: CreditsText
       rect:
         serializedVersion: 2
-        x: 1496
-        y: 922
-        width: 854
-        height: 262
+        x: 1406
+        y: 929
+        width: 935
+        height: 247
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_menu_feuille_3
+      name: PlayCursor
       rect:
         serializedVersion: 2
-        x: 3
-        y: 15
-        width: 820
-        height: 815
+        x: 26
+        y: 31
+        width: 781
+        height: 775
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_menu_feuille_4
+      name: ExitCursor
       rect:
         serializedVersion: 2
-        x: 873
-        y: 394
-        width: 575
-        height: 485
+        x: 891
+        y: 410
+        width: 554
+        height: 462
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_menu_feuille_5
+      name: CreditsCursor
       rect:
         serializedVersion: 2
-        x: 1645
-        y: 325
-        width: 556
-        height: 494
+        x: 1673
+        y: 330
+        width: 517
+        height: 476
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
