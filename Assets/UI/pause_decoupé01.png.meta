@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 85a40b8eb21135442b4fb2396731b98c
-timeCreated: 1479997610
+timeCreated: 1493910343
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,6 +15,14 @@ TextureImporter:
     21300016: rouage
     21300018: Cercle_plein02
     21300020: leds
+    21300022: Play
+    21300024: Exit
+    21300026: Credits
+    21300028: Continuer
+    21300030: Feuille continuer
+    21300032: Feuille credits
+    21300034: Feuille Exit
+    21300036: Feuille Play
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -103,19 +111,6 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Progressbar_content
-      rect:
-        serializedVersion: 2
-        x: 1912
-        y: 1387
-        width: 464
-        height: 907
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: Cercle_vide01
       rect:
         serializedVersion: 2
@@ -142,65 +137,104 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Progressbar_empty
+      name: Play
       rect:
         serializedVersion: 2
-        x: 93
-        y: 892
-        width: 464
-        height: 907
+        x: 19
+        y: 859
+        width: 639
+        height: 371
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cercle_vide02
+      name: Exit
       rect:
         serializedVersion: 2
-        x: 756
-        y: 816
-        width: 1077
-        height: 1143
+        x: 678
+        y: 899
+        width: 537
+        height: 279
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: rouage
+      name: Credits
       rect:
         serializedVersion: 2
-        x: 1799
-        y: 145
-        width: 389
-        height: 382
+        x: 1239
+        y: 881
+        width: 959
+        height: 292
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Cercle_plein02
+      name: Continuer
       rect:
         serializedVersion: 2
-        x: 1171
-        y: 81
-        width: 520
-        height: 523
+        x: 2211
+        y: 904
+        width: 1112
+        height: 268
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: leds
+      name: Feuille continuer
       rect:
         serializedVersion: 2
-        x: 152
-        y: 333
-        width: 859
-        height: 271
+        x: 2309
+        y: 387
+        width: 733
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Feuille credits
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 387
+        width: 542
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Feuille Exit
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 351
+        width: 579
+        height: 488
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Feuille Play
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 16
+        width: 832
+        height: 800
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

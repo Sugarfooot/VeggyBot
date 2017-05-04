@@ -1802,7 +1802,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012209722980}
   m_LocalRotation: {x: -0, y: -0.0000009238719, z: -0, w: 1}
-  m_LocalPosition: {x: 6.38, y: -1.0699997, z: 0.73}
+  m_LocalPosition: {x: -2.04, y: -1.0699997, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -2005,6 +2005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: d8c1716c0912b4d479acf766e27c504b, type: 2}
+  damagesFromPlayer: 1
   damageAmount: 8
   attackDistance: 2
   playerSpotted: 0

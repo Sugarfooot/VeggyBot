@@ -85,7 +85,7 @@ public class PlayerManager extends MonoBehaviour {
 	function OnAnimatorIK (){
 		if (transformToLock.Length > 0 && isShooting && lockOn != null){
 			animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
-			animator.SetIKPosition(AvatarIKGoal.RightHand, Vector3(lockOn.position.x, lockOn.position.y + 1, lockOn.position.z));
+			animator.SetIKPosition(AvatarIKGoal.RightHand, Vector3(lockOn.position.x, lockOn.position.y + 0.2, lockOn.position.z));
 			if (armTrs.localRotation.eulerAngles.y - refTrs.localRotation.eulerAngles.y > 140 && armTrs.localRotation.eulerAngles.y - refTrs.localRotation.eulerAngles.y < 340){
 				lockOn = null;
 				animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 0);
@@ -141,11 +141,7 @@ public class PlayerManager extends MonoBehaviour {
 			collider.enabled = true;
 		}
 		if (collider.CompareTag("Enemy")){
-			// if (transformToLock.Length == 1){
-			// 	enemyLockedIdx = 0;
-			// }
 			transformToLock += [collider.transform];
-			// UpdateLockableEnemies();
 		}
 	}
 
