@@ -38,6 +38,7 @@ GameObject:
   - 33: {fileID: 33000013097717142}
   - 23: {fileID: 23000012542476358}
   - 64: {fileID: 64000012264424006}
+  - 114: {fileID: 114000010107077550}
   m_Layer: 0
   m_Name: ROC_bigD_LOD0
   m_TagString: Untagged
@@ -55,6 +56,7 @@ GameObject:
   - 4: {fileID: 4000010363147260}
   - 33: {fileID: 33000011536966116}
   - 23: {fileID: 23000010571424496}
+  - 114: {fileID: 114000011210064162}
   m_Layer: 0
   m_Name: ROC_bigD_LOD1
   m_TagString: Untagged
@@ -72,6 +74,7 @@ GameObject:
   - 4: {fileID: 4000012688396976}
   - 33: {fileID: 33000014108178474}
   - 23: {fileID: 23000011917276306}
+  - 114: {fileID: 114000013571697338}
   m_Layer: 0
   m_Name: ROC_bigD_LOD2
   m_TagString: Untagged
@@ -98,10 +101,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011117771412}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.07163472, y: -0.5257805, z: 0.14784613, w: -0.8346046}
+  m_LocalPosition: {x: 61.1, y: 135.39, z: 39.14}
+  m_LocalScale: {x: 7.9501863, y: 7.950174, z: 7.9501886}
+  m_LocalEulerAnglesHint: {x: 15.913001, y: -296.923, z: -10.014001}
   m_Children:
   - {fileID: 4000012655512872}
   - {fileID: 4000010363147260}
@@ -115,7 +118,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012440790214}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -156,7 +159,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedWireframeHidden: 1
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -185,7 +188,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedWireframeHidden: 1
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -254,6 +257,69 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300006, guid: 4a01271247f74964796e03eaa709c655, type: 3}
+--- !u!114 &114000010107077550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012440790214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d1a1a2d92b42478e8491f850e1d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colors: []
+  _uv0: []
+  _uv1: []
+  _uv2: []
+  _uv3: []
+  _positions: []
+  _normals: []
+  _tangents: []
+  originalMaterial:
+  - {fileID: 2100000, guid: 520dc1b4ed52c434e98de8b37b082ec9, type: 2}
+--- !u!114 &114000011210064162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013129505224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d1a1a2d92b42478e8491f850e1d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colors: []
+  _uv0: []
+  _uv1: []
+  _uv2: []
+  _uv3: []
+  _positions: []
+  _normals: []
+  _tangents: []
+  originalMaterial:
+  - {fileID: 2100000, guid: 520dc1b4ed52c434e98de8b37b082ec9, type: 2}
+--- !u!114 &114000013571697338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013457003330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d1a1a2d92b42478e8491f850e1d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colors: []
+  _uv0: []
+  _uv1: []
+  _uv2: []
+  _uv3: []
+  _positions: []
+  _normals: []
+  _tangents: []
+  originalMaterial:
+  - {fileID: 2100000, guid: 520dc1b4ed52c434e98de8b37b082ec9, type: 2}
 --- !u!205 &205000010501236090
 LODGroup:
   m_ObjectHideFlags: 1
