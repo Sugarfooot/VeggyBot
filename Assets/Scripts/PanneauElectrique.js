@@ -3,7 +3,7 @@
 var panelHP : float;
 var wastedPanel : GameObject;
 var activePanel : MeshRenderer;
-var animatorToActivate : Animator;
+var animatorsToActivate : Animator[];
 var isWet : boolean = false;
 
 function Start () {
@@ -33,5 +33,7 @@ function TriggerDeactivation (){
 	GetComponent.<Collider>().enabled = false;
 	activePanel.enabled = false;
 	wastedPanel.SetActive(true);
-	animatorToActivate.SetTrigger("Activate");
+	for (var meca : Animator in animatorsToActivate){
+		meca.SetTrigger("Activate");
+	}
 }
