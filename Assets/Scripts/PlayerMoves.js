@@ -1,6 +1,4 @@
-﻿import System.Collections;
-import System.Collections.Generic;
-import UnityEngine;
+﻿import System.Collections.Generic;
 
 public class PlayerMoves extends MonoBehaviour {
 
@@ -36,12 +34,15 @@ public class PlayerMoves extends MonoBehaviour {
     private var canGather : boolean = false;
     private var enemyLayerMask : int;
 
+    private var falling : boolean = false;
+    private var lastGroundedPos : Vector3;
+
+
     @HideInInspector
     var animSpeed : Vector2;
 
     function Awake ()
     {
-        //m_Animator = GetComponent.<Animator>();
         m_Rigidbody = GetComponent.<Rigidbody>();
         m_Animable = GetComponent.<CharacterAnimations>();
         m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
@@ -50,10 +51,8 @@ public class PlayerMoves extends MonoBehaviour {
     }
 
 
-	// Use this for initialization
 	function Start () {
-		// get the transform of the main camera
-        if (Camera.main != null)
+		if (Camera.main != null)
         {
             m_Cam = Camera.main.transform;
         }
@@ -62,44 +61,19 @@ public class PlayerMoves extends MonoBehaviour {
 	// Update is called once per frame
 	function Update () {
 
-        // REPRENDRE ICI !!!
-        print (fallingDamage);
-        if (!m_IsGrounded && !checkAirTime){
-            AirTimeChecker();
+        if (!m_IsGrounded && !falling){
+            falling = true;
+            lastGroundedPos = transform.position;
         }
 
-        if (takeAirDamage && !m_IsGrounded){
-            fallingDamage += Time.deltaTime;
-        }
 
-        if (m_IsGrounded && takeAirDamage && fallingDamage > 0){
-            takeAirDamage = false;
-            GetComponent.<PlayerManager>().TakeDamage(fallingDamage);
-            fallingDamage = 0.0;
-            checkAirTime = false;
+        if (m_IsGrounded && falling){
+            if (Mathf.Abs(lastGroundedPos.y - transform.position.y) > 5){
+                GetComponent.<PlayerManager>().TakeDamage(Vector3.Distance(transform.position, lastGroundedPos));
+            }
+            falling = false;
         }
-		// if (Input.GetButtonDown("X") && canGather)
-  //       {
-  //           m_Animable.Gather();
-  //           StartCoroutine("GatherCD");
-  //       }
 	}
-
-    function AirTimeChecker (){
-        checkAirTime = true;
-        yield WaitForSeconds(m_airTimeBeforeDamage);
-        if (!m_IsGrounded){
-            takeAirDamage = true;
-        }
-    }
-
-    function GatherCD ()
-    {
-        canGather = false;
-        yield WaitForSeconds(1);
-        m_Animable.StopGathering();
-        m_Animable.Grab();
-    }
 
 	function FixedUpdate()
     {
@@ -132,22 +106,9 @@ public class PlayerMoves extends MonoBehaviour {
             m_Move = v*Vector3.forward + h*Vector3.right;
         }
 
-        // TODO : On garde une sorte de sprint ??
-
-        //#region Le susmentioné sprint
-
-#if !MOBILE_INPUT
-        // walk speed multiplier
-        if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
-#endif
-
-        //#endregion
-
         // pass all parameters to the character control script
         Move(m_Move, m_Jump);
         m_Jump = false;
-
-        //m_Animable.SetGrounded(m_IsGrounded);
     }
 
     function ToggleCarrying ()
@@ -208,13 +169,11 @@ public class PlayerMoves extends MonoBehaviour {
 		if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, hitInfo, m_GroundCheckDistance))
 		{
 			m_GroundNormal = hitInfo.normal;
-            //m_Animable.SetGrounded(true);
             m_IsGrounded = true;
             m_Animable.Land();
         }
 		else
 		{
-            //m_Animable.SetGrounded(false);
             m_IsGrounded = false;
             m_GroundNormal = Vector3.up;
 		}
@@ -237,23 +196,10 @@ public class PlayerMoves extends MonoBehaviour {
 		// check whether conditions are right to allow a jump:
 		if (jumpMove && m_IsGrounded && !isCarrying /*&& m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded")*/)
 		{
-			// jump!
 			m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
-            //m_Animable.SetGrounded(false);
             m_IsGrounded = false;
             m_Animable.Jump();
             m_GroundCheckDistance = 0.2f;
 		}
 	}
-
-    function SetCanGather ()
-    {
-        canGather = true;
-
-    }
-
-    function SetCannotGather ()
-    {
-        canGather = false;
-    }
 }
