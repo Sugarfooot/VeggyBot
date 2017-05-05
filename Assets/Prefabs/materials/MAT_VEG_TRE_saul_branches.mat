@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MAT_VEG_TRE_saul_branches
-  m_Shader: {fileID: 10601, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION
+  m_Shader: {fileID: 4800000, guid: a41056c095bd04938aad403f675ae3ba, type: 3}
+  m_ShaderKeywords: _BENDINGCONTROLS_VERTEX_COLORS _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -17,6 +17,12 @@ Material:
     m_TexEnvs:
     - first:
         name: _BumpMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpTransSpecMap
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -101,6 +107,9 @@ Material:
         name: _BaseLight
       second: 0.74
     - first:
+        name: _BendingControls
+      second: 0
+    - first:
         name: _BumpScale
       second: 1
     - first:
@@ -121,6 +130,9 @@ Material:
     - first:
         name: _GlossyReflections
       second: 1
+    - first:
+        name: _LeafTurbulence
+      second: 0.5
     - first:
         name: _Metallic
       second: 0
@@ -152,6 +164,9 @@ Material:
         name: _SrcBlend
       second: 1
     - first:
+        name: _TranslucencyViewDependency
+      second: 0.5
+    - first:
         name: _Transmission
       second: 0
     - first:
@@ -176,6 +191,18 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SpecularReflectivity
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - first:
+        name: _TouchBendingForce
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _TouchBendingPosition
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _TranslucencyColor
+      second: {r: 0.73, g: 0.85, b: 0.41, a: 1}
     - first:
         name: _TreeInstanceColor
       second: {r: 1, g: 1, b: 1, a: 1}
