@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MAT_VEG_TRE_saul_branches
-  m_Shader: {fileID: 4800000, guid: a41056c095bd04938aad403f675ae3ba, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5094d06db1a764e629ba3f8c0c6b50f8, type: 3}
   m_ShaderKeywords: _BENDINGCONTROLS_VERTEX_COLORS _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -17,6 +17,12 @@ Material:
     m_TexEnvs:
     - first:
         name: _BumpMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpSpecMap
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -104,6 +110,9 @@ Material:
         name: _AO
       second: 6.3
     - first:
+        name: _AfsXtraBending
+      second: 0
+    - first:
         name: _BaseLight
       second: 0.74
     - first:
@@ -149,6 +158,12 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _ShadowOffsetScale
+      second: 1
+    - first:
+        name: _ShadowStrength
+      second: 1
+    - first:
         name: _Shininess
       second: 0.078125
     - first:
@@ -165,10 +180,16 @@ Material:
       second: 1
     - first:
         name: _TranslucencyViewDependency
-      second: 0.5
+      second: 0.114
     - first:
         name: _Transmission
       second: 0
+    - first:
+        name: _TumbleFrequency
+      second: 1
+    - first:
+        name: _TumbleStrength
+      second: 0.1
     - first:
         name: _UVSec
       second: 0
@@ -187,13 +208,13 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0.25173008, g: 0.35294116, b: 0.26080415, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _SpecularReflectivity
-      second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+      second: {r: 0.7294117, g: 1, b: 0.66176474, a: 1}
     - first:
         name: _TouchBendingForce
       second: {r: 0, g: 0, b: 0, a: 0}

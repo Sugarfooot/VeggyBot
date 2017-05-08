@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MAT_VEG_TRE_acca_leaves
-  m_Shader: {fileID: 4800000, guid: a41056c095bd04938aad403f675ae3ba, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5094d06db1a764e629ba3f8c0c6b50f8, type: 3}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _BENDINGCONTROLS_VERTEX_COLORS
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -17,6 +17,12 @@ Material:
     m_TexEnvs:
     - first:
         name: _BumpMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpSpecMap
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -52,6 +58,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _GlossMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _MainTex
       second:
         m_Texture: {fileID: 2800000, guid: 98ad273f1a36c4e45bac8abba289eeeb, type: 3}
@@ -75,7 +87,22 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ShadowOffset
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TranslucencyMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - first:
+        name: _AfsXtraBending
+      second: 0
     - first:
         name: _BendingControls
       second: 0
@@ -116,17 +143,35 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _ShadowOffsetScale
+      second: 1
+    - first:
+        name: _ShadowStrength
+      second: 0.485
+    - first:
+        name: _Shininess
+      second: 0.11
+    - first:
         name: _SmoothnessTextureChannel
       second: 0
     - first:
         name: _SpecularHighlights
       second: 1
     - first:
+        name: _SquashAmount
+      second: 1
+    - first:
         name: _SrcBlend
       second: 1
     - first:
         name: _TranslucencyViewDependency
-      second: 0.5
+      second: 0.1
+    - first:
+        name: _TumbleFrequency
+      second: 1
+    - first:
+        name: _TumbleStrength
+      second: 0.1
     - first:
         name: _UVSec
       second: 0
@@ -136,13 +181,13 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+      second: {r: 0.31200036, g: 0.5588235, b: 0.29173875, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _SpecularReflectivity
-      second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+      second: {r: 0.6466143, g: 0.83823526, b: 0.5547145, a: 1}
     - first:
         name: _TouchBendingForce
       second: {r: 0, g: 0, b: 0, a: 0}
@@ -151,4 +196,10 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 0}
     - first:
         name: _TranslucencyColor
-      second: {r: 0.73, g: 0.85, b: 0.41, a: 1}
+      second: {r: 0.28269294, g: 0.5955882, b: 0.27151817, a: 1}
+    - first:
+        name: _TreeInstanceColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _TreeInstanceScale
+      second: {r: 1, g: 1, b: 1, a: 1}
