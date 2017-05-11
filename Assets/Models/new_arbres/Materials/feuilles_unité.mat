@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: "feuilles_unit\xE9"
-  m_Shader: {fileID: 4800000, guid: a41056c095bd04938aad403f675ae3ba, type: 3}
+  m_Shader: {fileID: 10601, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHATEST_ON _BENDINGCONTROLS_VERTEX_COLORS _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -17,6 +17,12 @@ Material:
     m_TexEnvs:
     - first:
         name: _BumpMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpSpecMap
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -52,6 +58,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _GlossMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _MainTex
       second:
         m_Texture: {fileID: 2800000, guid: 29cb96fb51b86044194beb2cd375e70d, type: 3}
@@ -71,6 +83,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     - first:
         name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ShadowOffset
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TranslucencyMap
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -96,10 +120,13 @@ Material:
     m_Floats:
     - first:
         name: _AO
-      second: 4.4
+      second: 3.76
+    - first:
+        name: _AfsXtraBending
+      second: 0
     - first:
         name: _BaseLight
-      second: 0
+      second: 0.23
     - first:
         name: _BendingControls
       second: 0
@@ -108,7 +135,7 @@ Material:
       second: 1
     - first:
         name: _Cutoff
-      second: 0.527
+      second: 0.537
     - first:
         name: _DetailNormalMapScale
       second: 1
@@ -135,7 +162,7 @@ Material:
       second: 1
     - first:
         name: _Occlusion
-      second: 5.3
+      second: 4.56
     - first:
         name: _OcclusionStrength
       second: 1
@@ -143,8 +170,14 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
-        name: _ShadowStrength
+        name: _ShadowOffsetScale
       second: 1
+    - first:
+        name: _ShadowStrength
+      second: 0.852
+    - first:
+        name: _Shininess
+      second: 0.078125
     - first:
         name: _SmoothnessTextureChannel
       second: 0
@@ -159,10 +192,16 @@ Material:
       second: 1
     - first:
         name: _TranslucencyViewDependency
-      second: 0
+      second: 0.759
     - first:
         name: _Transmission
       second: 0
+    - first:
+        name: _TumbleFrequency
+      second: 1
+    - first:
+        name: _TumbleStrength
+      second: 0.1
     - first:
         name: _UVSec
       second: 0
@@ -190,13 +229,13 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0.5818966, g: 0.66176474, b: 0.49145764, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _SpecularReflectivity
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 0.39338237, g: 0.5, b: 0.4382353, a: 1}
     - first:
         name: _TouchBendingForce
       second: {r: 0, g: 0, b: 0, a: 0}
@@ -205,7 +244,7 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 0}
     - first:
         name: _TranslucencyColor
-      second: {r: 0.03676468, g: 0.03676468, b: 0.03676468, a: 1}
+      second: {r: 0.121323526, g: 0.4852941, b: 0.13889454, a: 1}
     - first:
         name: _TreeInstanceColor
       second: {r: 1, g: 1, b: 1, a: 1}

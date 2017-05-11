@@ -35,8 +35,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010417620204}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 149.1, y: 78.9, z: 348.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 187.13695, y: 78, z: 179.93932}
+  m_LocalScale: {x: 0.21393014, y: 0.21393017, z: 0.21393017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,7 +91,7 @@ ParticleSystem:
   moveWithTransform: 1
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: 161021142
+  randomSeed: 295569406
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -468,7 +468,7 @@ ParticleSystem:
       minMaxState: 0
     randomizeRotationDirection: 1
     gravityModifier: 0.1
-    maxNumParticles: 22
+    maxNumParticles: 129
     size3D: 0
     rotation3D: 1
   ShapeModule:
@@ -769,7 +769,7 @@ ParticleSystem:
           rgba: 4294951546
         key1:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 16777215
         key2:
           serializedVersion: 2
           rgba: 0
@@ -1827,7 +1827,7 @@ ParticleSystemRenderer:
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 0.5
+  m_MaxParticleSize: 5.25
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2

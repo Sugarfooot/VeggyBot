@@ -8,11 +8,19 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: arbre_paintLOD2
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+<<<<<<< HEAD
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
+=======
+  m_ShaderKeywords: _ALPHATEST_ON _EMISSION
+  m_LightmapFlags: 1
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+>>>>>>> 9079468b03066085173e6eac3ca8f6988abb1176
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -49,7 +57,11 @@ Material:
     - first:
         name: _MainTex
       second:
+<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 7be4785f3bf6d5f44be80358123b1195, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: b6c13534949590f43b213fbd74cb9ca6, type: 3}
+>>>>>>> 9079468b03066085173e6eac3ca8f6988abb1176
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -82,7 +94,11 @@ Material:
       second: 1
     - first:
         name: _DstBlend
+<<<<<<< HEAD
       second: 10
+=======
+      second: 0
+>>>>>>> 9079468b03066085173e6eac3ca8f6988abb1176
     - first:
         name: _GlossMapScale
       second: 1
@@ -97,7 +113,11 @@ Material:
       second: 0
     - first:
         name: _Mode
+<<<<<<< HEAD
       second: 3
+=======
+      second: 1
+>>>>>>> 9079468b03066085173e6eac3ca8f6988abb1176
     - first:
         name: _OcclusionStrength
       second: 1
@@ -118,11 +138,19 @@ Material:
       second: 0
     - first:
         name: _ZWrite
+<<<<<<< HEAD
       second: 0
     m_Colors:
     - first:
         name: _Color
       second: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+=======
+      second: 1
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> 9079468b03066085173e6eac3ca8f6988abb1176
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
