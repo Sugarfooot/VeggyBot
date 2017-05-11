@@ -10,14 +10,15 @@ private var idleTime : float = 0.0;
 var damageAmount : int = 8;
 var attackDistance : float;
 var playerSpotted : boolean = false;
-var isPatroller : boolean = false;
+var isPatrolling : boolean = false;
+var waitTimeAtWaypoint : float = 3.0;
 var patrolWayParent : Transform;
 var particleAttack : ParticleSystem;
 private var targetPlayer : GameObject = null;
+private var targetWaypoint : Transform = null;
 private var isStalking : boolean = false;
 private var isDead : boolean = false;
 private var bDamaged : boolean = true;
-private var navAgent : NavMeshAgent;
 private var navIdx : int = -1;
 var spottedMtl : Material;
 
@@ -25,10 +26,11 @@ function Start () {
 	currentSoul = enemy.maxSoul;
 	currentIntuition = enemy.maxIntuition;
 	aiAnimator = GetComponent.<Animator>();
-	// if (isPatroller){
-	// 	StartPatrolling();
-	// 	aiAnimator.SetTrigger("Walk");
-	// }
+	if (isPatrolling && patrolWayParent != null){
+		navIdx = 0;
+		StartPatrolling();
+		aiAnimator.SetTrigger("Walk");
+	}
 }
 
 function Update () {
@@ -41,6 +43,9 @@ function Update () {
 		else{
 			FollowPlayer();
 		}
+	}
+	else if (isPatrolling){
+		transform.LookAt(Vector3(targetWaypoint.position.x, transform.position.y, targetWaypoint.position.z));
 	}
 
 	if (isDead){
@@ -56,10 +61,11 @@ function OnTriggerEnter (collider : Collider){
 }
 
 function SpotPlayer (){
+	StopPatrolling();
 	playerSpotted = true;
 	transform.LookAt(Vector3(targetPlayer.transform.position.x, transform.position.y, targetPlayer.transform.position.z));
 	aiAnimator.SetTrigger("SpotPlayer");
-	yield WaitForSeconds(1.5);
+	yield WaitForSeconds(1.1);
 	isStalking = true;
 }
 
@@ -76,6 +82,36 @@ function Attack (){
 
 function FollowPlayer (){
 	aiAnimator.SetTrigger("Run");
+}
+
+function StartPatrolling (){
+	if (patrolWayParent.childCount > 0){
+		targetWaypoint = patrolWayParent.GetChild(navIdx);
+	}
+}
+
+function StopPatrolling (){
+	isPatrolling = false;
+}
+
+function IsPatrolling (){
+	return isPatrolling;
+}
+
+function WaitAtWaypoint (){
+	isPatrolling = false;
+	yield WaitForSeconds(waitTimeAtWaypoint);
+	isPatrolling = true;
+}
+
+function TargetNewWaypoint (){
+	if (navIdx < patrolWayParent.childCount - 1){
+		navIdx++;
+	}
+	else if (navIdx == patrolWayParent.childCount - 1){
+		navIdx = 0;
+	}
+	targetWaypoint = patrolWayParent.GetChild(navIdx);
 }
 
 function TakeDamage (amount : float){
