@@ -21,14 +21,13 @@ GameObject:
   - 4: {fileID: 4000013903934874}
   - 33: {fileID: 33000010076296182}
   - 23: {fileID: 23000012001198196}
-  - 95: {fileID: 95000014148655180}
   m_Layer: 0
   m_Name: Sac_Sable_LOD01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000010587324270
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,7 +54,6 @@ GameObject:
   - 4: {fileID: 4000013383089904}
   - 33: {fileID: 33000013774390186}
   - 23: {fileID: 23000013234821804}
-  - 95: {fileID: 95000012624142570}
   - 64: {fileID: 64000012451452406}
   m_Layer: 0
   m_Name: Sac_Sable_LOD00
@@ -96,10 +94,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010587324270}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.99119484, z: -0, w: -0.13241199}
+  m_LocalPosition: {x: 234.037, y: 69.779, z: 282.721}
+  m_LocalScale: {x: 2.7854488, y: 2.7854493, z: 2.7854493}
+  m_LocalEulerAnglesHint: {x: 0, y: 194.909, z: 0}
   m_Children:
   - {fileID: 4000013383089904}
   - {fileID: 4000013903934874}
@@ -189,40 +187,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 1e32dadcdcc0d0241b212a688d54a2b2, type: 3}
---- !u!95 &95000012624142570
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013947219428}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c7147dfb894e65a4fbdc69a593e7fc4b, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95000014148655180
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010476726454}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29d08c9702bc4d046ae30222b96b290d, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!205 &205000010619565990
 LODGroup:
   m_ObjectHideFlags: 1
@@ -235,11 +199,11 @@ LODGroup:
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LODs:
-  - screenRelativeHeight: 0.29867464
+  - screenRelativeHeight: 0.17117143
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23000013234821804}
-  - screenRelativeHeight: 0.06143893
+  - screenRelativeHeight: 0.021970592
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23000012001198196}
