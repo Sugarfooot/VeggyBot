@@ -1462,6 +1462,7 @@ GameObject:
   - 4: {fileID: 4000013786221064}
   - 33: {fileID: 33000012397119402}
   - 23: {fileID: 23000012520983764}
+  - 114: {fileID: 114000011465140320}
   m_Layer: 0
   m_Name: VEG_PLA_litB_LOD2
   m_TagString: Untagged
@@ -1524,6 +1525,7 @@ GameObject:
   - 4: {fileID: 4000011387423644}
   - 33: {fileID: 33000012572266478}
   - 23: {fileID: 23000010767109596}
+  - 114: {fileID: 114000014275322968}
   m_Layer: 0
   m_Name: VEG_PLA_litB_LOD1
   m_TagString: Untagged
@@ -1961,6 +1963,7 @@ GameObject:
   - 4: {fileID: 4000011451017872}
   - 33: {fileID: 33000013424779758}
   - 23: {fileID: 23000012018794174}
+  - 114: {fileID: 114000014238930562}
   m_Layer: 0
   m_Name: VEG_PLA_litB_LOD3
   m_TagString: Untagged
@@ -4608,6 +4611,66 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114000011465140320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012929233594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d1a1a2d92b42478e8491f850e1d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colors: []
+  _uv0: []
+  _uv1: []
+  _uv2: []
+  _uv3: []
+  _positions: []
+  _normals: []
+  _tangents: []
+  originalMaterial: []
+--- !u!114 &114000014238930562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013840325302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d1a1a2d92b42478e8491f850e1d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colors: []
+  _uv0: []
+  _uv1: []
+  _uv2: []
+  _uv3: []
+  _positions: []
+  _normals: []
+  _tangents: []
+  originalMaterial: []
+--- !u!114 &114000014275322968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012953133004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d1a1a2d92b42478e8491f850e1d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colors: []
+  _uv0: []
+  _uv1: []
+  _uv2: []
+  _uv3: []
+  _positions: []
+  _normals: []
+  _tangents: []
+  originalMaterial: []
 --- !u!137 &137000013566251910
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
