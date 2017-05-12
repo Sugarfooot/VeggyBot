@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Cherry_Juice
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 95a27ff28da9d4646bafa3a9b3e90709, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -46,6 +46,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _Foam
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _MainTex
       second:
         m_Texture: {fileID: 0}
@@ -69,6 +75,36 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ReflectionTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Water01
+      second:
+        m_Texture: {fileID: 2800000, guid: 90ff426733b42774fa4fb464cc68b2c9, type: 3}
+        m_Scale: {x: 0.1, y: 0.1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Water02
+      second:
+        m_Texture: {fileID: 2800000, guid: e13418555c7b85443a784514bbec2574, type: 3}
+        m_Scale: {x: 0.1, y: 0.1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Wave01
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Wave02
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _BumpScale
@@ -77,11 +113,20 @@ Material:
         name: _Cutoff
       second: 0.5
     - first:
+        name: _DepthRefractionBlend
+      second: 1.42
+    - first:
         name: _DetailNormalMapScale
       second: 1
     - first:
         name: _DstBlend
       second: 0
+    - first:
+        name: _FogHeight
+      second: 0.33
+    - first:
+        name: _Fresnel
+      second: 9.82
     - first:
         name: _GlossMapScale
       second: 1
@@ -104,6 +149,15 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _RefractionAmount
+      second: 0.0757
+    - first:
+        name: _ShoreBlend
+      second: 8.7
+    - first:
+        name: _ShoreFoamDepth
+      second: 2
+    - first:
         name: _SmoothnessTextureChannel
       second: 0
     - first:
@@ -116,6 +170,9 @@ Material:
         name: _UVSec
       second: 0
     - first:
+        name: _UseFoam
+      second: 0
+    - first:
         name: _ZWrite
       second: 1
     m_Colors:
@@ -125,3 +182,6 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _FogColor
+      second: {r: 0.22794116, g: 0.09888624, b: 0.1122367, a: 1}
