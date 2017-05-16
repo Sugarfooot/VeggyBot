@@ -1801,10 +1801,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012209722980}
-  m_LocalRotation: {x: -0, y: -0.99739045, z: -0, w: -0.072196506}
-  m_LocalPosition: {x: 208.35074, y: 69.57, z: 317.21884}
+  m_LocalRotation: {x: -0, y: -0.97929376, z: -0, w: 0.20244445}
+  m_LocalPosition: {x: 209.68259, y: 69.343, z: 315.40216}
   m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
-  m_LocalEulerAnglesHint: {x: 0, y: -188.06, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -156.85701, z: 0}
   m_Children:
   - {fileID: 4000012902864844}
   - {fileID: 4000010685685528}
@@ -2005,11 +2005,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: d8c1716c0912b4d479acf766e27c504b, type: 2}
-  damagesFromPlayer: 1
+  damagesFromPlayer: 5
   damageAmount: 8
   attackDistance: 2
   playerSpotted: 0
-  isPatroller: 0
+  isPatrolling: 0
+  waitTimeAtWaypoint: 3
   patrolWayParent: {fileID: 0}
   particleAttack: {fileID: 198000010422288128}
   spottedMtl: {fileID: 0}
