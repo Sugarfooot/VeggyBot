@@ -2,38 +2,255 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 3
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: ParticleWaterSpray
-  m_Shader: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: []
+  m_Shader: {fileID: 4800000, guid: 2ad49b72164b6684288033e712c56737, type: 3}
+  m_ShaderKeywords: _USEFOAM_ON _USEREFLECTIONS_ON
+  m_LightmapFlags: 5
   m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 5b303ff28ad9368468a2edd759cf458d, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Foam
+      second:
+        m_Texture: {fileID: 2800000, guid: 199d83fd2aca7214481411272c61f368, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FoamTexture
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 5b303ff28ad9368468a2edd759cf458d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _NormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 5c812e1122126a94e8157bd20106d153, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _NormalTexture
+      second:
+        m_Texture: {fileID: 2800000, guid: 90ff426733b42774fa4fb464cc68b2c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ReflectionTex
+      second:
+        m_Texture: {fileID: 2800000, guid: d3623424c1376f94198b092ca5bed6db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Texture
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Water01
+      second:
+        m_Texture: {fileID: 2800000, guid: d3623424c1376f94198b092ca5bed6db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Water02
+      second:
+        m_Texture: {fileID: 2800000, guid: d3623424c1376f94198b092ca5bed6db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Wave01
+      second:
+        m_Texture: {fileID: 2800000, guid: 90ff426733b42774fa4fb464cc68b2c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Wave02
+      second:
+        m_Texture: {fileID: 2800000, guid: ab936a54e633d9344a28ecf0cb43d652, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _heightMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 59b4ce678b8889d43b2671cf8b8a4892, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _heightMap_copy
+      second:
+        m_Texture: {fileID: 2800000, guid: 59b4ce678b8889d43b2671cf8b8a4892, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-      data:
-        first:
-          name: _InvFade
-        second: .827499986
+    - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
+        name: _DepthFade
+      second: 10
+    - first:
+        name: _DepthRefractionBlend
+      second: 14
+    - first:
+        name: _DepthTransparency
+      second: 1.5
+    - first:
+        name: _DistanceVisibility
+      second: 0
+    - first:
+        name: _Distortion
+      second: 1.12
+    - first:
+        name: _Fade
+      second: 3
+    - first:
+        name: _FoamBlend
+      second: 0.15
+    - first:
+        name: _FoamContrast
+      second: 0.25
+    - first:
+        name: _FoamIntensity
+      second: 5
+    - first:
+        name: _FoamSpeed
+      second: 120
+    - first:
+        name: _FoamTiling
+      second: 3
+    - first:
+        name: _FoamVisibility
+      second: 0.3
+    - first:
+        name: _FogHeight
+      second: 1
+    - first:
+        name: _Fresnel
+      second: 1
+    - first:
+        name: _Fresnel_power
+      second: 0.5
+    - first:
+        name: _Gloss
+      second: 0
+    - first:
+        name: _Intensity
+      second: 0
+    - first:
+        name: _InvFade
+      second: 0.8275
+    - first:
+        name: _LightWrapping
+      second: 1.5
+    - first:
+        name: _Metallic
+      second: 0
+    - first:
+        name: _NormalTiling
+      second: 1
+    - first:
+        name: _Reflectionintensity
+      second: 0.885
+    - first:
+        name: _Refraction
+      second: 0.5
+    - first:
+        name: _RefractionAmount
+      second: 0.1
+    - first:
+        name: _Roughness
+      second: 0
+    - first:
+        name: _ShallowDeepBlend
+      second: 3.6
+    - first:
+        name: _ShoreBlend
+      second: 6
+    - first:
+        name: _ShoreFade
+      second: 0.3
+    - first:
+        name: _ShoreFoamDepth
+      second: 2
+    - first:
+        name: _ShoreTransparency
+      second: 0.04
+    - first:
+        name: _Specular
+      second: 0
+    - first:
+        name: _Transparency
+      second: 0
+    - first:
+        name: _UseFoam
+      second: 1
+    - first:
+        name: _UseReflections
+      second: 0.5429346
+    - first:
+        name: _WaterLevel
+      second: 22
+    - first:
+        name: _WaveSpeed
+      second: 40
+    - first:
+        name: _baseColor_slope
+      second: 0
+    - first:
+        name: _node_4993_copy
+      second: 0.8935443
+    - first:
+        name: _offset_Size
+      second: 1
+    - first:
+        name: _opacity_Max
+      second: 1
+    - first:
+        name: _opacity_Min
+      second: 0
+    - first:
+        name: _speed
+      second: 1
     m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _TintColor
-        second: {r: 1, g: 1, b: 1, a: .75686276}
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Color1
+      second: {r: 0.2521626, g: 0.7794118, b: 0.4085193, a: 1}
+    - first:
+        name: _Color2
+      second: {r: 0.3893927, g: 0.4485294, b: 0.3660792, a: 1}
+    - first:
+        name: _DeepWaterColor
+      second: {r: 0.07843138, g: 0.3921569, b: 0.7843137, a: 1}
+    - first:
+        name: _FoamColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - first:
+        name: _FogColor
+      second: {r: 0.17257786, g: 0.31489077, b: 0.83823526, a: 1}
+    - first:
+        name: _ShallowWaterColor
+      second: {r: 0.4411765, g: 0.9537525, b: 1, a: 1}
+    - first:
+        name: _SpecularColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - first:
+        name: _TintColor
+      second: {r: 1, g: 1, b: 1, a: 0.75686276}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
