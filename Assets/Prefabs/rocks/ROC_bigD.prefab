@@ -25,7 +25,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1000012440790214
 GameObject:
@@ -39,12 +39,13 @@ GameObject:
   - 23: {fileID: 23000012542476358}
   - 64: {fileID: 64000012264424006}
   - 114: {fileID: 114000010107077550}
+  - 114: {fileID: 114000013092908072}
   m_Layer: 0
   m_Name: ROC_bigD_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1000013129505224
 GameObject:
@@ -57,12 +58,13 @@ GameObject:
   - 33: {fileID: 33000011536966116}
   - 23: {fileID: 23000010571424496}
   - 114: {fileID: 114000011210064162}
+  - 114: {fileID: 114000012190251890}
   m_Layer: 0
   m_Name: ROC_bigD_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1000013457003330
 GameObject:
@@ -75,12 +77,13 @@ GameObject:
   - 33: {fileID: 33000014108178474}
   - 23: {fileID: 23000011917276306}
   - 114: {fileID: 114000013571697338}
+  - 114: {fileID: 114000012586854308}
   m_Layer: 0
   m_Name: ROC_bigD_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4000010363147260
 Transform:
@@ -101,10 +104,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011117771412}
-  m_LocalRotation: {x: -0.07163472, y: -0.5257805, z: 0.14784613, w: -0.8346046}
-  m_LocalPosition: {x: 61.1, y: 135.39, z: 39.14}
-  m_LocalScale: {x: 7.9501863, y: 7.950174, z: 7.9501886}
-  m_LocalEulerAnglesHint: {x: 15.913001, y: -296.923, z: -10.014001}
+  m_LocalRotation: {x: -0.1576638, y: 0.26551595, z: 0.046175074, w: -0.95000595}
+  m_LocalPosition: {x: 84.17999, y: 143.65, z: 16.289997}
+  m_LocalScale: {x: 4.043442, y: 4.0434275, z: 4.043443}
+  m_LocalEulerAnglesHint: {x: 15.913001, y: -392.801, z: -10.014001}
   m_Children:
   - {fileID: 4000012655512872}
   - {fileID: 4000010363147260}
@@ -217,7 +220,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedWireframeHidden: 1
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -299,6 +302,69 @@ MonoBehaviour:
   _tangents: []
   originalMaterial:
   - {fileID: 2100000, guid: 520dc1b4ed52c434e98de8b37b082ec9, type: 2}
+--- !u!114 &114000012190251890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013129505224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d1a1a2d92b42478e8491f850e1d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colors: []
+  _uv0: []
+  _uv1: []
+  _uv2: []
+  _uv3: []
+  _positions: []
+  _normals: []
+  _tangents: []
+  originalMaterial:
+  - {fileID: 2100000, guid: 520dc1b4ed52c434e98de8b37b082ec9, type: 2}
+--- !u!114 &114000012586854308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013457003330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d1a1a2d92b42478e8491f850e1d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colors: []
+  _uv0: []
+  _uv1: []
+  _uv2: []
+  _uv3: []
+  _positions: []
+  _normals: []
+  _tangents: []
+  originalMaterial:
+  - {fileID: 2100000, guid: 520dc1b4ed52c434e98de8b37b082ec9, type: 2}
+--- !u!114 &114000013092908072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012440790214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d1a1a2d92b42478e8491f850e1d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colors: []
+  _uv0: []
+  _uv1: []
+  _uv2: []
+  _uv3: []
+  _positions: []
+  _normals: []
+  _tangents: []
+  originalMaterial:
+  - {fileID: 2100000, guid: 520dc1b4ed52c434e98de8b37b082ec9, type: 2}
 --- !u!114 &114000013571697338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -329,14 +395,14 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0, y: 0, z: 0}
   m_Size: 1.066398
-  m_FadeMode: 0
+  m_FadeMode: 1
   m_AnimateCrossFading: 0
   m_LODs:
-  - screenRelativeHeight: 0.49621648
+  - screenRelativeHeight: 0.7170282
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23000012542476358}
-  - screenRelativeHeight: 0.1977905
+  - screenRelativeHeight: 0.4598968
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23000010571424496}
