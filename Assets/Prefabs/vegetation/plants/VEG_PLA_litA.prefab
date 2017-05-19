@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013451555852}
-  - 95: {fileID: 95000014111914528}
   - 205: {fileID: 205000013453910920}
   m_Layer: 0
   m_Name: VEG_PLA_litA
@@ -81,10 +80,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010445652738}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 135.47902, y: 111.91431, z: 233.36002}
-  m_LocalScale: {x: 5.376295, y: 5.376295, z: 5.376295}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.28704762, y: 0.057628036, z: -0.21456929, w: 0.9317954}
+  m_LocalPosition: {x: 3.488449, y: 21.094124, z: -44.261566}
+  m_LocalScale: {x: 2.4469168, y: 2.446917, z: 2.4469168}
+  m_LocalEulerAnglesHint: {x: 34.023003, y: -1.0600001, z: -26.141}
   m_Children:
   - {fileID: 4000011541811842}
   - {fileID: 4000013823470648}
@@ -175,23 +174,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011656307226}
   m_Mesh: {fileID: 4300002, guid: 3ca02cd69d1a2bd469ba1e53b09255d9, type: 3}
---- !u!95 &95000014111914528
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010445652738}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 3ca02cd69d1a2bd469ba1e53b09255d9, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!205 &205000013453910920
 LODGroup:
   m_ObjectHideFlags: 1

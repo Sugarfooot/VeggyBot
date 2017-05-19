@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: ParticleWaterSpray
-  m_Shader: {fileID: 4800000, guid: 2ad49b72164b6684288033e712c56737, type: 3}
+  m_Shader: {fileID: 4800000, guid: 475c4a4e617a8401b84ca7b32c7cc460, type: 3}
   m_ShaderKeywords: _USEFOAM_ON _USEREFLECTIONS_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -15,6 +15,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 2800000, guid: ac81606a79c56446abf07ad51c6b9979, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - first:
         name: _Foam
       second:
@@ -30,7 +36,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 5b303ff28ad9368468a2edd759cf458d, type: 3}
+        m_Texture: {fileID: 2800000, guid: d3623424c1376f94198b092ca5bed6db, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -47,6 +53,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     - first:
         name: _ReflectionTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ShoreTex
       second:
         m_Texture: {fileID: 2800000, guid: d3623424c1376f94198b092ca5bed6db, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -140,8 +152,14 @@ Material:
         name: _Fresnel
       second: 1
     - first:
+        name: _FresnelScale
+      second: 2.25
+    - first:
         name: _Fresnel_power
       second: 0.5
+    - first:
+        name: _GerstnerIntensity
+      second: 1
     - first:
         name: _Gloss
       second: 0
@@ -175,6 +193,9 @@ Material:
     - first:
         name: _ShallowDeepBlend
       second: 3.6
+    - first:
+        name: _Shininess
+      second: 2
     - first:
         name: _ShoreBlend
       second: 6
@@ -225,6 +246,21 @@ Material:
       second: 1
     m_Colors:
     - first:
+        name: _AnimationDirection
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _AnimationTiling
+      second: {r: 2.2, g: 2.2, b: -1.1, a: -1.1}
+    - first:
+        name: _BaseColor
+      second: {r: 0.36786333, g: 0.51190794, b: 0.7941176, a: 0.5}
+    - first:
+        name: _BumpDirection
+      second: {r: 1, g: 1, b: -1, a: 1}
+    - first:
+        name: _BumpTiling
+      second: {r: 1, g: 1, b: -2, a: 3}
+    - first:
         name: _Color
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
@@ -237,20 +273,53 @@ Material:
         name: _DeepWaterColor
       second: {r: 0.07843138, g: 0.3921569, b: 0.7843137, a: 1}
     - first:
+        name: _DistortParams
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _Foam
+      second: {r: 0.81, g: -0.13, b: 2.67, a: 0}
+    - first:
         name: _FoamColor
       second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - first:
         name: _FogColor
       second: {r: 0.17257786, g: 0.31489077, b: 0.83823526, a: 1}
     - first:
+        name: _GAmplitude
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _GDirectionAB
+      second: {r: 0.3, g: 0.85, b: 0.85, a: 0.25}
+    - first:
+        name: _GDirectionCD
+      second: {r: 0.1, g: 0.9, b: 0.5, a: 0.5}
+    - first:
+        name: _GFrequency
+      second: {r: 1.3, g: 1.35, b: 1.25, a: 1.25}
+    - first:
+        name: _GSpeed
+      second: {r: 1.2, g: 1.375, b: 1.1, a: 1.5}
+    - first:
+        name: _GSteepness
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _InvFadeParemeter
+      second: {r: 6.91, g: 0.68, b: 0.5, a: 67.25}
+    - first:
+        name: _ReflectionColor
+      second: {r: 0.096993946, g: 0.2696277, b: 0.50735295, a: 0.5}
+    - first:
         name: _ShallowWaterColor
       second: {r: 0.4411765, g: 0.9537525, b: 1, a: 1}
     - first:
         name: _SpecularColor
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _TintColor
       second: {r: 1, g: 1, b: 1, a: 0.75686276}
+    - first:
+        name: _WorldLightDir
+      second: {r: 0, g: 0.1, b: -0.5, a: 0}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
