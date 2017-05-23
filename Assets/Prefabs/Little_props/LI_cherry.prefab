@@ -26,7 +26,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1000011352752012
 GameObject:
@@ -43,7 +43,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1000013413485606
 GameObject:
@@ -61,7 +61,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1000014125933288
 GameObject:
@@ -78,7 +78,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1000014149446876
 GameObject:
@@ -94,7 +94,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4000011129434690
 Transform:
@@ -102,10 +102,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014149446876}
-  m_LocalRotation: {x: -0.27459016, y: 0.89284796, z: 0.18815857, w: 0.30334663}
-  m_LocalPosition: {x: 128.75, y: 82.98, z: 179.03}
-  m_LocalScale: {x: 4.8036695, y: 4.80367, z: 4.80367}
-  m_LocalEulerAnglesHint: {x: -30.155, y: 149.49701, z: -25.649002}
+  m_LocalRotation: {x: -0, y: 0.111797005, z: -0, w: 0.99373114}
+  m_LocalPosition: {x: 76.7965, y: 134.7591, z: 16.986269}
+  m_LocalScale: {x: 8.061509, y: 8.061506, z: 8.061509}
+  m_LocalEulerAnglesHint: {x: -30.155, y: 45.904003, z: -25.649002}
   m_Children:
   - {fileID: 4000013247528364}
   - {fileID: 4000013548641072}
@@ -334,19 +334,19 @@ LODGroup:
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LODs:
-  - screenRelativeHeight: 0.5141537
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23000011127666406}
   - screenRelativeHeight: 0.24900101
     fadeTransitionWidth: 0
     renderers:
+    - renderer: {fileID: 23000011127666406}
+  - screenRelativeHeight: 0.09986946
+    fadeTransitionWidth: 0
+    renderers:
     - renderer: {fileID: 23000014140306246}
-  - screenRelativeHeight: 0.09673972
+  - screenRelativeHeight: 0.05430883
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23000010980788510}
-  - screenRelativeHeight: 0.036377672
+  - screenRelativeHeight: 0.0238144
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23000013960843112}
