@@ -1,8 +1,11 @@
 var cams : Transform;
 var keys : String[];
+private var mainCam : GameObject;
 
 function Start() {
-	Camera.main.gameObject.SetActive(false);
+	yield WaitForSeconds(Time.deltaTime);
+	mainCam = Camera.main.gameObject;
+	mainCam.SetActive(false)
 	DisableAllCamsButOne(cams.GetChild(0).gameObject);
 }
 
