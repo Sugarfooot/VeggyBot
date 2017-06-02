@@ -7,11 +7,12 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MAT_VEG_TRE_acca_leaves
-  m_Shader: {fileID: 4800000, guid: 5094d06db1a764e629ba3f8c0c6b50f8, type: 3}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _BENDINGCONTROLS_VERTEX_COLORS
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_Shader: {fileID: 4800000, guid: d0d241aff1676604494f767a23ce1ff9, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BENDINGCONTROLS_VERTEX_COLORS _EMISSION
+  m_LightmapFlags: 1
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -101,8 +102,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
+        name: _AO
+      second: 0.39
+    - first:
         name: _AfsXtraBending
       second: 0
+    - first:
+        name: _BaseLight
+      second: 0.35
     - first:
         name: _BendingControls
       second: 0
@@ -117,13 +124,13 @@ Material:
       second: 1
     - first:
         name: _DstBlend
-      second: 10
+      second: 0
     - first:
         name: _GlossMapScale
       second: 1
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 0
     - first:
         name: _GlossyReflections
       second: 1
@@ -135,7 +142,10 @@ Material:
       second: 0
     - first:
         name: _Mode
-      second: 3
+      second: 1
+    - first:
+        name: _Occlusion
+      second: 4.1
     - first:
         name: _OcclusionStrength
       second: 1
@@ -147,7 +157,7 @@ Material:
       second: 1
     - first:
         name: _ShadowStrength
-      second: 0.485
+      second: 0.426
     - first:
         name: _Shininess
       second: 0.11
@@ -165,7 +175,7 @@ Material:
       second: 1
     - first:
         name: _TranslucencyViewDependency
-      second: 0.1
+      second: 0.461
     - first:
         name: _TumbleFrequency
       second: 1
@@ -177,14 +187,14 @@ Material:
       second: 0
     - first:
         name: _ZWrite
-      second: 0
+      second: 1
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.31200036, g: 0.5588235, b: 0.29173875, a: 1}
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 0.03389923, g: 0.08088237, b: 0.034223247, a: 1}
     - first:
         name: _SpecularReflectivity
       second: {r: 0.6466143, g: 0.83823526, b: 0.5547145, a: 1}

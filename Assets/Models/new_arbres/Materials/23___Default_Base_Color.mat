@@ -7,8 +7,9 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 23___Default_Base_Color
-  m_Shader: {fileID: 4800000, guid: a41056c095bd04938aad403f675ae3ba, type: 3}
-  m_ShaderKeywords: _BENDINGCONTROLS_VERTEX_COLORS _EMISSION _LAYERS2 _NORMALMAP
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _BENDINGCONTROLS_VERTEX_COLORS _DETAIL_MULX2 _EMISSION _LAYERS2
+    _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -256,7 +257,7 @@ Material:
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 0.125, g: 0.09700812, b: 0.06158088, a: 1}
     - first:
         name: _SpecColor1
       second: {r: 0.2, g: 0.2, b: 0.2, a: 0.2}
