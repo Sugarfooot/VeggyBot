@@ -37,6 +37,8 @@ public class PlayerMoves extends MonoBehaviour {
     private var falling : boolean = false;
     private var lastGroundedPos : Vector3;
 
+    var audios : AudioSource[];
+
 
     @HideInInspector
     var animSpeed : Vector2;
@@ -56,6 +58,7 @@ public class PlayerMoves extends MonoBehaviour {
         {
             m_Cam = Camera.main.transform;
         }
+        audioSrc = GetComponent.<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -133,7 +136,7 @@ public class PlayerMoves extends MonoBehaviour {
 		// convert the world relative moveInput vector into a local-relative
 		// turn amount and forward amount required to head in the desired
 		// direction.
-		if (move.magnitude > 1f) move.Normalize();
+		if (move.magnitude > 1) move.Normalize();
 		move = transform.InverseTransformDirection(move);
 		CheckGroundStatus();
 		move = Vector3.ProjectOnPlane(move, m_GroundNormal);
@@ -149,10 +152,17 @@ public class PlayerMoves extends MonoBehaviour {
 		// control and velocity handling is different when grounded and airborne:
 		if (m_IsGrounded)
 		{
+            if (!audios[0].isPlaying && move.magnitude > 0.5){
+                audios[0].Play();
+            }
+            else if (audios[0].isPlaying && move.magnitude < 0.5){
+                audios[0].Stop();
+            }
 			HandleGroundedMovement(jump);
 		}
 		else
 		{
+            audios[0].Stop();
 			HandleAirborneMovement(move);
 		}
 	}
@@ -202,4 +212,20 @@ public class PlayerMoves extends MonoBehaviour {
             m_GroundCheckDistance = 0.2f;
 		}
 	}
+
+    function PlayDeath (){
+        audios[1].Play();
+    }
+
+    function AttackPlay (){
+        if (!audios[2].isPlaying){
+            audios[2].Play();
+        }
+    }
+
+    function AttackStop (){
+        if (audios[2].isPlaying){
+            audios[2].Stop();
+        }
+    }
 }

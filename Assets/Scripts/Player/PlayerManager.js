@@ -22,7 +22,8 @@ public class PlayerManager extends MonoBehaviour {
 	private var transformToLock : Transform[] = [];
 	private var enemyLockedIdx : int = -1;
 	private var lockOn : Transform = null;
-	private var isDead : boolean = false; 
+	private var isDead : boolean = false;
+	private var pMoves : PlayerMoves;
 
 	var refTrs : Transform;
 	var armTrs : Transform;
@@ -45,6 +46,7 @@ public class PlayerManager extends MonoBehaviour {
 		spawnPoint = transform.position;
 		animator = GetComponent.<Animator>();
 		currentHealth = pomoCharacter.maxSoul;
+		pMoves = GetComponent.<PlayerMoves>();
 	}
 
 	function Update () {
@@ -97,6 +99,8 @@ public class PlayerManager extends MonoBehaviour {
 		canShoot = false;
 		isShooting = true;
 		animator.SetBool("Attack", true);
+		yield WaitForSeconds(0.15);
+		pMoves.AttackPlay();
 		hose.Play();
 	}
 
@@ -104,12 +108,14 @@ public class PlayerManager extends MonoBehaviour {
 		canShoot = true;
 		isShooting = false;
 		animator.SetBool("Attack", false);
+        pMoves.AttackStop();
         hose.Stop();
 	}
 
 	function Respawn (){
 		isDead = true;
 		animator.SetTrigger("Death");
+		pMoves.PlayDeath();
 		StopShooting();
 		yield WaitForSeconds(1.49);
 		animator.SetTrigger("Idle");
