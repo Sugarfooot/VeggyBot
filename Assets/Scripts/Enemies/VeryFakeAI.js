@@ -21,11 +21,13 @@ private var isDead : boolean = false;
 private var bDamaged : boolean = true;
 private var navIdx : int = -1;
 var spottedMtl : Material;
+private var audioSrc : AudioSource;
 
 function Start () {
 	currentSoul = enemy.maxSoul;
 	currentIntuition = enemy.maxIntuition;
 	aiAnimator = GetComponent.<Animator>();
+	audioSrc = GetComponent.<AudioSource>();
 	if (isPatrolling && patrolWayParent != null){
 		navIdx = 0;
 		StartPatrolling();
@@ -145,6 +147,7 @@ function Die (){
 		aiAnimator.ResetTrigger("Walk");
 		aiAnimator.SetTrigger("Death");
 	}
+	audioSrc.Play();
 	PlayerManager.Instance().RemoveLockableEnemies(transform);
 	Destroy(gameObject,0.5);
 }
